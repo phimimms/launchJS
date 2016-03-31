@@ -39,7 +39,8 @@ export default class HoistingSlide extends Slide {
                 <div className="slide-header">Hoisting</div>
                 <div className='slide-content'>
                     <ul>
-                        <li>The use of a variable within its scope <strong>but</strong> prior to its declaration</li>
+                        <li>Functions are interpreted as if <strong>all</strong> of its variable declarations were <em>hoisted</em> to its top</li>
+                        <li>Prevents reference error from using a variable within its scope <strong>prior</strong> to its declaration</li>
                         <li>Function scopes are defined before execution</li>
                         <div style={containerStyle}>
                             <div style={sideContainerStyle}>
@@ -54,7 +55,7 @@ export default class HoistingSlide extends Slide {
                                 </div>
                             </div>
                             <div style={sideContainerStyle}>
-                                <h2>Non-Hoisted Equivalent</h2>
+                                <h2>Interpretation</h2>
                                 <div className="code-block smaller">
                                     <p>
                                         <span>function foo() &#123;</span>

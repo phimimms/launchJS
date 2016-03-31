@@ -34,7 +34,7 @@ export default class ES6ScopeSlide extends Slide {
                                 <span></span>
                                 <span>(function() &#123;</span>
                                 <span>    let a = 1; // No different than 'var'</span>
-                                <span>    &#123;</span>
+                                <span>    if (a) &#123;</span>
                                 <span>        let b = 2;</span>
                                 <span>    &#125;</span>
                                 <span>    console.log(b); // Reference Error!</span>

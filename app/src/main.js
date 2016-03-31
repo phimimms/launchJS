@@ -16,6 +16,13 @@ import functionDeclarationsSlide from './js/slides/scope/functionDeclarations';
 import functionExpressionsSlide from './js/slides/scope/functionExpressions';
 import ScopeIQSlide from './js/slides/scope/scopeIQ';
 import ES6ScopeSlide from './js/slides/scope/es6Scope';
+import ThisIntroSlide from './js/slides/this/thisIntro';
+import DefaultBindingSlide from './js/slides/this/defaultBinding';
+import ImplicitBindingSlide from './js/slides/this/implicitBinding';
+import ExplicitBindingSlide from './js/slides/this/explicitBinding';
+import newBindingSlide from './js/slides/this/newBinding';
+import ThisIQSlide from './js/slides/this/thisIQ';
+import ES6ThisSlide from './js/slides/this/es6This';
 
 $(document).ready(function() {
     var slidesContainer = document.getElementById('slides');
@@ -37,7 +44,14 @@ $(document).ready(function() {
         functionDeclarationsSlide,
         functionExpressionsSlide,
         ScopeIQSlide,
-        ES6ScopeSlide
+        ES6ScopeSlide,
+        ThisIntroSlide,
+        DefaultBindingSlide,
+        ImplicitBindingSlide,
+        ExplicitBindingSlide,
+        newBindingSlide,
+        ThisIQSlide,
+        ES6ThisSlide
     ];
 
     for (let i = 0, n = Slides.length; i < n; i++) {

@@ -43,7 +43,7 @@ export default class newBindingSlide extends Slide {
                                 <span>console.log(obj); // &#123; a: 1 &#125;</span>
                             </p>
                         </div>
-                        <li>Binding Priority: <code>new</code> &#62; hard &#62; explicit &#62; implicit &#62; default</li>
+                        <li><strong>Binding Priority:</strong> <code>new</code> &#62; hard &#62; explicit &#62; implicit &#62; default</li>
                     </ul>
                 </div>
             </div>

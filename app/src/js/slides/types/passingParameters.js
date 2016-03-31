@@ -3,7 +3,7 @@
 import React from 'react';
 import Slide from '../slide';
 
-export default class DefaultBindingSlide extends Slide {
+export default class PassingParametersSlide extends Slide {
     /**
      * Instantiates the slide.
      *
@@ -12,8 +12,8 @@ export default class DefaultBindingSlide extends Slide {
     constructor(props) {
         super(props);
 
-        this.sectionName = 'this';
-        this.slideTitle = 'Default Binding';
+        this.sectionName = 'Types';
+        this.slideTitle = 'Passing Parameters';
     }
 
     /**
@@ -23,30 +23,34 @@ export default class DefaultBindingSlide extends Slide {
      */
     render() {
         super.render();
+
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Default Binding</div>
+                <div className="slide-header">Passing Parameters</div>
                 <div className="slide-content">
                     <ul>
-                        <li>Invoked with a plain, undecorated function reference</li>
+                        <li>Primitive types are <strong>always</strong> passed by <em>value</em></li>
                         <div className="code-block small">
                             <p>
-                                <span>var foo = function bar() &#123;</span>
-                                <span>    console.log(this); // global object (window)</span>
+                                <span>var foo = function(p) &#123;</span>
+                                <span>    p += 1;</span>
                                 <span>&#125;;</span>
                                 <span> </span>
-                                <span>foo();</span>
+                                <span>var a = 0;</span>
+                                <span>foo(a);</span>
+                                <span>console.log(a); // 0</span>
                             </p>
                         </div>
-                        <li>If the contents of the invoked function include <code>'use strict';</code>, then <code>this</code> will be <code>undefined</code></li>
+                        <li>Compound types are <strong>always</strong> passed by <em>reference</em></li>
                         <div className="code-block small">
                             <p>
-                                <span>var foo = function bar() &#123;</span>
-                                <span>    'use strict';</span>
-                                <span>    console.log(this); // undefined</span>
+                                <span>var foo = function(p) &#123;</span>
+                                <span>    p.push(1);</span>
                                 <span>&#125;;</span>
                                 <span> </span>
-                                <span>foo();</span>
+                                <span>var a = [0];</span>
+                                <span>foo(a);</span>
+                                <span>console.log(a); // [0, 1]</span>
                             </p>
                         </div>
                     </ul>

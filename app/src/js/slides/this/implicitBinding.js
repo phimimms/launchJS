@@ -32,10 +32,11 @@ export default class ImplicitBindingSlide extends Slide {
                         <div className="code-block">
                             <p>
                                 <span>var foo = &#123;</span>
-                                <span>    bar: function bar() &#123;</span>
+                                <span>    bar: function() &#123;</span>
                                 <span>        console.log(this); // foo</span>
                                 <span>    &#125;</span>
                                 <span>&#125;;</span>
+                                <span> </span>
                                 <span>foo.bar();</span>
                             </p>
                         </div>

@@ -23,6 +23,12 @@ import ExplicitBindingSlide from './js/slides/this/explicitBinding';
 import newBindingSlide from './js/slides/this/newBinding';
 import ThisIQSlide from './js/slides/this/thisIQ';
 import ES6ThisSlide from './js/slides/this/es6This';
+import TypesIntroSlide from './js/slides/types/typesIntro';
+import PassingParametersSlide from './js/slides/types/passingParameters';
+import getterSettersSlide from './js/slides/types/gettersSetters';
+import PrototypesSlide from './js/slides/types/prototypes';
+import PropertyAccessorsSlide from './js/slides/types/propertyAccessors';
+import typesIQSlide from './js/slides/types/typesIQ';
 
 $(document).ready(function() {
     var slidesContainer = document.getElementById('slides');
@@ -51,7 +57,13 @@ $(document).ready(function() {
         ExplicitBindingSlide,
         newBindingSlide,
         ThisIQSlide,
-        ES6ThisSlide
+        ES6ThisSlide,
+        TypesIntroSlide,
+        PassingParametersSlide,
+        getterSettersSlide,
+        PrototypesSlide,
+        PropertyAccessorsSlide,
+        typesIQSlide
     ];
 
     for (let i = 0, n = Slides.length; i < n; i++) {

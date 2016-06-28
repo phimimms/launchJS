@@ -12,7 +12,7 @@ export default class PassingParametersSlide extends Slide {
     constructor(props) {
         super(props);
 
-        this.sectionName = 'Types';
+        this.sectionName = 'Types & Grammar';
         this.slideTitle = 'Passing Parameters';
     }
 

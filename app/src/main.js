@@ -12,23 +12,25 @@ import ResourcesSlide from './js/slides/introduction/Resources';
 import ScopeIntroSlide from './js/slides/scope/scopeIntro';
 import UndeclaredVariablesSlide from './js/slides/scope/undeclaredVariables';
 import HoistingSlide from './js/slides/scope/hoisting';
-import functionDeclarationsSlide from './js/slides/scope/functionDeclarations';
-import functionExpressionsSlide from './js/slides/scope/functionExpressions';
+import FunctionDeclarationsSlide from './js/slides/scope/functionDeclarations';
+import FunctionExpressionsSlide from './js/slides/scope/functionExpressions';
+import ClosureSlide from './js/slides/scope/closure';
 import ScopeIQSlide from './js/slides/scope/scopeIQ';
 import ES6ScopeSlide from './js/slides/scope/es6Scope';
+import LetLoopsSlide from './js/slides/scope/letLoops';
 import ThisIntroSlide from './js/slides/this/thisIntro';
 import DefaultBindingSlide from './js/slides/this/defaultBinding';
 import ImplicitBindingSlide from './js/slides/this/implicitBinding';
 import ExplicitBindingSlide from './js/slides/this/explicitBinding';
-import newBindingSlide from './js/slides/this/newBinding';
+import NewBindingSlide from './js/slides/this/newBinding';
 import ThisIQSlide from './js/slides/this/thisIQ';
 import ES6ThisSlide from './js/slides/this/es6This';
-import TypesIntroSlide from './js/slides/types/typesIntro';
-import PassingParametersSlide from './js/slides/types/passingParameters';
-import getterSettersSlide from './js/slides/types/gettersSetters';
-import PrototypesSlide from './js/slides/types/prototypes';
-import PropertyAccessorsSlide from './js/slides/types/propertyAccessors';
-import typesIQSlide from './js/slides/types/typesIQ';
+import TypesIntroSlide from './js/slides/typesAndGrammar/typesIntro';
+import PassingParametersSlide from './js/slides/typesAndGrammar/passingParameters';
+import GetterSettersSlide from './js/slides/typesAndGrammar/gettersSetters';
+import PrototypesSlide from './js/slides/typesAndGrammar/prototypes';
+import PropertyAccessorsSlide from './js/slides/typesAndGrammar/propertyAccessors';
+import TypesIQSlide from './js/slides/typesAndGrammar/typesIQ';
 
 $(document).ready(function() {
     var slidesContainer = document.getElementById('slides');
@@ -42,28 +44,30 @@ $(document).ready(function() {
     };
 
     const Slides = [
-        IntroSlide,
-        ResourcesSlide,
+        //IntroSlide,
+        //ResourcesSlide,
         ScopeIntroSlide,
         UndeclaredVariablesSlide,
         HoistingSlide,
-        functionDeclarationsSlide,
-        functionExpressionsSlide,
+        FunctionDeclarationsSlide,
+        FunctionExpressionsSlide,
+        ClosureSlide,
         ScopeIQSlide,
         ES6ScopeSlide,
+        LetLoopsSlide,
         ThisIntroSlide,
         DefaultBindingSlide,
         ImplicitBindingSlide,
         ExplicitBindingSlide,
-        newBindingSlide,
+        NewBindingSlide,
         ThisIQSlide,
         ES6ThisSlide,
         TypesIntroSlide,
         PassingParametersSlide,
-        getterSettersSlide,
+        GetterSettersSlide,
         PrototypesSlide,
         PropertyAccessorsSlide,
-        typesIQSlide
+        TypesIQSlide
     ];
 
     for (let i = 0, n = Slides.length; i < n; i++) {

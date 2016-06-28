@@ -43,14 +43,6 @@ export default class ES6ScopeSlide extends Slide {
                                 <span>&#125;)();</span>
                             </p>
                         </div>
-                        <li><code>let</code> Loops</li>
-                        <div className="code-block small">
-                            <p>
-                                <span>for (let i = 0; i &#60; 5; i++) &#123;</span>
-                                <span>    ...</span>
-                                <span>&#125;</span>
-                            </p>
-                        </div>
                     </ul>
                 </div>
             </div>

@@ -12,7 +12,7 @@ export default class PropertyAccessorsSlide extends Slide {
     constructor(props) {
         super(props);
 
-        this.sectionName = 'Types';
+        this.sectionName = 'Types & Grammar';
         this.slideTitle = 'Property Accessors';
     }
 

@@ -12,7 +12,7 @@ export default class TypesIntroSlide extends Slide {
     constructor(props) {
         super(props);
 
-        this.sectionName = 'Types';
+        this.sectionName = 'Types & Grammar';
         this.slideTitle = 'Introduction';
     }
 
@@ -26,7 +26,7 @@ export default class TypesIntroSlide extends Slide {
 
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Types</div>
+                <div className="slide-header">Types & Grammar</div>
                 <div className="slide-content">
                     <ul>
                         <li>Javascript is <strong>not</strong> a typed language</li>

@@ -12,7 +12,7 @@ export default class PrototypesSlide extends Slide {
     constructor(props) {
         super(props);
 
-        this.sectionName = 'Types';
+        this.sectionName = 'Types & Grammar';
         this.slideTitle = 'Object Prototypes';
     }
 

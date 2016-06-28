@@ -22,7 +22,7 @@ A presentation on Javascript execution behavior.
 * Object Prototypes
 * Property Accessors
 
-### What's to Come?
+### What's to Come
 * Promises
 * ES6
 

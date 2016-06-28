@@ -38,7 +38,7 @@ export default class EqualityOperatorsSlide extends Slide {
                                 <span>if (a) &#123; // Does reach here &#125;</span>
                             </p>
                         </div>
-                        <li>Objects (including arrays and functions) are only equal if they are both references to the <em>exact same value</em></li>
+                        <li>Objects (including arrays and functions) are <em>only</em> equal <strong>if</strong> they are both references to the <em>exact same value</em></li>
                         <ul><li><code>==</code> and <code>===</code> behave identically when two objects are being compared</li></ul>
                     </ul>
                 </div>

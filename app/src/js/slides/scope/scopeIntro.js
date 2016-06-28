@@ -59,9 +59,9 @@ export default class ScopeIntroSlide extends Slide {
                             </div>
                         </div>
                         <div style={{float: 'left', width: '60%'}}>
-                            <div className="circle-large yellow__transparent">global</div>
+                            <div className="circle-large yellow__transparent">bar</div>
                             <div className="circle-medium orange__transparent">foo</div>
-                            <div className="circle-small red__transparent">bar</div>
+                            <div className="circle-small red__transparent">global</div>
                         </div>
                     </div>
                 </div>

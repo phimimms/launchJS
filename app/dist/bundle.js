@@ -1765,7 +1765,7 @@ var ScopeIntroSlide = function (_Slide) {
                             _react2.default.createElement(
                                 'div',
                                 { className: 'circle-large yellow__transparent' },
-                                'global'
+                                'bar'
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -1775,7 +1775,7 @@ var ScopeIntroSlide = function (_Slide) {
                             _react2.default.createElement(
                                 'div',
                                 { className: 'circle-small red__transparent' },
-                                'bar'
+                                'global'
                             )
                         )
                     )
@@ -3703,7 +3703,7 @@ var ConditionalOperatorsSlide = function (_Slide) {
                         ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'code-block small' },
+                            { className: 'code-block smaller' },
                             _react2.default.createElement(
                                 'p',
                                 null,
@@ -3715,7 +3715,7 @@ var ConditionalOperatorsSlide = function (_Slide) {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'var b = null || {}; // null'
+                                    'var b = null || {}; // {}'
                                 ),
                                 _react2.default.createElement(
                                     'span',
@@ -3725,7 +3725,17 @@ var ConditionalOperatorsSlide = function (_Slide) {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    'if (a || b) { // Does not reach here }'
+                                    'if (b || a) {'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    // b || a --> {} --> Reaches here'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '}'
                                 )
                             )
                         )
@@ -3874,7 +3884,19 @@ var EqualityOperatorsSlide = function (_Slide) {
                         _react2.default.createElement(
                             'li',
                             null,
-                            'Objects (including arrays and functions) are only equal if they are both references to the ',
+                            'Objects (including arrays and functions) are ',
+                            _react2.default.createElement(
+                                'em',
+                                null,
+                                'only'
+                            ),
+                            ' equal ',
+                            _react2.default.createElement(
+                                'strong',
+                                null,
+                                'if'
+                            ),
+                            ' they are both references to the ',
                             _react2.default.createElement(
                                 'em',
                                 null,

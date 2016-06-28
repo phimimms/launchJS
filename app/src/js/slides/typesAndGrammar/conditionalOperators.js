@@ -37,12 +37,14 @@ export default class ConditionalOperatorsSlide extends Slide {
                                     Otherwise the result is the value of the <em>first</em> operand.</li>
                         </ul>
                         <li><code>if</code> coerces its expression to a boolean value</li>
-                        <div className="code-block small">
+                        <div className="code-block smaller">
                             <p>
                                 <span>var a = [] && 0;    // 0</span>
-                                <span>var b = null || &#123;&#125;; // null</span>
+                                <span>var b = null || &#123;&#125;; // &#123;&#125;</span>
                                 <span> </span>
-                                <span>if (a || b) &#123; // Does not reach here &#125;</span>
+                                <span>if (b || a) &#123;</span>
+                                <span>    // b || a --> &#123;&#125; --> Reaches here</span>
+                                <span>&#125;</span>
                             </p>
                         </div>
                     </ul>

@@ -9,7 +9,7 @@
 
 .orange__transparent{background-color:rgba(255,128,0,0.5)}.red__transparent{background-color:rgba(255,0,0,0.5)}.yellow__transparent{background-color:rgba(255,255,0,0.5)}
 
-.circle-large{border-radius:50%;height:550px;line-height:75px;margin:0 auto;position:absolute;text-align:center;width:550px}.circle-medium{border-radius:50%;height:400px;line-height:75px;margin:75px;position:absolute;text-align:center;width:400px}.circle-small{border-radius:50%;height:250px;line-height:75px;margin:150px;position:absolute;text-align:center;width:250px}.invisible{visibility:hidden}.unselectable{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.circle-large{border-radius:50%;height:550px;line-height:75px;margin:0 auto;position:absolute;text-align:center;width:550px}.circle-medium{border-radius:50%;height:400px;line-height:75px;margin:75px;position:absolute;text-align:center;width:400px}.circle-small{border-radius:50%;height:250px;line-height:100px;margin:150px;position:absolute;text-align:center;width:250px}.invisible{visibility:hidden}.unselectable{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}
 
 #fullpage{float:left;height:100%;width:80%}#menu-content{height:100%;padding:1em;width:100%}#toolbar{background:#0064B6;color:#F2F2F2;display:block;float:left;height:100%;left:0;overflow:hidden;text-shadow:0 0 2em black;width:20%;z-index:9}#toolbar h2{margin:0;margin-bottom:0.5em}#toolbar li{cursor:pointer;font-size:0.75em;margin-bottom:0.25em}#toolbar li.selected{color:#80C6FF}#toolbar ul{margin:0.5em;margin-bottom:0}
 

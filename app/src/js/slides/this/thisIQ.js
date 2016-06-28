@@ -27,7 +27,7 @@ export default class ThisIQSlide extends Slide {
             <div className="slide-container novetta-bg">
                 <div className="slide-header">Interview Question</div>
                 <div className="slide-content">
-                    <div className="code-block small">
+                    <div className="code-block smaller">
                         <p>
                             <span>(function foo() &#123;</span>
                             <span>    function bar() &#123;</span>

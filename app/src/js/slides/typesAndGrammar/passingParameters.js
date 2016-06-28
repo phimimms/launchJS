@@ -12,7 +12,7 @@ export default class PassingParametersSlide extends Slide {
     constructor(props) {
         super(props);
 
-        this.sectionName = 'Types';
+        this.sectionName = 'Types & Grammar';
         this.slideTitle = 'Passing Parameters';
     }
 
@@ -30,7 +30,7 @@ export default class PassingParametersSlide extends Slide {
                 <div className="slide-content">
                     <ul>
                         <li>Primitive types are <strong>always</strong> passed by <em>value</em></li>
-                        <div className="code-block small">
+                        <div className="code-block smaller">
                             <p>
                                 <span>var foo = function(p) &#123;</span>
                                 <span>    p += 1;</span>
@@ -42,7 +42,7 @@ export default class PassingParametersSlide extends Slide {
                             </p>
                         </div>
                         <li>Compound types are <strong>always</strong> passed by <em>reference</em></li>
-                        <div className="code-block small">
+                        <div className="code-block smaller">
                             <p>
                                 <span>var foo = function(p) &#123;</span>
                                 <span>    p.push(1);</span>

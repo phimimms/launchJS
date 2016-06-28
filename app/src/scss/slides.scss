@@ -20,9 +20,10 @@
         margin:                 0.25em;
     }
 
-    img {
-        max-height:             100%;
-        max-width:              100%;
+    a {
+        color:                  #939598;
+        display:                inline-block;
+        font-size:              0.75em;
     }
 
     ul {
@@ -87,6 +88,10 @@
 
     .smaller {
         font-size:          50%;
+    }
+
+    .smallest {
+        font-size:          45%;
     }
 }
 

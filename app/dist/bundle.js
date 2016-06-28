@@ -68,7 +68,7 @@ var Resources = function (_Slide) {
 
 exports.default = Resources;
 
-},{"../slide":10,"react":205}],2:[function(require,module,exports){
+},{"../slide":13,"react":212}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -138,7 +138,354 @@ var IntroSlide = function (_Slide) {
 
 exports.default = IntroSlide;
 
-},{"../slide":10,"react":205}],3:[function(require,module,exports){
+},{"../slide":13,"react":212}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _slide = require('../slide');
+
+var _slide2 = _interopRequireDefault(_slide);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var PromisesIntroSlide = function (_Slide) {
+    _inherits(PromisesIntroSlide, _Slide);
+
+    /**
+     * Instantiates the slide.
+     *
+     * @param {Object} props A map of instance properties to initial values
+     */
+
+    function PromisesIntroSlide(props) {
+        _classCallCheck(this, PromisesIntroSlide);
+
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PromisesIntroSlide).call(this, props));
+
+        _this.sectionName = 'Promises';
+        _this.slideTitle = 'Introduction';
+        return _this;
+    }
+
+    /**
+     * Renders the slide's template.
+     *
+     * @return {Element}
+     */
+
+
+    _createClass(PromisesIntroSlide, [{
+        key: 'render',
+        value: function render() {
+            _get(Object.getPrototypeOf(PromisesIntroSlide.prototype), 'render', this).call(this);
+            return _react2.default.createElement(
+                'div',
+                { className: 'slide-container novetta-bg' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-header' },
+                    'Promises'
+                ),
+                _react2.default.createElement('div', { className: 'slide-content' })
+            );
+        }
+    }]);
+
+    return PromisesIntroSlide;
+}(_slide2.default);
+
+exports.default = PromisesIntroSlide;
+
+},{"../slide":13,"react":212}],4:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _slide = require('../slide');
+
+var _slide2 = _interopRequireDefault(_slide);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ClosureSlide = function (_Slide) {
+    _inherits(ClosureSlide, _Slide);
+
+    /**
+     * Instantiates the slide.
+     *
+     * @param {Object} props A map of instance properties to initial values
+     */
+
+    function ClosureSlide(props) {
+        _classCallCheck(this, ClosureSlide);
+
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ClosureSlide).call(this, props));
+
+        _this.sectionName = 'Scope';
+        _this.slideTitle = 'Closure';
+        return _this;
+    }
+
+    /**
+     * Renders the slide's template.
+     *
+     * @return {Element}
+     */
+
+
+    _createClass(ClosureSlide, [{
+        key: 'render',
+        value: function render() {
+            _get(Object.getPrototypeOf(ClosureSlide.prototype), 'render', this).call(this);
+
+            var sideContainerStyle = {
+                float: 'left',
+                width: '50%'
+            };
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'slide-container novetta-bg' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-header' },
+                    'Closure'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-content' },
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'The mapping of a function\'s ',
+                            _react2.default.createElement(
+                                'em',
+                                null,
+                                'free variables'
+                            ),
+                            ' to their value at the time of the function\'s declaration'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'strong',
+                                    null,
+                                    'free variables:'
+                                ),
+                                ' Identifiers used locally but declared in an enclosing scope'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'strong',
+                                null,
+                                'Be careful with callbacks!'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { style: sideContainerStyle },
+                        _react2.default.createElement(
+                            'h2',
+                            null,
+                            'Does Not Maintain Closure'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'code-block smallest' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '(function foo(elements) {'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    function bar() {'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '        console.log(i);'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    }'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    ' '
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    for (var i = 0, n = elements.length; i < n; i++) {'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '        elements[i]'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '            .addEventListener(\'click\', bar);'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    }'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '})(document.getElementsByClassName(\'clickable\'));'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'a',
+                            { href: 'https://jsfiddle.net/r2gx6ctv/31/', target: '_blank' },
+                            'Live Example'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { style: sideContainerStyle },
+                        _react2.default.createElement(
+                            'h2',
+                            null,
+                            'Maintains ',
+                            _react2.default.createElement(
+                                'code',
+                                null,
+                                'num'
+                            ),
+                            '\'s Value'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'code-block smallest' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '(function foo(elements) {'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    function bar(n) {'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '        console.log(n);'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    }'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    ' '
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    for (var i = 0, n = elements.length; i < n; i++) {'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '        elements[i]'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '            .addEventListener(\'click\', bar.bind(this, i));'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    }'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '})(document.getElementsByClassName(\'clickable\'));'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'a',
+                            { href: 'https://jsfiddle.net/r2gx6ctv/32/', target: '_blank' },
+                            'Live Example'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ClosureSlide;
+}(_slide2.default);
+
+exports.default = ClosureSlide;
+
+},{"../slide":13,"react":212}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -283,39 +630,6 @@ var ES6ScopeSlide = function (_Slide) {
                                     '})();'
                                 )
                             )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                'code',
-                                null,
-                                'let'
-                            ),
-                            ' Loops'
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'code-block small' },
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    'for (let i = 0; i < 5; i++) {'
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    '    ...'
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    '}'
-                                )
-                            )
                         )
                     )
                 )
@@ -328,7 +642,7 @@ var ES6ScopeSlide = function (_Slide) {
 
 exports.default = ES6ScopeSlide;
 
-},{"../slide":10,"react":205}],4:[function(require,module,exports){
+},{"../slide":13,"react":212}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -526,7 +840,7 @@ var FunctionDeclarationsSlide = function (_Slide) {
 
 exports.default = FunctionDeclarationsSlide;
 
-},{"../slide":10,"react":205}],5:[function(require,module,exports){
+},{"../slide":13,"react":212}],7:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -743,7 +1057,7 @@ var FunctionExpressionsSlide = function (_Slide) {
 
 exports.default = FunctionExpressionsSlide;
 
-},{"../slide":10,"react":205}],6:[function(require,module,exports){
+},{"../slide":13,"react":212}],8:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -962,7 +1276,181 @@ var HoistingSlide = function (_Slide) {
 
 exports.default = HoistingSlide;
 
-},{"../slide":10,"react":205}],7:[function(require,module,exports){
+},{"../slide":13,"react":212}],9:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _slide = require('../slide');
+
+var _slide2 = _interopRequireDefault(_slide);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LetLoopsSlide = function (_Slide) {
+    _inherits(LetLoopsSlide, _Slide);
+
+    /**
+     * Instantiates the slide.
+     *
+     * @param {Object} props A map of instance properties to initial values
+     */
+
+    function LetLoopsSlide(props) {
+        _classCallCheck(this, LetLoopsSlide);
+
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(LetLoopsSlide).call(this, props));
+
+        _this.sectionName = 'Scope';
+        _this.slideTitle = 'Let Loops';
+        return _this;
+    }
+
+    /**
+     * Renders the slide's template.
+     *
+     * @return {Element}
+     */
+
+
+    _createClass(LetLoopsSlide, [{
+        key: 'render',
+        value: function render() {
+            _get(Object.getPrototypeOf(LetLoopsSlide.prototype), 'render', this).call(this);
+            return _react2.default.createElement(
+                'div',
+                { className: 'slide-container novetta-bg' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-header' },
+                    'Let Loops'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-content' },
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'The identifier is scoped to the loop\'s braces'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'code-block small' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'for (let i = 0; i < 5; i++) {'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    ...'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '}'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'console.log(i); // Reference Error!'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'Creates closure ',
+                            _react2.default.createElement(
+                                'strong',
+                                null,
+                                'per'
+                            ),
+                            ' iteration'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'code-block small' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '(function foo(elements) {'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    for (let i = 0, n = elements.length; i < n; i++) {'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '        elements[i]'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '            .addEventListener(\'click\', function() {'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '                console.log(i);'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '        });'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '    }'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    '})(document.getElementsByClassName(\'clickable\'));'
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return LetLoopsSlide;
+}(_slide2.default);
+
+exports.default = LetLoopsSlide;
+
+},{"../slide":13,"react":212}],10:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1093,7 +1581,7 @@ var ScopeIQSlide = function (_Slide) {
 
 exports.default = ScopeIQSlide;
 
-},{"../slide":10,"react":205}],8:[function(require,module,exports){
+},{"../slide":13,"react":212}],11:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1274,7 +1762,21 @@ var ScopeIntroSlide = function (_Slide) {
                         _react2.default.createElement(
                             'div',
                             { style: { float: 'left', width: '60%' } },
-                            _react2.default.createElement('img', { src: './src/assets/img/nested-scope.png', alt: 'Functions nest their scope' })
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'circle-large yellow__transparent' },
+                                'global'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'circle-medium orange__transparent' },
+                                'foo'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'circle-small red__transparent' },
+                                'bar'
+                            )
                         )
                     )
                 )
@@ -1287,7 +1789,7 @@ var ScopeIntroSlide = function (_Slide) {
 
 exports.default = ScopeIntroSlide;
 
-},{"../slide":10,"react":205}],9:[function(require,module,exports){
+},{"../slide":13,"react":212}],12:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1462,7 +1964,7 @@ var UndeclaredVariablesSlide = function (_Slide) {
 
 exports.default = UndeclaredVariablesSlide;
 
-},{"../slide":10,"react":205}],10:[function(require,module,exports){
+},{"../slide":13,"react":212}],13:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1693,7 +2195,7 @@ var Slide = function (_React$Component) {
 
 exports.default = Slide;
 
-},{"jquery":53,"react":205}],11:[function(require,module,exports){
+},{"jquery":60,"react":212}],14:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1873,7 +2375,7 @@ var DefaultBindingSlide = function (_Slide) {
 
 exports.default = DefaultBindingSlide;
 
-},{"../slide":10,"react":205}],12:[function(require,module,exports){
+},{"../slide":13,"react":212}],15:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2049,7 +2551,7 @@ var ES6ThisSlide = function (_Slide) {
 
 exports.default = ES6ThisSlide;
 
-},{"../slide":10,"react":205}],13:[function(require,module,exports){
+},{"../slide":13,"react":212}],16:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2245,7 +2747,7 @@ var ExplicitBindingSlide = function (_Slide) {
 
 exports.default = ExplicitBindingSlide;
 
-},{"../slide":10,"react":205}],14:[function(require,module,exports){
+},{"../slide":13,"react":212}],17:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2375,7 +2877,7 @@ var ImplicitBindingSlide = function (_Slide) {
 
 exports.default = ImplicitBindingSlide;
 
-},{"../slide":10,"react":205}],15:[function(require,module,exports){
+},{"../slide":13,"react":212}],18:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2536,7 +3038,7 @@ var newBindingSlide = function (_Slide) {
 
 exports.default = newBindingSlide;
 
-},{"../slide":10,"react":205}],16:[function(require,module,exports){
+},{"../slide":13,"react":212}],19:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2606,7 +3108,7 @@ var ThisIQSlide = function (_Slide) {
                     { className: 'slide-content' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'code-block small' },
+                        { className: 'code-block smaller' },
                         _react2.default.createElement(
                             'p',
                             null,
@@ -2717,7 +3219,7 @@ var ThisIQSlide = function (_Slide) {
 
 exports.default = ThisIQSlide;
 
-},{"../slide":10,"react":205}],17:[function(require,module,exports){
+},{"../slide":13,"react":212}],20:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2839,7 +3341,740 @@ var ThisIntroSlide = function (_Slide) {
 
 exports.default = ThisIntroSlide;
 
-},{"../slide":10,"react":205}],18:[function(require,module,exports){
+},{"../slide":13,"react":212}],21:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _slide = require('../slide');
+
+var _slide2 = _interopRequireDefault(_slide);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CoercionSlide = function (_Slide) {
+    _inherits(CoercionSlide, _Slide);
+
+    /**
+     * Instantiates the slide.
+     *
+     * @param {Object} props A map of instance properties to initial values
+     */
+
+    function CoercionSlide(props) {
+        _classCallCheck(this, CoercionSlide);
+
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(CoercionSlide).call(this, props));
+
+        _this.sectionName = 'Types & Grammar';
+        _this.slideTitle = 'Coercion';
+        return _this;
+    }
+
+    /**
+     * Renders the slide's template.
+     *
+     * @return {Element}
+     */
+
+
+    _createClass(CoercionSlide, [{
+        key: 'render',
+        value: function render() {
+            _get(Object.getPrototypeOf(CoercionSlide.prototype), 'render', this).call(this);
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'slide-container novetta-bg' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-header' },
+                    'Coercion'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-content' },
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'Implicit conversion of one type to another'
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'strong',
+                                null,
+                                'Always'
+                            ),
+                            ' results to a primitive type'
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'String to Number:'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'code-block smaller' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'var a = \'15\';'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'console.log(+a);     // 15'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'console.log(+a + 1); // 16'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'Number to String:'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'code-block smaller' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'var a = 15;'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'console.log(a + \'\');  // \'15\''
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'console.log(a + \'1\'); // \'151\''
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'Anything to Boolean:'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'code-block smaller' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'var a = 15;'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'console.log(!a);  // false'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'console.log(!!a); // true'
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return CoercionSlide;
+}(_slide2.default);
+
+exports.default = CoercionSlide;
+
+},{"../slide":13,"react":212}],22:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _slide = require('../slide');
+
+var _slide2 = _interopRequireDefault(_slide);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ConditionalOperatorsSlide = function (_Slide) {
+    _inherits(ConditionalOperatorsSlide, _Slide);
+
+    /**
+     * Instantiates the slide.
+     *
+     * @param {Object} props A map of instance properties to initial values
+     */
+
+    function ConditionalOperatorsSlide(props) {
+        _classCallCheck(this, ConditionalOperatorsSlide);
+
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ConditionalOperatorsSlide).call(this, props));
+
+        _this.sectionName = 'Types & Grammar';
+        _this.slideTitle = 'Conditional Operators';
+        return _this;
+    }
+
+    /**
+     * Renders the slide's template.
+     *
+     * @return {Element}
+     */
+
+
+    _createClass(ConditionalOperatorsSlide, [{
+        key: 'render',
+        value: function render() {
+            _get(Object.getPrototypeOf(ConditionalOperatorsSlide.prototype), 'render', this).call(this);
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'slide-container novetta-bg' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-header' },
+                    'Conditional Operators'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-content' },
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'The value produced by ',
+                            _react2.default.createElement(
+                                'code',
+                                null,
+                                '&&'
+                            ),
+                            ' or ',
+                            _react2.default.createElement(
+                                'code',
+                                null,
+                                '||'
+                            ),
+                            ' will ',
+                            _react2.default.createElement(
+                                'strong',
+                                null,
+                                'always'
+                            ),
+                            ' be ',
+                            _react2.default.createElement(
+                                'em',
+                                null,
+                                'one'
+                            ),
+                            ' of the two operand expressions'
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'Both operators perform a boolean test on the first operand'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'For ',
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    '||'
+                                ),
+                                ', if the test is ',
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    'true'
+                                ),
+                                ', the result is the value of the ',
+                                _react2.default.createElement(
+                                    'em',
+                                    null,
+                                    'first'
+                                ),
+                                ' operand. Otherwise the result is the value of the ',
+                                _react2.default.createElement(
+                                    'em',
+                                    null,
+                                    'second'
+                                ),
+                                ' operand.'
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'For ',
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    '&&'
+                                ),
+                                ', if the test is ',
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    'true'
+                                ),
+                                ', the result is the value of the ',
+                                _react2.default.createElement(
+                                    'em',
+                                    null,
+                                    'second'
+                                ),
+                                ' operand. Otherwise the result is the value of the ',
+                                _react2.default.createElement(
+                                    'em',
+                                    null,
+                                    'first'
+                                ),
+                                ' operand.'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'code',
+                                null,
+                                'if'
+                            ),
+                            ' coerces its expression to a boolean value'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'code-block small' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'var a = [] && 0;    // 0'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'var b = null || {}; // null'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    ' '
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'if (a || b) { // Does not reach here }'
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ConditionalOperatorsSlide;
+}(_slide2.default);
+
+exports.default = ConditionalOperatorsSlide;
+
+},{"../slide":13,"react":212}],23:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _slide = require('../slide');
+
+var _slide2 = _interopRequireDefault(_slide);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var EqualityOperatorsSlide = function (_Slide) {
+    _inherits(EqualityOperatorsSlide, _Slide);
+
+    /**
+     * Instantiates the slide.
+     *
+     * @param {Object} props A map of instance properties to initial values
+     */
+
+    function EqualityOperatorsSlide(props) {
+        _classCallCheck(this, EqualityOperatorsSlide);
+
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(EqualityOperatorsSlide).call(this, props));
+
+        _this.sectionName = 'Types & Grammar';
+        _this.slideTitle = 'Equality Operators';
+        return _this;
+    }
+
+    /**
+     * Renders the slide's template.
+     *
+     * @return {Element}
+     */
+
+
+    _createClass(EqualityOperatorsSlide, [{
+        key: 'render',
+        value: function render() {
+            _get(Object.getPrototypeOf(EqualityOperatorsSlide.prototype), 'render', this).call(this);
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'slide-container novetta-bg' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-header' },
+                    'Equality Operators'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-content' },
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'code',
+                                null,
+                                '=='
+                            ),
+                            ' allows coercion in the comparison and ',
+                            _react2.default.createElement(
+                                'code',
+                                null,
+                                '==='
+                            ),
+                            ' disallows coercion'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'strong',
+                                    null,
+                                    'Never'
+                                ),
+                                ' use ',
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    '=='
+                                ),
+                                ' against a boolean value'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'code-block smaller' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'var a = \'42\';'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'if (a == true) { // Does not reach here }'
+                                ),
+                                _react2.default.createElement(
+                                    'span',
+                                    null,
+                                    'if (a) { // Does reach here }'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'Objects (including arrays and functions) are only equal if they are both references to the ',
+                            _react2.default.createElement(
+                                'em',
+                                null,
+                                'exact same value'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    '=='
+                                ),
+                                ' and ',
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    '==='
+                                ),
+                                ' behave identically when two objects are being compared'
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return EqualityOperatorsSlide;
+}(_slide2.default);
+
+exports.default = EqualityOperatorsSlide;
+
+},{"../slide":13,"react":212}],24:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _slide = require('../slide');
+
+var _slide2 = _interopRequireDefault(_slide);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FalsySlide = function (_Slide) {
+    _inherits(FalsySlide, _Slide);
+
+    /**
+     * Instantiates the slide.
+     *
+     * @param {Object} props A map of instance properties to initial values
+     */
+
+    function FalsySlide(props) {
+        _classCallCheck(this, FalsySlide);
+
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(FalsySlide).call(this, props));
+
+        _this.sectionName = 'Types & Grammar';
+        _this.slideTitle = 'Truthy vs. Falsy';
+        return _this;
+    }
+
+    /**
+     * Renders the slide's template.
+     *
+     * @return {Element}
+     */
+
+
+    _createClass(FalsySlide, [{
+        key: 'render',
+        value: function render() {
+            _get(Object.getPrototypeOf(FalsySlide.prototype), 'render', this).call(this);
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'slide-container novetta-bg' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-header' },
+                    'Truthy vs. Falsy'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slide-content' },
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'Falsy values:'
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    'undefined'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    'null'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    'false'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    '+0'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    '-0'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                _react2.default.createElement(
+                                    'code',
+                                    null,
+                                    'NaN'
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'Anything ',
+                            _react2.default.createElement(
+                                'strong',
+                                null,
+                                'not'
+                            ),
+                            ' explicitly on the falsy list is ',
+                            _react2.default.createElement(
+                                'em',
+                                null,
+                                'truthy'
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return FalsySlide;
+}(_slide2.default);
+
+exports.default = FalsySlide;
+
+},{"../slide":13,"react":212}],25:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2880,7 +4115,7 @@ var GettersSettersSlide = function (_Slide) {
 
         var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(GettersSettersSlide).call(this, props));
 
-        _this.sectionName = 'Types';
+        _this.sectionName = 'Types & Grammar';
         _this.slideTitle = 'Getters & Setters';
         return _this;
     }
@@ -2995,7 +4230,7 @@ var GettersSettersSlide = function (_Slide) {
 
 exports.default = GettersSettersSlide;
 
-},{"../slide":10,"react":205}],19:[function(require,module,exports){
+},{"../slide":13,"react":212}],26:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3036,7 +4271,7 @@ var PassingParametersSlide = function (_Slide) {
 
         var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PassingParametersSlide).call(this, props));
 
-        _this.sectionName = 'Types';
+        _this.sectionName = 'Types & Grammar';
         _this.slideTitle = 'Passing Parameters';
         return _this;
     }
@@ -3085,7 +4320,7 @@ var PassingParametersSlide = function (_Slide) {
                         ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'code-block small' },
+                            { className: 'code-block smaller' },
                             _react2.default.createElement(
                                 'p',
                                 null,
@@ -3144,7 +4379,7 @@ var PassingParametersSlide = function (_Slide) {
                         ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'code-block small' },
+                            { className: 'code-block smaller' },
                             _react2.default.createElement(
                                 'p',
                                 null,
@@ -3196,7 +4431,7 @@ var PassingParametersSlide = function (_Slide) {
 
 exports.default = PassingParametersSlide;
 
-},{"../slide":10,"react":205}],20:[function(require,module,exports){
+},{"../slide":13,"react":212}],27:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3237,7 +4472,7 @@ var PropertyAccessorsSlide = function (_Slide) {
 
         var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PropertyAccessorsSlide).call(this, props));
 
-        _this.sectionName = 'Types';
+        _this.sectionName = 'Types & Grammar';
         _this.slideTitle = 'Property Accessors';
         return _this;
     }
@@ -3338,7 +4573,7 @@ var PropertyAccessorsSlide = function (_Slide) {
 
 exports.default = PropertyAccessorsSlide;
 
-},{"../slide":10,"react":205}],21:[function(require,module,exports){
+},{"../slide":13,"react":212}],28:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3379,7 +4614,7 @@ var PrototypesSlide = function (_Slide) {
 
         var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PrototypesSlide).call(this, props));
 
-        _this.sectionName = 'Types';
+        _this.sectionName = 'Types & Grammar';
         _this.slideTitle = 'Object Prototypes';
         return _this;
     }
@@ -3461,7 +4696,7 @@ var PrototypesSlide = function (_Slide) {
                                 null,
                                 'Object.create()'
                             ),
-                            ' creates a new object that\'s prototype-linked to the specified object'
+                            ' returns a new object that\'s prototype-linked to the specified object'
                         ),
                         _react2.default.createElement(
                             'div',
@@ -3497,7 +4732,7 @@ var PrototypesSlide = function (_Slide) {
 
 exports.default = PrototypesSlide;
 
-},{"../slide":10,"react":205}],22:[function(require,module,exports){
+},{"../slide":13,"react":212}],29:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3538,7 +4773,7 @@ var TypesIQSlide = function (_Slide) {
 
         var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TypesIQSlide).call(this, props));
 
-        _this.sectionName = 'Types';
+        _this.sectionName = 'Types & Grammar';
         _this.slideTitle = 'Interview Question';
         return _this;
     }
@@ -3635,12 +4870,12 @@ var TypesIQSlide = function (_Slide) {
                             _react2.default.createElement(
                                 'span',
                                 null,
-                                'console.log(obj1.a);'
+                                'console.log(obj1.a); // ?'
                             ),
                             _react2.default.createElement(
                                 'span',
                                 null,
-                                'console.log(obj2.a);'
+                                'console.log(obj2.a); // ?'
                             ),
                             _react2.default.createElement(
                                 'span',
@@ -3670,12 +4905,12 @@ var TypesIQSlide = function (_Slide) {
                             _react2.default.createElement(
                                 'span',
                                 null,
-                                'console.log(obj2.a);'
+                                'console.log(obj2.a); // ?'
                             ),
                             _react2.default.createElement(
                                 'span',
                                 null,
-                                'console.log(obj3.a);'
+                                'console.log(obj3.a); // ?'
                             )
                         )
                     )
@@ -3689,7 +4924,7 @@ var TypesIQSlide = function (_Slide) {
 
 exports.default = TypesIQSlide;
 
-},{"../slide":10,"react":205}],23:[function(require,module,exports){
+},{"../slide":13,"react":212}],30:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3730,7 +4965,7 @@ var TypesIntroSlide = function (_Slide) {
 
         var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TypesIntroSlide).call(this, props));
 
-        _this.sectionName = 'Types';
+        _this.sectionName = 'Types & Grammar';
         _this.slideTitle = 'Introduction';
         return _this;
     }
@@ -3753,7 +4988,7 @@ var TypesIntroSlide = function (_Slide) {
                 _react2.default.createElement(
                     'div',
                     { className: 'slide-header' },
-                    'Types'
+                    'Types & Grammar'
                 ),
                 _react2.default.createElement(
                     'div',
@@ -3788,6 +5023,21 @@ var TypesIntroSlide = function (_Slide) {
                                     null,
                                     'a = [\'Now I am an array\'];'
                                 )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            _react2.default.createElement(
+                                'li',
+                                null,
+                                'Variables don\'t have types -- ',
+                                _react2.default.createElement(
+                                    'em',
+                                    null,
+                                    'values'
+                                ),
+                                ' have types'
                             )
                         ),
                         _react2.default.createElement(
@@ -3885,7 +5135,7 @@ var TypesIntroSlide = function (_Slide) {
 
 exports.default = TypesIntroSlide;
 
-},{"../slide":10,"react":205}],24:[function(require,module,exports){
+},{"../slide":13,"react":212}],31:[function(require,module,exports){
 'use strict';
 
 // Third-Party Dependencies
@@ -3932,6 +5182,10 @@ var _functionExpressions = require('./js/slides/scope/functionExpressions');
 
 var _functionExpressions2 = _interopRequireDefault(_functionExpressions);
 
+var _closure = require('./js/slides/scope/closure');
+
+var _closure2 = _interopRequireDefault(_closure);
+
 var _scopeIQ = require('./js/slides/scope/scopeIQ');
 
 var _scopeIQ2 = _interopRequireDefault(_scopeIQ);
@@ -3939,6 +5193,10 @@ var _scopeIQ2 = _interopRequireDefault(_scopeIQ);
 var _es6Scope = require('./js/slides/scope/es6Scope');
 
 var _es6Scope2 = _interopRequireDefault(_es6Scope);
+
+var _letLoops = require('./js/slides/scope/letLoops');
+
+var _letLoops2 = _interopRequireDefault(_letLoops);
 
 var _thisIntro = require('./js/slides/this/thisIntro');
 
@@ -3968,34 +5226,51 @@ var _es6This = require('./js/slides/this/es6This');
 
 var _es6This2 = _interopRequireDefault(_es6This);
 
-var _typesIntro = require('./js/slides/types/typesIntro');
+var _typesIntro = require('./js/slides/typesAndGrammar/typesIntro');
 
 var _typesIntro2 = _interopRequireDefault(_typesIntro);
 
-var _passingParameters = require('./js/slides/types/passingParameters');
+var _coercion = require('./js/slides/typesAndGrammar/coercion');
+
+var _coercion2 = _interopRequireDefault(_coercion);
+
+var _falsy = require('./js/slides/typesAndGrammar/falsy');
+
+var _falsy2 = _interopRequireDefault(_falsy);
+
+var _equalityOperators = require('./js/slides/typesAndGrammar/equalityOperators');
+
+var _equalityOperators2 = _interopRequireDefault(_equalityOperators);
+
+var _conditionalOperators = require('./js/slides/typesAndGrammar/conditionalOperators');
+
+var _conditionalOperators2 = _interopRequireDefault(_conditionalOperators);
+
+var _passingParameters = require('./js/slides/typesAndGrammar/passingParameters');
 
 var _passingParameters2 = _interopRequireDefault(_passingParameters);
 
-var _gettersSetters = require('./js/slides/types/gettersSetters');
+var _gettersSetters = require('./js/slides/typesAndGrammar/gettersSetters');
 
 var _gettersSetters2 = _interopRequireDefault(_gettersSetters);
 
-var _prototypes = require('./js/slides/types/prototypes');
+var _prototypes = require('./js/slides/typesAndGrammar/prototypes');
 
 var _prototypes2 = _interopRequireDefault(_prototypes);
 
-var _propertyAccessors = require('./js/slides/types/propertyAccessors');
+var _propertyAccessors = require('./js/slides/typesAndGrammar/propertyAccessors');
 
 var _propertyAccessors2 = _interopRequireDefault(_propertyAccessors);
 
-var _typesIQ = require('./js/slides/types/typesIQ');
+var _typesIQ = require('./js/slides/typesAndGrammar/typesIQ');
 
 var _typesIQ2 = _interopRequireDefault(_typesIQ);
 
+var _promisesIntro = require('./js/slides/promises/promisesIntro');
+
+var _promisesIntro2 = _interopRequireDefault(_promisesIntro);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// Slides
-
 
 (0, _jquery2.default)(document).ready(function () {
     var slidesContainer = document.getElementById('slides');
@@ -4008,7 +5283,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         return el;
     };
 
-    var Slides = [_intro2.default, _Resources2.default, _scopeIntro2.default, _undeclaredVariables2.default, _hoisting2.default, _functionDeclarations2.default, _functionExpressions2.default, _scopeIQ2.default, _es6Scope2.default, _thisIntro2.default, _defaultBinding2.default, _implicitBinding2.default, _explicitBinding2.default, _newBinding2.default, _thisIQ2.default, _es6This2.default, _typesIntro2.default, _passingParameters2.default, _gettersSetters2.default, _prototypes2.default, _propertyAccessors2.default, _typesIQ2.default];
+    var Slides = [
+    //IntroSlide,
+    //ResourcesSlide,
+    _scopeIntro2.default, _undeclaredVariables2.default, _hoisting2.default, _functionDeclarations2.default, _functionExpressions2.default, _closure2.default, _scopeIQ2.default, _es6Scope2.default, _letLoops2.default, _thisIntro2.default, _defaultBinding2.default, _implicitBinding2.default, _explicitBinding2.default, _newBinding2.default, _thisIQ2.default, _es6This2.default, _typesIntro2.default, _coercion2.default, _falsy2.default, _equalityOperators2.default, _conditionalOperators2.default, _passingParameters2.default, _gettersSetters2.default, _prototypes2.default, _propertyAccessors2.default, _typesIQ2.default /*,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              PromisesIntroSlide
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */
+    ];
 
     for (var i = 0, n = Slides.length; i < n; i++) {
         var Slide = Slides[i];
@@ -4032,7 +5313,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     });
 });
 
-},{"./js/slides/introduction/Resources":1,"./js/slides/introduction/intro":2,"./js/slides/scope/es6Scope":3,"./js/slides/scope/functionDeclarations":4,"./js/slides/scope/functionExpressions":5,"./js/slides/scope/hoisting":6,"./js/slides/scope/scopeIQ":7,"./js/slides/scope/scopeIntro":8,"./js/slides/scope/undeclaredVariables":9,"./js/slides/this/defaultBinding":11,"./js/slides/this/es6This":12,"./js/slides/this/explicitBinding":13,"./js/slides/this/implicitBinding":14,"./js/slides/this/newBinding":15,"./js/slides/this/thisIQ":16,"./js/slides/this/thisIntro":17,"./js/slides/types/gettersSetters":18,"./js/slides/types/passingParameters":19,"./js/slides/types/propertyAccessors":20,"./js/slides/types/prototypes":21,"./js/slides/types/typesIQ":22,"./js/slides/types/typesIntro":23,"fullpage.js":52,"jquery":53,"perfect-scrollbar":54,"react-dom":76}],25:[function(require,module,exports){
+// Slides
+
+},{"./js/slides/introduction/Resources":1,"./js/slides/introduction/intro":2,"./js/slides/promises/promisesIntro":3,"./js/slides/scope/closure":4,"./js/slides/scope/es6Scope":5,"./js/slides/scope/functionDeclarations":6,"./js/slides/scope/functionExpressions":7,"./js/slides/scope/hoisting":8,"./js/slides/scope/letLoops":9,"./js/slides/scope/scopeIQ":10,"./js/slides/scope/scopeIntro":11,"./js/slides/scope/undeclaredVariables":12,"./js/slides/this/defaultBinding":14,"./js/slides/this/es6This":15,"./js/slides/this/explicitBinding":16,"./js/slides/this/implicitBinding":17,"./js/slides/this/newBinding":18,"./js/slides/this/thisIQ":19,"./js/slides/this/thisIntro":20,"./js/slides/typesAndGrammar/coercion":21,"./js/slides/typesAndGrammar/conditionalOperators":22,"./js/slides/typesAndGrammar/equalityOperators":23,"./js/slides/typesAndGrammar/falsy":24,"./js/slides/typesAndGrammar/gettersSetters":25,"./js/slides/typesAndGrammar/passingParameters":26,"./js/slides/typesAndGrammar/propertyAccessors":27,"./js/slides/typesAndGrammar/prototypes":28,"./js/slides/typesAndGrammar/typesIQ":29,"./js/slides/typesAndGrammar/typesIntro":30,"fullpage.js":59,"jquery":60,"perfect-scrollbar":61,"react-dom":83}],32:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4119,7 +5402,7 @@ var EventListener = {
 
 module.exports = EventListener;
 }).call(this,require('_process'))
-},{"./emptyFunction":32,"_process":75}],26:[function(require,module,exports){
+},{"./emptyFunction":39,"_process":82}],33:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4156,7 +5439,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],27:[function(require,module,exports){
+},{}],34:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4189,7 +5472,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],28:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4230,7 +5513,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":27}],29:[function(require,module,exports){
+},{"./camelize":34}],36:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4286,7 +5569,7 @@ function containsNode(_x, _x2) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":42}],30:[function(require,module,exports){
+},{"./isTextNode":49}],37:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4372,7 +5655,7 @@ function createArrayFromMixed(obj) {
 }
 
 module.exports = createArrayFromMixed;
-},{"./toArray":50}],31:[function(require,module,exports){
+},{"./toArray":57}],38:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4459,7 +5742,7 @@ function createNodesFromMarkup(markup, handleScript) {
 
 module.exports = createNodesFromMarkup;
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":26,"./createArrayFromMixed":30,"./getMarkupWrap":36,"./invariant":40,"_process":75}],32:[function(require,module,exports){
+},{"./ExecutionEnvironment":33,"./createArrayFromMixed":37,"./getMarkupWrap":43,"./invariant":47,"_process":82}],39:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4498,7 +5781,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],33:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4521,7 +5804,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = emptyObject;
 }).call(this,require('_process'))
-},{"_process":75}],34:[function(require,module,exports){
+},{"_process":82}],41:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4548,7 +5831,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],35:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4584,7 +5867,7 @@ function getActiveElement() /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],36:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4682,7 +5965,7 @@ function getMarkupWrap(nodeName) {
 
 module.exports = getMarkupWrap;
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":26,"./invariant":40,"_process":75}],37:[function(require,module,exports){
+},{"./ExecutionEnvironment":33,"./invariant":47,"_process":82}],44:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4721,7 +6004,7 @@ function getUnboundedScrollPosition(scrollable) {
 }
 
 module.exports = getUnboundedScrollPosition;
-},{}],38:[function(require,module,exports){
+},{}],45:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4755,7 +6038,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],39:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4795,7 +6078,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":38}],40:[function(require,module,exports){
+},{"./hyphenate":45}],47:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4848,7 +6131,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 
 module.exports = invariant;
 }).call(this,require('_process'))
-},{"_process":75}],41:[function(require,module,exports){
+},{"_process":82}],48:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4872,7 +6155,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],42:[function(require,module,exports){
+},{}],49:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4898,7 +6181,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":41}],43:[function(require,module,exports){
+},{"./isNode":48}],50:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -4949,7 +6232,7 @@ var keyMirror = function (obj) {
 
 module.exports = keyMirror;
 }).call(this,require('_process'))
-},{"./invariant":40,"_process":75}],44:[function(require,module,exports){
+},{"./invariant":47,"_process":82}],51:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4985,7 +6268,7 @@ var keyOf = function (oneKeyObj) {
 };
 
 module.exports = keyOf;
-},{}],45:[function(require,module,exports){
+},{}],52:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -5037,7 +6320,7 @@ function mapObject(object, callback, context) {
 }
 
 module.exports = mapObject;
-},{}],46:[function(require,module,exports){
+},{}],53:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -5069,7 +6352,7 @@ function memoizeStringOnly(callback) {
 }
 
 module.exports = memoizeStringOnly;
-},{}],47:[function(require,module,exports){
+},{}],54:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -5093,7 +6376,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = performance || {};
-},{"./ExecutionEnvironment":26}],48:[function(require,module,exports){
+},{"./ExecutionEnvironment":33}],55:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -5128,7 +6411,7 @@ if (performance.now) {
 }
 
 module.exports = performanceNow;
-},{"./performance":47}],49:[function(require,module,exports){
+},{"./performance":54}],56:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -5179,7 +6462,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],50:[function(require,module,exports){
+},{}],57:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -5239,7 +6522,7 @@ function toArray(obj) {
 
 module.exports = toArray;
 }).call(this,require('_process'))
-},{"./invariant":40,"_process":75}],51:[function(require,module,exports){
+},{"./invariant":47,"_process":82}],58:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -5299,9 +6582,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = warning;
 }).call(this,require('_process'))
-},{"./emptyFunction":32,"_process":75}],52:[function(require,module,exports){
+},{"./emptyFunction":39,"_process":82}],59:[function(require,module,exports){
 /*!
- * fullPage 2.7.8
+ * fullPage 2.8.1
  * https://github.com/alvarotrigo/fullPage.js
  * @license MIT licensed
  *
@@ -5328,8 +6611,6 @@ module.exports = warning;
     // slimscroll
     var SCROLLABLE =            'fp-scrollable';
     var SCROLLABLE_SEL =        '.' + SCROLLABLE;
-    var SLIMSCROLL_BAR_SEL =    '.slimScrollBar';
-    var SLIMSCROLL_RAIL_SEL =   '.slimScrollRail';
 
     // util
     var RESPONSIVE =            'fp-responsive';
@@ -5392,17 +6673,28 @@ module.exports = warning;
     var $window = $(window);
     var $document = $(document);
 
-    var defaultScrollHandler;
+    // Default options for iScroll.js used when using scrollOverflow
+    var iscrollOptions = {
+        scrollbars: true,
+        mouseWheel: true,
+        hideScrollbars: false,
+        fadeScrollbars: false,
+        disableMouse: true,
+
+        //fixing bug in iScroll with links: https://github.com/cubiq/iscroll/issues/783
+        click: true 
+    };
 
     $.fn.fullpage = function(options) {
         //only once my friend!
-        if($('html').hasClass(ENABLED)){ displayWarnings(); return };
+        if($('html').hasClass(ENABLED)){ displayWarnings(); return; }
 
         // common jQuery objects
         var $htmlBody = $('html, body');
         var $body = $('body');
 
         var FP = $.fn.fullpage;
+
         // Create some defaults, extending them with any options that were provided
         options = $.extend({
             //navigation
@@ -5432,7 +6724,8 @@ module.exports = warning;
             continuousVertical: false,
             normalScrollElements: null,
             scrollOverflow: false,
-            scrollOverflowHandler: defaultScrollHandler,
+            scrollOverflowHandler: iscrollHandler,
+            scrollOverflowOptions: null,
             touchSensitivity: 5,
             normalScrollElementTouchThreshold: 5,
 
@@ -5445,7 +6738,6 @@ module.exports = warning;
             controlArrows: true,
             controlArrowColor: '#fff',
             verticalCentered: true,
-            resize: false,
             sectionsColor : [],
             paddingTop: 0,
             paddingBottom: 0,
@@ -5471,11 +6763,11 @@ module.exports = warning;
 
         displayWarnings();
 
+        //extending iScroll options with the user custom ones
+        iscrollOptions = $.extend(iscrollOptions, options.scrollOverflowOptions);
+
         //easeInOutCubic animation included in the plugin
         $.extend($.easing,{ easeInOutCubic: function (x, t, b, c, d) {if ((t/=d/2) < 1) return c/2*t*t*t + b;return c/2*((t-=2)*t*t + 2) + b;}});
-
-        //TO BE REMOVED in future versions. Maintained temporaly for backwards compatibility.
-        $.extend($.easing,{ easeInQuart: function (x, t, b, c, d) { return c*(t/=d)*t*t*t + b; }});
 
         /**
         * Sets the autoScroll option.
@@ -5645,15 +6937,9 @@ module.exports = warning;
         * Anchors or index positions can be used as params.
         */
         FP.silentMoveTo = function(sectionAnchor, slideAnchor){
-            requestAnimFrame(function(){
-                FP.setScrollingSpeed (0, 'internal');
-            });
-
-            FP.moveTo(sectionAnchor, slideAnchor)
-
-            requestAnimFrame(function(){
-                FP.setScrollingSpeed (originals.scrollingSpeed, 'internal');
-            });
+            FP.setScrollingSpeed (0, 'internal');
+            FP.moveTo(sectionAnchor, slideAnchor);
+            FP.setScrollingSpeed (originals.scrollingSpeed, 'internal');
         };
 
         /**
@@ -5693,17 +6979,8 @@ module.exports = warning;
             if(container.hasClass(DESTROYED)){ return; }  //nothing to do if the plugin was destroyed
 
             isResizing = true;
-            requestAnimFrame(function(){
-                isResizing = true;
-            });
 
-            var windowsWidth = $window.outerWidth();
             windowsHeight = $window.height();  //updating global var
-
-            //text resizing
-            if (options.resize) {
-                resizeMe(windowsHeight, windowsWidth);
-            }
 
             $(SECTION_SEL).each(function(){
                 var slidesWrap = $(this).find(SLIDES_WRAPPER_SEL);
@@ -5743,9 +7020,6 @@ module.exports = warning;
             }
 
             isResizing = false;
-            requestAnimFrame(function(){
-                isResizing = false;
-            });
             $.isFunction( options.afterResize ) && resizing && options.afterResize.call(container);
             $.isFunction( options.afterReBuild ) && !resizing && options.afterReBuild.call(container);
         };
@@ -5771,7 +7045,7 @@ module.exports = warning;
                 $(SECTION_NAV_SEL).show();
                 $body.removeClass(RESPONSIVE);
             }
-        }
+        };
 
         //flag to avoid very fast sliding for landscape sliders
         var slideMoving = false;
@@ -5835,9 +7109,10 @@ module.exports = warning;
             //setting the class for the body element
             setBodyClass();
 
-            $window.on('load', function() {
+            if(document.readyState === 'complete'){
                 scrollToAnchor();
-            });
+            }
+            $window.on('load', scrollToAnchor);
         }
 
         function bindEvents(){
@@ -5892,16 +7167,18 @@ module.exports = warning;
         * Setting options from DOM elements if they are not provided.
         */
         function setOptionsFromDOM(){
+            var sections = container.find(options.sectionSelector);
+
             //no anchors option? Checking for them in the DOM attributes
             if(!options.anchors.length){
-                options.anchors = $(options.sectionSelector + '[data-anchor]').map(function(){
+                options.anchors = sections.filter('[data-anchor]').map(function(){
                     return $(this).data('anchor').toString();
                 }).get();
             }
 
             //no tooltipos option? Checking for them in the DOM attributes
             if(!options.navigationTooltips.length){
-                options.navigationTooltips = $(options.sectionSelector + '[data-tooltip]').map(function(){
+                options.navigationTooltips = sections.filter('[data-tooltip]').map(function(){
                     return $(this).data('tooltip').toString();
                 }).get();
             }
@@ -5955,6 +7232,9 @@ module.exports = warning;
             if(options.navigation){
                 addVerticalNavigation();
             }
+
+            enableYoutubeAPI();
+            enableVidemoAPI();
 
             if(options.scrollOverflow){
                 if(document.readyState === 'complete'){
@@ -6140,6 +7420,35 @@ module.exports = warning;
             afterRenderActions();
         }
 
+        /*
+        * Enables the Youtube videos API so we can control their flow if necessary.
+        */
+        function enableYoutubeAPI(){
+            container.find('iframe[src*="youtube.com/embed/"]').each(function(){
+                var sign = getUrlParamSign($(this).attr('src'));
+                $(this).attr('src', $(this).attr('src') + sign + 'enablejsapi=1');
+            });
+        }
+
+        /*
+        * Enables the Vimeo videos API so we can control their flow if necessary.
+        */
+        function enableVidemoAPI(){
+            container.find('iframe[src*="player.vimeo.com/"]').each(function(){
+                var sign = getUrlParamSign($(this).attr('src'));
+                $(this).attr('src', $(this).attr('src') + sign + 'api=1');
+            });
+        }
+
+        /*
+        * Returns the prefix sign to use for a new parameter in an existen URL.
+        *
+        * @return {String}  ? | &
+        */
+        function getUrlParamSign(url){
+            return ( !/\?/.test( url ) ) ? '?' : '&';
+        }
+
         /**
         * Actions and callbacks to fire afterRender
         */
@@ -6244,15 +7553,11 @@ module.exports = warning;
                             //allows to scroll to an active section and
                             //if the section is already active, we prevent firing callbacks
                             if($(SECTION_ACTIVE_SEL).is(currentSection)){
-                                requestAnimFrame(function(){
-                                    isResizing = true;
-                                });
+                                isResizing = true;
                             }
                             scrollPage($(SECTION_ACTIVE_SEL));
 
-                            requestAnimFrame(function(){
-                                isResizing = false;
-                            });
+                            isResizing = false;
                         }
                     }, options.fitToSectionDelay);
                 }
@@ -6570,26 +7875,17 @@ module.exports = warning;
             });
         }
 
-        //IE < 10 pollify for requestAnimationFrame
-        window.requestAnimFrame = function(){
-            return window.requestAnimationFrame ||
-                window.webkitRequestAnimationFrame ||
-                window.mozRequestAnimationFrame ||
-                window.oRequestAnimationFrame ||
-                window.msRequestAnimationFrame ||
-                function(callback){ callback() }
-        }();
-
         var previousDestTop = 0;
         /**
         * Returns the destination Y position based on the scrolling direction and
         * the height of the section.
         */
-        function getDestinationPosition(dest, element){
+        function getDestinationPosition(element){
+            var elemPosition = element.position();
 
             //top of the desination will be at the top of the viewport
-            var position = dest.top;
-            var isScrollingDown =  dest.top > previousDestTop;
+            var position = elemPosition.top;
+            var isScrollingDown =  elemPosition.top > previousDestTop;
             var sectionBottom = position - windowsHeight + element.outerHeight();
 
             //is the destination element bigger than the viewport?
@@ -6600,8 +7896,8 @@ module.exports = warning;
                 }
             }
 
-            //sections equal or smaller than the viewport height AND scrolling down?
-            else if(isScrollingDown){
+            //sections equal or smaller than the viewport height && scrolling down? ||  is resizing and its in the last section
+            else if(isScrollingDown || (isResizing && element.is(':last-child')) ){
                 //The bottom of the destination will be at the bottom of the viewport
                 position = sectionBottom;
             }
@@ -6620,73 +7916,71 @@ module.exports = warning;
         * Scrolls the site to the given element and scrolls to the slide if a callback is given.
         */
         function scrollPage(element, callback, isMovementUp){
-            //requestAnimFrame is used in order to prevent a Chrome 44 bug (http://stackoverflow.com/a/31961816/1081396)
-            requestAnimFrame(function(){
-                var dest = element.position();
-                if(typeof dest === 'undefined'){ return; } //there's no element to scroll, leaving the function
+            if(typeof element === 'undefined'){ return; } //there's no element to scroll, leaving the function
 
-                var dtop = getDestinationPosition(dest, element);
+            var dtop = getDestinationPosition(element);
 
-                //local variables
-                var v = {
-                    element: element,
-                    callback: callback,
-                    isMovementUp: isMovementUp,
-                    dest: dest,
-                    dtop: dtop,
-                    yMovement: getYmovement(element),
-                    anchorLink: element.data('anchor'),
-                    sectionIndex: element.index(SECTION_SEL),
-                    activeSlide: element.find(SLIDE_ACTIVE_SEL),
-                    activeSection: $(SECTION_ACTIVE_SEL),
-                    leavingSection: $(SECTION_ACTIVE_SEL).index(SECTION_SEL) + 1,
+            //local variables
+            var v = {
+                element: element,
+                callback: callback,
+                isMovementUp: isMovementUp,
+                dtop: dtop,
+                yMovement: getYmovement(element),
+                anchorLink: element.data('anchor'),
+                sectionIndex: element.index(SECTION_SEL),
+                activeSlide: element.find(SLIDE_ACTIVE_SEL),
+                activeSection: $(SECTION_ACTIVE_SEL),
+                leavingSection: $(SECTION_ACTIVE_SEL).index(SECTION_SEL) + 1,
 
-                    //caching the value of isResizing at the momment the function is called
-                    //because it will be checked later inside a setTimeout and the value might change
-                    localIsResizing: isResizing
-                };
+                //caching the value of isResizing at the momment the function is called
+                //because it will be checked later inside a setTimeout and the value might change
+                localIsResizing: isResizing
+            };
 
-                //quiting when destination scroll is the same as the current one
-                if((v.activeSection.is(element) && !isResizing) || (options.scrollBar && $window.scrollTop() === v.dtop && !element.hasClass(AUTO_HEIGHT) )){ return; }
+            //quiting when destination scroll is the same as the current one
+            if((v.activeSection.is(element) && !isResizing) || (options.scrollBar && $window.scrollTop() === v.dtop && !element.hasClass(AUTO_HEIGHT) )){ return; }
 
-                if(v.activeSlide.length){
-                    var slideAnchorLink = v.activeSlide.data('anchor');
-                    var slideIndex = v.activeSlide.index();
+            if(v.activeSlide.length){
+                var slideAnchorLink = v.activeSlide.data('anchor');
+                var slideIndex = v.activeSlide.index();
+            }
+
+            // If continuousVertical && we need to wrap around
+            if (options.autoScrolling && options.continuousVertical && typeof (v.isMovementUp) !== "undefined" &&
+                ((!v.isMovementUp && v.yMovement == 'up') || // Intending to scroll down but about to go up or
+                (v.isMovementUp && v.yMovement == 'down'))) { // intending to scroll up but about to go down
+
+                v = createInfiniteSections(v);
+            }
+
+            //callback (onLeave) if the site is not just resizing and readjusting the slides
+            if($.isFunction(options.onLeave) && !v.localIsResizing){
+                if(options.onLeave.call(v.activeSection, v.leavingSection, (v.sectionIndex + 1), v.yMovement) === false){
+                    return;
                 }
+            }
 
-                // If continuousVertical && we need to wrap around
-                if (options.autoScrolling && options.continuousVertical && typeof (v.isMovementUp) !== "undefined" &&
-                    ((!v.isMovementUp && v.yMovement == 'up') || // Intending to scroll down but about to go up or
-                    (v.isMovementUp && v.yMovement == 'down'))) { // intending to scroll up but about to go down
+            stopMedia(v.activeSection);
 
-                    v = createInfiniteSections(v);
-                }
+            element.addClass(ACTIVE).siblings().removeClass(ACTIVE);
+            lazyLoad(element);
+            options.scrollOverflowHandler.onLeave();
 
-                //callback (onLeave) if the site is not just resizing and readjusting the slides
-                if($.isFunction(options.onLeave) && !v.localIsResizing){
-                    if(options.onLeave.call(v.activeSection, v.leavingSection, (v.sectionIndex + 1), v.yMovement) === false){
-                        return;
-                    }
-                }
-                stopMedia(v.activeSection);
 
-                element.addClass(ACTIVE).siblings().removeClass(ACTIVE);
-                lazyLoad(element);
+            //preventing from activating the MouseWheelHandler event
+            //more than once if the page is scrolling
+            canScroll = false;
 
-                //preventing from activating the MouseWheelHandler event
-                //more than once if the page is scrolling
-                canScroll = false;
+            setState(slideIndex, slideAnchorLink, v.anchorLink, v.sectionIndex);
 
-                setState(slideIndex, slideAnchorLink, v.anchorLink, v.sectionIndex);
+            performMovement(v);
 
-                performMovement(v);
+            //flag to avoid callingn `scrollPage()` twice in case of using anchor links
+            lastScrolledDestiny = v.anchorLink;
 
-                //flag to avoid callingn `scrollPage()` twice in case of using anchor links
-                lastScrolledDestiny = v.anchorLink;
-
-                //avoid firing it twice (as it does also on scroll)
-                activateMenuAndNav(v.anchorLink, v.sectionIndex);
-            });
+            //avoid firing it twice (as it does also on scroll)
+            activateMenuAndNav(v.anchorLink, v.sectionIndex);
         }
 
         /**
@@ -6775,8 +8069,7 @@ module.exports = warning;
             v.wrapAroundElements = v.activeSection;
 
             // Recalculate animation variables
-            v.dest = v.element.position();
-            v.dtop = v.dest.top;
+            v.dtop = v.element.position().top;
             v.yMovement = getYmovement(v.element);
 
             return v;
@@ -6816,6 +8109,7 @@ module.exports = warning;
 
             //callback (afterLoad) if the site is not just resizing and readjusting the slides
             $.isFunction(options.afterLoad) && !v.localIsResizing && options.afterLoad.call(v.element, v.anchorLink, (v.sectionIndex + 1));
+            options.scrollOverflowHandler.afterLoad();
 
             playMedia(v.element);
             v.element.addClass(COMPLETELY).siblings().removeClass(COMPLETELY);
@@ -6831,7 +8125,7 @@ module.exports = warning;
         function lazyLoad(destiny){
             var destiny = getSlideOrSection(destiny);
 
-            destiny.find('img[data-src], source[data-src], audio[data-src]').each(function(){
+            destiny.find('img[data-src], source[data-src], audio[data-src], iframe[data-src]').each(function(){
                 $(this).attr('src', $(this).data('src'));
                 $(this).removeAttr('data-src');
 
@@ -6851,8 +8145,17 @@ module.exports = warning;
             destiny.find('video, audio').each(function(){
                 var element = $(this).get(0);
 
-                if( element.hasAttribute('autoplay') && typeof element.play === 'function' ) {
+                if( element.hasAttribute('data-autoplay') && typeof element.play === 'function' ) {
                     element.play();
+                }
+            });
+
+            //youtube videos
+            destiny.find('iframe[src*="youtube.com/embed/"]').each(function(){
+                var element = $(this).get(0);
+
+                if( /youtube\.com\/embed\//.test($(this).attr('src')) && element.hasAttribute('data-autoplay')){
+                    element.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
                 }
             });
         }
@@ -6867,8 +8170,17 @@ module.exports = warning;
             destiny.find('video, audio').each(function(){
                 var element = $(this).get(0);
 
-                if( !element.hasAttribute('data-ignore') && typeof element.pause === 'function' ) {
+                if( !element.hasAttribute('data-keepplaying') && typeof element.pause === 'function' ) {
                     element.pause();
+                }
+            });
+
+            //youtube videos
+            destiny.find('iframe[src*="youtube.com/embed/"]').each(function(){
+                var element = $(this).get(0);
+
+                if( /youtube\.com\/embed\//.test($(this).attr('src')) && !element.hasAttribute('data-keepplaying')){
+                    $(this).get(0).contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
                 }
             });
         }
@@ -6891,8 +8203,8 @@ module.exports = warning;
         function scrollToAnchor(){
             //getting the anchor link in the URL and deleting the `#`
             var value =  window.location.hash.replace('#', '').split('/');
-            var section = value[0];
-            var slide = value[1];
+            var section = decodeURIComponent(value[0]);
+            var slide = decodeURIComponent(value[1]);
 
             if(section){  //if theres any #
                 if(options.animateAnchor){
@@ -6910,8 +8222,8 @@ module.exports = warning;
         function hashChangeHandler(){
             if(!isScrolling && !options.lockAnchors){
                 var value =  window.location.hash.replace('#', '').split('/');
-                var section = value[0];
-                var slide = value[1];
+                var section = decodeURIComponent(value[0]);
+                var slide = decodeURIComponent(value[1]);
 
                     //when moving to a slide in the first section for the first time (first time to add an anchor to the URL)
                     var isFirstSlideMove =  (typeof lastScrolledDestiny === 'undefined');
@@ -6937,6 +8249,7 @@ module.exports = warning;
             var activeElement = $(':focus');
 
             if(!activeElement.is('textarea') && !activeElement.is('input') && !activeElement.is('select') &&
+                activeElement.attr('contentEditable') !== "true" && activeElement.attr('contentEditable') !== '' &&
                 options.keyboardScrolling && options.autoScrolling){
                 var keyCode = e.which;
 
@@ -7259,26 +8572,6 @@ module.exports = warning;
         }
 
         /**
-         * Resizing of the font size depending on the window size as well as some of the images on the site.
-         */
-        function resizeMe(displayHeight, displayWidth) {
-            //Standard dimensions, for which the body font size is correct
-            var preferredHeight = 825;
-            var preferredWidth = 900;
-
-            if (displayHeight < preferredHeight || displayWidth < preferredWidth) {
-                var heightPercentage = (displayHeight * 100) / preferredHeight;
-                var widthPercentage = (displayWidth * 100) / preferredWidth;
-                var percentage = Math.min(heightPercentage, widthPercentage);
-                var newFontSize = percentage.toFixed(2);
-
-                $body.css('font-size', newFontSize + '%');
-            } else {
-                $body.css('font-size', '100%');
-            }
-        }
-
-        /**
          * Activating the website navigation dots according to the given slide name.
          */
         function activateNavDots(name, sectionIndex){
@@ -7340,8 +8633,16 @@ module.exports = warning;
             return 'right';
         }
 
-
+        /**
+        * Checks if the element needs scrollbar and if the user wants to apply it.
+        * If so it creates it.
+        *
+        * @param {Object} element   jQuery object of the section or slide
+        */
         function createSlimScrolling(element){
+            //User doesn't want scrollbar here? Sayonara baby!
+            if(element.hasClass('fp-noscroll')) return;
+
             //needed to make `scrollHeight` work under Opera 12
             element.css('overflow', 'hidden');
 
@@ -7591,8 +8892,6 @@ module.exports = warning;
 
             var sectionAnchor = getAnchor(section);
             var slideAnchor = getAnchor(slide);
-
-            var sectionIndex = section.index(SECTION_SEL);
 
             var text = String(sectionAnchor);
 
@@ -7991,7 +9290,7 @@ module.exports = warning;
                 });
 
                 var idAttr = $document.find('[id]').filter(function() {
-                    return this.id && this.id.toLowerCase() == name.toLowerCase();
+                    return $(this).attr('id') && $(this).attr('id').toLowerCase() == name.toLowerCase();
                 });
 
                 if(idAttr.length || nameAttr.length ){
@@ -8008,7 +9307,29 @@ module.exports = warning;
         function showError(type, text){
             console && console[type] && console[type]('fullPage: ' + text);
         }
-    };
+    }; //end of $.fn.fullpage
+
+    if(typeof IScroll !== 'undefined'){
+        /*
+        * Turns iScroll `mousewheel` option off dynamically
+        * https://github.com/cubiq/iscroll/issues/1036
+        */
+        IScroll.prototype.wheelOn = function () {
+            this.wrapper.addEventListener('wheel', this);
+            this.wrapper.addEventListener('mousewheel', this);
+            this.wrapper.addEventListener('DOMMouseScroll', this);
+        };
+
+        /*
+        * Turns iScroll `mousewheel` option on dynamically
+        * https://github.com/cubiq/iscroll/issues/1036
+        */
+        IScroll.prototype.wheelOff = function () {
+            this.wrapper.removeEventListener('wheel', this);
+            this.wrapper.removeEventListener('mousewheel', this);
+            this.wrapper.removeEventListener('DOMMouseScroll', this);
+        };
+    }
 
     /**
      * An object to handle overflow scrolling.
@@ -8019,23 +9340,29 @@ module.exports = warning;
      *
      * @type {Object}
      */
-    var slimScrollHandler = {
+    var iscrollHandler = {
+        refreshId: null,
+        iScrollInstances: [],
+
         /**
-         * Optional function called after each render.
-         *
-         * Solves a bug with slimScroll vendor library #1037, #553
-         *
-         * @param  {object} section jQuery object containing rendered section
-         */
-        afterRender: function(section){
-            var slides = section.find(SLIDES_WRAPPER);
-            var scrollableWrap = section.find(SCROLLABLE_SEL);
+        * Turns off iScroll for the destination section.
+        * When scrolling very fast on some trackpads (and Apple laptops) the inertial scrolling would
+        * scroll the destination section/slide before the sections animations ends.
+        */
+        onLeave: function(){
+            var scroller = $(SECTION_ACTIVE_SEL).find(SCROLLABLE_SEL).data('iscrollInstance');
 
-            if(slides.length){
-                scrollableWrap = slides.find(SLIDE_ACTIVE_SEL);
+            if(typeof scroller !== 'undefined' && scroller){
+                scroller.wheelOff();
             }
+        },
 
-            scrollableWrap.mouseover();
+        // Turns on iScroll on section load
+        afterLoad: function(){
+            var scroller = $(SECTION_ACTIVE_SEL).find(SCROLLABLE_SEL).data('iscrollInstance');
+            if(typeof scroller !== 'undefined' && scroller){
+                scroller.wheelOn();
+            }
         },
 
         /**
@@ -8044,12 +9371,21 @@ module.exports = warning;
          * @param  {Object} element      jQuery object containing current section
          * @param  {Number} scrollHeight Current window height in pixels
          */
-        create: function(element, scrollHeight){
-            element.find(SCROLLABLE_SEL).slimScroll({
-                allowPageScroll: true,
-                height: scrollHeight + 'px',
-                size: '10px',
-                alwaysVisible: true
+        create: function(element, scrollHeight) {
+            var scrollable = element.find(SCROLLABLE_SEL);
+
+            scrollable.height(scrollHeight);
+            scrollable.each(function() {
+                var $this = jQuery(this);
+                var iScrollInstance = $this.data('iscrollInstance');
+                if (iScrollInstance) {
+                    $.each(iscrollHandler.iScrollInstances, function(){
+                        $(this).destroy();
+                    });
+                }
+                iScrollInstance = new IScroll($this.get(0), iscrollOptions);
+                iscrollHandler.iScrollInstances.push(iScrollInstance);
+                $this.data('iscrollInstance', iScrollInstance);
             });
         },
 
@@ -8061,11 +9397,16 @@ module.exports = warning;
          * @param  {Object}  scrollable jQuery object for the scrollable element
          * @return {Boolean}
          */
-        isScrolled: function(type, scrollable){
-            if(type === 'top'){
-                return !scrollable.scrollTop();
-            }else if(type === 'bottom'){
-                return scrollable.scrollTop() + 1 + scrollable.innerHeight() >= scrollable[0].scrollHeight;
+        isScrolled: function(type, scrollable) {
+            var scroller = scrollable.data('iscrollInstance');
+
+            if (!scroller) {
+                return false;
+            }
+            if (type === 'top') {
+                return scroller.y >= 0 && !scrollable.scrollTop();
+            } else if (type === 'bottom') {
+                return (0 - scroller.y) + scrollable.scrollTop() + 1 + scrollable.innerHeight() >= scrollable[0].scrollHeight;
             }
         },
 
@@ -8079,7 +9420,7 @@ module.exports = warning;
          */
         scrollable: function(activeSection){
             // if there are landscape slides, we check if the scrolling bar is in the current one or not
-            if(activeSection.find(SLIDES_WRAPPER_SEL).length){
+            if (activeSection.find(SLIDES_WRAPPER_SEL).length) {
                 return activeSection.find(SLIDE_ACTIVE_SEL).find(SCROLLABLE_SEL);
             }
             return activeSection.find(SCROLLABLE_SEL);
@@ -8093,8 +9434,8 @@ module.exports = warning;
          * @param  {Object} element jQuery object containing current section
          * @return {Number}
          */
-        scrollHeight: function(element){
-            return element.find(SCROLLABLE_SEL).get(0).scrollHeight;
+        scrollHeight: function(element) {
+            return element.find(SCROLLABLE_SEL).children().first().get(0).scrollHeight;
         },
 
         /**
@@ -8102,10 +9443,15 @@ module.exports = warning;
          *
          * @param  {Object} element      jQuery object containing current section
          */
-        remove: function(element){
-            element.find(SCROLLABLE_SEL).children().first().unwrap().unwrap();
-            element.find(SLIMSCROLL_BAR_SEL).remove();
-            element.find(SLIMSCROLL_RAIL_SEL).remove();
+        remove: function(element) {
+            var scrollable = element.find(SCROLLABLE_SEL);
+            if (scrollable.length) {
+                var iScrollInstance = scrollable.data('iscrollInstance');
+                iScrollInstance.destroy();
+
+                scrollable.data('iscrollInstance', 'undefined');
+            }
+            element.find(SCROLLABLE_SEL).children().first().children().first().unwrap().unwrap();
         },
 
         /**
@@ -8115,7 +9461,18 @@ module.exports = warning;
          * @param  {Object} element      jQuery object containing current section
          * @param  {Number} scrollHeight Current window height in pixels
          */
-        update: function(element, scrollHeight){
+        update: function(element, scrollHeight) {
+            //using a timeout in order to execute the refresh function only once when `update` is called multiple times in a
+            //short period of time.
+            //it also comes on handy because iScroll requires the use of timeout when using `refresh`.
+            clearTimeout(iscrollHandler.refreshId);
+            iscrollHandler.refreshId = setTimeout(function(){
+                $.each(iscrollHandler.iScrollInstances, function(){
+                    $(this).get(0).refresh();
+                });
+            }, 150);
+
+            //updating the wrappers height
             element.find(SCROLLABLE_SEL).css('height', scrollHeight + 'px').parent().css('height', scrollHeight + 'px');
         },
 
@@ -8126,18 +9483,16 @@ module.exports = warning;
          * @return {String|Object} Can be a string containing HTML,
          *                         a DOM element, or jQuery object.
          */
-        wrapContent: function(){
-            return '<div class="' + SCROLLABLE + '"></div>';
+        wrapContent: function() {
+            return '<div class="' + SCROLLABLE + '"><div class="fp-scroller"></div></div>';
         }
     };
 
-    defaultScrollHandler = slimScrollHandler;
-
 });
 
-},{"jquery":53}],53:[function(require,module,exports){
+},{"jquery":60}],60:[function(require,module,exports){
 /*!
- * jQuery JavaScript Library v2.2.2
+ * jQuery JavaScript Library v2.2.4
  * http://jquery.com/
  *
  * Includes Sizzle.js
@@ -8147,7 +9502,7 @@ module.exports = warning;
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2016-03-17T17:51Z
+ * Date: 2016-05-20T17:23Z
  */
 
 (function( global, factory ) {
@@ -8203,7 +9558,7 @@ var support = {};
 
 
 var
-	version = "2.2.2",
+	version = "2.2.4",
 
 	// Define a local copy of jQuery
 	jQuery = function( selector, context ) {
@@ -13144,13 +14499,14 @@ jQuery.Event.prototype = {
 	isDefaultPrevented: returnFalse,
 	isPropagationStopped: returnFalse,
 	isImmediatePropagationStopped: returnFalse,
+	isSimulated: false,
 
 	preventDefault: function() {
 		var e = this.originalEvent;
 
 		this.isDefaultPrevented = returnTrue;
 
-		if ( e ) {
+		if ( e && !this.isSimulated ) {
 			e.preventDefault();
 		}
 	},
@@ -13159,7 +14515,7 @@ jQuery.Event.prototype = {
 
 		this.isPropagationStopped = returnTrue;
 
-		if ( e ) {
+		if ( e && !this.isSimulated ) {
 			e.stopPropagation();
 		}
 	},
@@ -13168,7 +14524,7 @@ jQuery.Event.prototype = {
 
 		this.isImmediatePropagationStopped = returnTrue;
 
-		if ( e ) {
+		if ( e && !this.isSimulated ) {
 			e.stopImmediatePropagation();
 		}
 
@@ -14098,19 +15454,6 @@ function getWidthOrHeight( elem, name, extra ) {
 		val = name === "width" ? elem.offsetWidth : elem.offsetHeight,
 		styles = getStyles( elem ),
 		isBorderBox = jQuery.css( elem, "boxSizing", false, styles ) === "border-box";
-
-	// Support: IE11 only
-	// In IE 11 fullscreen elements inside of an iframe have
-	// 100x too small dimensions (gh-1764).
-	if ( document.msFullscreenElement && window.top !== window ) {
-
-		// Support: IE11 only
-		// Running getBoundingClientRect on a disconnected node
-		// in IE throws an error.
-		if ( elem.getClientRects().length ) {
-			val = Math.round( elem.getBoundingClientRect()[ name ] * 100 );
-		}
-	}
 
 	// Some non-html elements return undefined for offsetWidth, so check for null/undefined
 	// svg - https://bugzilla.mozilla.org/show_bug.cgi?id=649285
@@ -16002,6 +17345,7 @@ jQuery.extend( jQuery.event, {
 	},
 
 	// Piggyback on a donor event to simulate a different one
+	// Used only for `focus(in | out)` events
 	simulate: function( type, elem, event ) {
 		var e = jQuery.extend(
 			new jQuery.Event(),
@@ -16009,27 +17353,10 @@ jQuery.extend( jQuery.event, {
 			{
 				type: type,
 				isSimulated: true
-
-				// Previously, `originalEvent: {}` was set here, so stopPropagation call
-				// would not be triggered on donor event, since in our own
-				// jQuery.event.stopPropagation function we had a check for existence of
-				// originalEvent.stopPropagation method, so, consequently it would be a noop.
-				//
-				// But now, this "simulate" function is used only for events
-				// for which stopPropagation() is noop, so there is no need for that anymore.
-				//
-				// For the 1.x branch though, guard for "click" and "submit"
-				// events is still used, but was moved to jQuery.event.stopPropagation function
-				// because `originalEvent` should point to the original event for the constancy
-				// with other events and for more focused logic
 			}
 		);
 
 		jQuery.event.trigger( e, null, elem );
-
-		if ( e.isDefaultPrevented() ) {
-			event.preventDefault();
-		}
 	}
 
 } );
@@ -17613,7 +18940,7 @@ jQuery.fn.load = function( url, params, callback ) {
 		// If it fails, this function gets "jqXHR", "status", "error"
 		} ).always( callback && function( jqXHR, status ) {
 			self.each( function() {
-				callback.apply( self, response || [ jqXHR.responseText, status, jqXHR ] );
+				callback.apply( this, response || [ jqXHR.responseText, status, jqXHR ] );
 			} );
 		} );
 	}
@@ -17979,12 +19306,12 @@ if ( !noGlobal ) {
 return jQuery;
 }));
 
-},{}],54:[function(require,module,exports){
+},{}],61:[function(require,module,exports){
 'use strict';
 
 module.exports = require('./src/js/main');
 
-},{"./src/js/main":60}],55:[function(require,module,exports){
+},{"./src/js/main":67}],62:[function(require,module,exports){
 'use strict';
 
 function oldAdd(element, className) {
@@ -18028,7 +19355,7 @@ exports.list = function (element) {
   }
 };
 
-},{}],56:[function(require,module,exports){
+},{}],63:[function(require,module,exports){
 'use strict';
 
 var DOM = {};
@@ -18114,7 +19441,7 @@ DOM.queryChildren = function (element, selector) {
 
 module.exports = DOM;
 
-},{}],57:[function(require,module,exports){
+},{}],64:[function(require,module,exports){
 'use strict';
 
 var EventElement = function (element) {
@@ -18187,7 +19514,7 @@ EventManager.prototype.once = function (element, eventName, handler) {
 
 module.exports = EventManager;
 
-},{}],58:[function(require,module,exports){
+},{}],65:[function(require,module,exports){
 'use strict';
 
 module.exports = (function () {
@@ -18202,23 +19529,25 @@ module.exports = (function () {
   };
 })();
 
-},{}],59:[function(require,module,exports){
+},{}],66:[function(require,module,exports){
 'use strict';
 
-var cls = require('./class')
-  , d = require('./dom');
+var cls = require('./class');
+var dom = require('./dom');
 
-exports.toInt = function (x) {
+var toInt = exports.toInt = function (x) {
   return parseInt(x, 10) || 0;
 };
 
-exports.clone = function (obj) {
+var clone = exports.clone = function (obj) {
   if (obj === null) {
     return null;
+  } else if (obj.constructor === Array) {
+    return obj.map(clone);
   } else if (typeof obj === 'object') {
     var result = {};
     for (var key in obj) {
-      result[key] = this.clone(obj[key]);
+      result[key] = clone(obj[key]);
     }
     return result;
   } else {
@@ -18227,18 +19556,18 @@ exports.clone = function (obj) {
 };
 
 exports.extend = function (original, source) {
-  var result = this.clone(original);
+  var result = clone(original);
   for (var key in source) {
-    result[key] = this.clone(source[key]);
+    result[key] = clone(source[key]);
   }
   return result;
 };
 
 exports.isEditable = function (el) {
-  return d.matches(el, "input,[contenteditable]") ||
-         d.matches(el, "select,[contenteditable]") ||
-         d.matches(el, "textarea,[contenteditable]") ||
-         d.matches(el, "button,[contenteditable]");
+  return dom.matches(el, "input,[contenteditable]") ||
+         dom.matches(el, "select,[contenteditable]") ||
+         dom.matches(el, "textarea,[contenteditable]") ||
+         dom.matches(el, "button,[contenteditable]");
 };
 
 exports.removePsClasses = function (element) {
@@ -18252,11 +19581,11 @@ exports.removePsClasses = function (element) {
 };
 
 exports.outerWidth = function (element) {
-  return this.toInt(d.css(element, 'width')) +
-         this.toInt(d.css(element, 'paddingLeft')) +
-         this.toInt(d.css(element, 'paddingRight')) +
-         this.toInt(d.css(element, 'borderLeftWidth')) +
-         this.toInt(d.css(element, 'borderRightWidth'));
+  return toInt(dom.css(element, 'width')) +
+         toInt(dom.css(element, 'paddingLeft')) +
+         toInt(dom.css(element, 'paddingRight')) +
+         toInt(dom.css(element, 'borderLeftWidth')) +
+         toInt(dom.css(element, 'borderRightWidth'));
 };
 
 exports.startScrolling = function (element, axis) {
@@ -18285,12 +19614,12 @@ exports.env = {
   supportsIePointer: window.navigator.msMaxTouchPoints !== null
 };
 
-},{"./class":55,"./dom":56}],60:[function(require,module,exports){
+},{"./class":62,"./dom":63}],67:[function(require,module,exports){
 'use strict';
 
-var destroy = require('./plugin/destroy')
-  , initialize = require('./plugin/initialize')
-  , update = require('./plugin/update');
+var destroy = require('./plugin/destroy');
+var initialize = require('./plugin/initialize');
+var update = require('./plugin/update');
 
 module.exports = {
   initialize: initialize,
@@ -18298,10 +19627,11 @@ module.exports = {
   destroy: destroy
 };
 
-},{"./plugin/destroy":62,"./plugin/initialize":70,"./plugin/update":74}],61:[function(require,module,exports){
+},{"./plugin/destroy":69,"./plugin/initialize":77,"./plugin/update":81}],68:[function(require,module,exports){
 'use strict';
 
 module.exports = {
+  handlers: ['click-rail', 'drag-scrollbar', 'keyboard', 'wheel', 'touch'],
   maxScrollbarLength: null,
   minScrollbarLength: null,
   scrollXMarginOffset: 0,
@@ -18311,19 +19641,17 @@ module.exports = {
   suppressScrollY: false,
   swipePropagation: true,
   useBothWheelAxes: false,
-  useKeyboard: true,
-  useSelectionScroll: false,
   wheelPropagation: false,
   wheelSpeed: 1,
   theme: 'default'
 };
 
-},{}],62:[function(require,module,exports){
+},{}],69:[function(require,module,exports){
 'use strict';
 
-var d = require('../lib/dom')
-  , h = require('../lib/helper')
-  , instances = require('./instances');
+var _ = require('../lib/helper');
+var dom = require('../lib/dom');
+var instances = require('./instances');
 
 module.exports = function (element) {
   var i = instances.get(element);
@@ -18333,34 +19661,34 @@ module.exports = function (element) {
   }
 
   i.event.unbindAll();
-  d.remove(i.scrollbarX);
-  d.remove(i.scrollbarY);
-  d.remove(i.scrollbarXRail);
-  d.remove(i.scrollbarYRail);
-  h.removePsClasses(element);
+  dom.remove(i.scrollbarX);
+  dom.remove(i.scrollbarY);
+  dom.remove(i.scrollbarXRail);
+  dom.remove(i.scrollbarYRail);
+  _.removePsClasses(element);
 
   instances.remove(element);
 };
 
-},{"../lib/dom":56,"../lib/helper":59,"./instances":71}],63:[function(require,module,exports){
+},{"../lib/dom":63,"../lib/helper":66,"./instances":78}],70:[function(require,module,exports){
 'use strict';
 
-var h = require('../../lib/helper')
-  , instances = require('../instances')
-  , updateGeometry = require('../update-geometry')
-  , updateScroll = require('../update-scroll');
+var _ = require('../../lib/helper');
+var instances = require('../instances');
+var updateGeometry = require('../update-geometry');
+var updateScroll = require('../update-scroll');
 
 function bindClickRailHandler(element, i) {
   function pageOffset(el) {
     return el.getBoundingClientRect();
   }
-  var stopPropagation = window.Event.prototype.stopPropagation.bind;
+  var stopPropagation = function (e) { e.stopPropagation(); };
 
   if (i.settings.stopPropagationOnClick) {
     i.event.bind(i.scrollbarY, 'click', stopPropagation);
   }
   i.event.bind(i.scrollbarYRail, 'click', function (e) {
-    var halfOfScrollbarLength = h.toInt(i.scrollbarYHeight / 2);
+    var halfOfScrollbarLength = _.toInt(i.scrollbarYHeight / 2);
     var positionTop = i.railYRatio * (e.pageY - window.pageYOffset - pageOffset(i.scrollbarYRail).top - halfOfScrollbarLength);
     var maxPositionTop = i.railYRatio * (i.railYHeight - i.scrollbarYHeight);
     var positionRatio = positionTop / maxPositionTop;
@@ -18381,7 +19709,7 @@ function bindClickRailHandler(element, i) {
     i.event.bind(i.scrollbarX, 'click', stopPropagation);
   }
   i.event.bind(i.scrollbarXRail, 'click', function (e) {
-    var halfOfScrollbarLength = h.toInt(i.scrollbarXWidth / 2);
+    var halfOfScrollbarLength = _.toInt(i.scrollbarXWidth / 2);
     var positionLeft = i.railXRatio * (e.pageX - window.pageXOffset - pageOffset(i.scrollbarXRail).left - halfOfScrollbarLength);
     var maxPositionLeft = i.railXRatio * (i.railXWidth - i.scrollbarXWidth);
     var positionRatio = positionLeft / maxPositionLeft;
@@ -18404,14 +19732,14 @@ module.exports = function (element) {
   bindClickRailHandler(element, i);
 };
 
-},{"../../lib/helper":59,"../instances":71,"../update-geometry":72,"../update-scroll":73}],64:[function(require,module,exports){
+},{"../../lib/helper":66,"../instances":78,"../update-geometry":79,"../update-scroll":80}],71:[function(require,module,exports){
 'use strict';
 
-var d = require('../../lib/dom')
-  , h = require('../../lib/helper')
-  , instances = require('../instances')
-  , updateGeometry = require('../update-geometry')
-  , updateScroll = require('../update-scroll');
+var _ = require('../../lib/helper');
+var dom = require('../../lib/dom');
+var instances = require('../instances');
+var updateGeometry = require('../update-geometry');
+var updateScroll = require('../update-scroll');
 
 function bindMouseScrollXHandler(element, i) {
   var currentLeft = null;
@@ -18429,7 +19757,7 @@ function bindMouseScrollXHandler(element, i) {
       i.scrollbarXLeft = newLeft;
     }
 
-    var scrollLeft = h.toInt(i.scrollbarXLeft * (i.contentWidth - i.containerWidth) / (i.containerWidth - (i.railXRatio * i.scrollbarXWidth))) - i.negativeScrollAdjustment;
+    var scrollLeft = _.toInt(i.scrollbarXLeft * (i.contentWidth - i.containerWidth) / (i.containerWidth - (i.railXRatio * i.scrollbarXWidth))) - i.negativeScrollAdjustment;
     updateScroll(element, 'left', scrollLeft);
   }
 
@@ -18441,14 +19769,14 @@ function bindMouseScrollXHandler(element, i) {
   };
 
   var mouseUpHandler = function () {
-    h.stopScrolling(element, 'x');
+    _.stopScrolling(element, 'x');
     i.event.unbind(i.ownerDocument, 'mousemove', mouseMoveHandler);
   };
 
   i.event.bind(i.scrollbarX, 'mousedown', function (e) {
     currentPageX = e.pageX;
-    currentLeft = h.toInt(d.css(i.scrollbarX, 'left')) * i.railXRatio;
-    h.startScrolling(element, 'x');
+    currentLeft = _.toInt(dom.css(i.scrollbarX, 'left')) * i.railXRatio;
+    _.startScrolling(element, 'x');
 
     i.event.bind(i.ownerDocument, 'mousemove', mouseMoveHandler);
     i.event.once(i.ownerDocument, 'mouseup', mouseUpHandler);
@@ -18474,7 +19802,7 @@ function bindMouseScrollYHandler(element, i) {
       i.scrollbarYTop = newTop;
     }
 
-    var scrollTop = h.toInt(i.scrollbarYTop * (i.contentHeight - i.containerHeight) / (i.containerHeight - (i.railYRatio * i.scrollbarYHeight)));
+    var scrollTop = _.toInt(i.scrollbarYTop * (i.contentHeight - i.containerHeight) / (i.containerHeight - (i.railYRatio * i.scrollbarYHeight)));
     updateScroll(element, 'top', scrollTop);
   }
 
@@ -18486,14 +19814,14 @@ function bindMouseScrollYHandler(element, i) {
   };
 
   var mouseUpHandler = function () {
-    h.stopScrolling(element, 'y');
+    _.stopScrolling(element, 'y');
     i.event.unbind(i.ownerDocument, 'mousemove', mouseMoveHandler);
   };
 
   i.event.bind(i.scrollbarY, 'mousedown', function (e) {
     currentPageY = e.pageY;
-    currentTop = h.toInt(d.css(i.scrollbarY, 'top')) * i.railYRatio;
-    h.startScrolling(element, 'y');
+    currentTop = _.toInt(dom.css(i.scrollbarY, 'top')) * i.railYRatio;
+    _.startScrolling(element, 'y');
 
     i.event.bind(i.ownerDocument, 'mousemove', mouseMoveHandler);
     i.event.once(i.ownerDocument, 'mouseup', mouseUpHandler);
@@ -18509,14 +19837,14 @@ module.exports = function (element) {
   bindMouseScrollYHandler(element, i);
 };
 
-},{"../../lib/dom":56,"../../lib/helper":59,"../instances":71,"../update-geometry":72,"../update-scroll":73}],65:[function(require,module,exports){
+},{"../../lib/dom":63,"../../lib/helper":66,"../instances":78,"../update-geometry":79,"../update-scroll":80}],72:[function(require,module,exports){
 'use strict';
 
-var h = require('../../lib/helper')
-  , d = require('../../lib/dom')
-  , instances = require('../instances')
-  , updateGeometry = require('../update-geometry')
-  , updateScroll = require('../update-scroll');
+var _ = require('../../lib/helper');
+var dom = require('../../lib/dom');
+var instances = require('../instances');
+var updateGeometry = require('../update-geometry');
+var updateScroll = require('../update-scroll');
 
 function bindKeyboardHandler(element, i) {
   var hovered = false;
@@ -18556,8 +19884,8 @@ function bindKeyboardHandler(element, i) {
       return;
     }
 
-    var focused = d.matches(i.scrollbarX, ':focus') ||
-                  d.matches(i.scrollbarY, ':focus');
+    var focused = dom.matches(i.scrollbarX, ':focus') ||
+                  dom.matches(i.scrollbarY, ':focus');
 
     if (!hovered && !focused) {
       return;
@@ -18565,11 +19893,15 @@ function bindKeyboardHandler(element, i) {
 
     var activeElement = document.activeElement ? document.activeElement : i.ownerDocument.activeElement;
     if (activeElement) {
-      // go deeper if element is a webcomponent
-      while (activeElement.shadowRoot) {
-        activeElement = activeElement.shadowRoot.activeElement;
+      if (activeElement.tagName === 'IFRAME') {
+        activeElement = activeElement.contentDocument.activeElement;
+      } else {
+        // go deeper if element is a webcomponent
+        while (activeElement.shadowRoot) {
+          activeElement = activeElement.shadowRoot.activeElement;
+        }
       }
-      if (h.isEditable(activeElement)) {
+      if (_.isEditable(activeElement)) {
         return;
       }
     }
@@ -18637,12 +19969,12 @@ module.exports = function (element) {
   bindKeyboardHandler(element, i);
 };
 
-},{"../../lib/dom":56,"../../lib/helper":59,"../instances":71,"../update-geometry":72,"../update-scroll":73}],66:[function(require,module,exports){
+},{"../../lib/dom":63,"../../lib/helper":66,"../instances":78,"../update-geometry":79,"../update-scroll":80}],73:[function(require,module,exports){
 'use strict';
 
-var instances = require('../instances')
-  , updateGeometry = require('../update-geometry')
-  , updateScroll = require('../update-scroll');
+var instances = require('../instances');
+var updateGeometry = require('../update-geometry');
+var updateScroll = require('../update-scroll');
 
 function bindMouseWheelHandler(element, i) {
   var shouldPrevent = false;
@@ -18695,20 +20027,22 @@ function bindMouseWheelHandler(element, i) {
     return [deltaX, deltaY];
   }
 
-  function shouldBeConsumedByTextarea(deltaX, deltaY) {
-    var hoveredTextarea = element.querySelector('textarea:hover');
-    if (hoveredTextarea) {
-      var maxScrollTop = hoveredTextarea.scrollHeight - hoveredTextarea.clientHeight;
+  function shouldBeConsumedByChild(deltaX, deltaY) {
+    var child = element.querySelector('textarea:hover, .ps-child:hover');
+    if (child) {
+      if (child.tagName !== 'TEXTAREA' && !window.getComputedStyle(child).overflow.match(/(scroll|auto)/)) {
+        return false;
+      }
+
+      var maxScrollTop = child.scrollHeight - child.clientHeight;
       if (maxScrollTop > 0) {
-        if (!(hoveredTextarea.scrollTop === 0 && deltaY > 0) &&
-            !(hoveredTextarea.scrollTop === maxScrollTop && deltaY < 0)) {
+        if (!(child.scrollTop === 0 && deltaY > 0) && !(child.scrollTop === maxScrollTop && deltaY < 0)) {
           return true;
         }
       }
-      var maxScrollLeft = hoveredTextarea.scrollLeft - hoveredTextarea.clientWidth;
+      var maxScrollLeft = child.scrollLeft - child.clientWidth;
       if (maxScrollLeft > 0) {
-        if (!(hoveredTextarea.scrollLeft === 0 && deltaX < 0) &&
-            !(hoveredTextarea.scrollLeft === maxScrollLeft && deltaX > 0)) {
+        if (!(child.scrollLeft === 0 && deltaX < 0) && !(child.scrollLeft === maxScrollLeft && deltaX > 0)) {
           return true;
         }
       }
@@ -18722,7 +20056,7 @@ function bindMouseWheelHandler(element, i) {
     var deltaX = delta[0];
     var deltaY = delta[1];
 
-    if (shouldBeConsumedByTextarea(deltaX, deltaY)) {
+    if (shouldBeConsumedByChild(deltaX, deltaY)) {
       return;
     }
 
@@ -18773,11 +20107,11 @@ module.exports = function (element) {
   bindMouseWheelHandler(element, i);
 };
 
-},{"../instances":71,"../update-geometry":72,"../update-scroll":73}],67:[function(require,module,exports){
+},{"../instances":78,"../update-geometry":79,"../update-scroll":80}],74:[function(require,module,exports){
 'use strict';
 
-var instances = require('../instances')
-  , updateGeometry = require('../update-geometry');
+var instances = require('../instances');
+var updateGeometry = require('../update-geometry');
 
 function bindNativeScrollHandler(element, i) {
   i.event.bind(element, 'scroll', function () {
@@ -18790,13 +20124,13 @@ module.exports = function (element) {
   bindNativeScrollHandler(element, i);
 };
 
-},{"../instances":71,"../update-geometry":72}],68:[function(require,module,exports){
+},{"../instances":78,"../update-geometry":79}],75:[function(require,module,exports){
 'use strict';
 
-var h = require('../../lib/helper')
-  , instances = require('../instances')
-  , updateGeometry = require('../update-geometry')
-  , updateScroll = require('../update-scroll');
+var _ = require('../../lib/helper');
+var instances = require('../instances');
+var updateGeometry = require('../update-geometry');
+var updateScroll = require('../update-scroll');
 
 function bindSelectionHandler(element, i) {
   function getRangeNode() {
@@ -18830,7 +20164,7 @@ function bindSelectionHandler(element, i) {
       clearInterval(scrollingLoop);
       scrollingLoop = null;
     }
-    h.stopScrolling(element);
+    _.stopScrolling(element);
   }
 
   var isSelected = false;
@@ -18861,10 +20195,10 @@ function bindSelectionHandler(element, i) {
 
       if (mousePosition.x < containerGeometry.left + 3) {
         scrollDiff.left = -5;
-        h.startScrolling(element, 'x');
+        _.startScrolling(element, 'x');
       } else if (mousePosition.x > containerGeometry.right - 3) {
         scrollDiff.left = 5;
-        h.startScrolling(element, 'x');
+        _.startScrolling(element, 'x');
       } else {
         scrollDiff.left = 0;
       }
@@ -18875,14 +20209,14 @@ function bindSelectionHandler(element, i) {
         } else {
           scrollDiff.top = -20;
         }
-        h.startScrolling(element, 'y');
+        _.startScrolling(element, 'y');
       } else if (mousePosition.y > containerGeometry.bottom - 3) {
         if (mousePosition.y - containerGeometry.bottom + 3 < 5) {
           scrollDiff.top = 5;
         } else {
           scrollDiff.top = 20;
         }
-        h.startScrolling(element, 'y');
+        _.startScrolling(element, 'y');
       } else {
         scrollDiff.top = 0;
       }
@@ -18901,12 +20235,13 @@ module.exports = function (element) {
   bindSelectionHandler(element, i);
 };
 
-},{"../../lib/helper":59,"../instances":71,"../update-geometry":72,"../update-scroll":73}],69:[function(require,module,exports){
+},{"../../lib/helper":66,"../instances":78,"../update-geometry":79,"../update-scroll":80}],76:[function(require,module,exports){
 'use strict';
 
-var instances = require('../instances')
-  , updateGeometry = require('../update-geometry')
-  , updateScroll = require('../update-scroll');
+var _ = require('../../lib/helper');
+var instances = require('../instances');
+var updateGeometry = require('../update-geometry');
+var updateScroll = require('../update-scroll');
 
 function bindTouchHandler(element, i, supportsTouch, supportsIePointer) {
   function shouldPreventDefault(deltaX, deltaY) {
@@ -18991,6 +20326,9 @@ function bindTouchHandler(element, i, supportsTouch, supportsIePointer) {
     }
   }
   function touchMove(e) {
+    if (!inLocalTouch && i.settings.swipePropagation) {
+      touchStart(e);
+    }
     if (!inGlobalTouch && inLocalTouch && shouldHandle(e)) {
       var touch = getTouch(e);
 
@@ -19066,27 +20404,33 @@ function bindTouchHandler(element, i, supportsTouch, supportsIePointer) {
   }
 }
 
-module.exports = function (element, supportsTouch, supportsIePointer) {
+module.exports = function (element) {
+  if (!_.env.supportsTouch && !_.env.supportsIePointer) {
+    return;
+  }
+
   var i = instances.get(element);
-  bindTouchHandler(element, i, supportsTouch, supportsIePointer);
+  bindTouchHandler(element, i, _.env.supportsTouch, _.env.supportsIePointer);
 };
 
-},{"../instances":71,"../update-geometry":72,"../update-scroll":73}],70:[function(require,module,exports){
+},{"../../lib/helper":66,"../instances":78,"../update-geometry":79,"../update-scroll":80}],77:[function(require,module,exports){
 'use strict';
 
-var cls = require('../lib/class')
-  , h = require('../lib/helper')
-  , instances = require('./instances')
-  , updateGeometry = require('./update-geometry');
+var _ = require('../lib/helper');
+var cls = require('../lib/class');
+var instances = require('./instances');
+var updateGeometry = require('./update-geometry');
 
 // Handlers
-var clickRailHandler = require('./handler/click-rail')
-  , dragScrollbarHandler = require('./handler/drag-scrollbar')
-  , keyboardHandler = require('./handler/keyboard')
-  , mouseWheelHandler = require('./handler/mouse-wheel')
-  , nativeScrollHandler = require('./handler/native-scroll')
-  , selectionHandler = require('./handler/selection')
-  , touchHandler = require('./handler/touch');
+var handlers = {
+  'click-rail': require('./handler/click-rail'),
+  'drag-scrollbar': require('./handler/drag-scrollbar'),
+  'keyboard': require('./handler/keyboard'),
+  'wheel': require('./handler/mouse-wheel'),
+  'touch': require('./handler/touch'),
+  'selection': require('./handler/selection')
+};
+var nativeScrollHandler = require('./handler/native-scroll');
 
 module.exports = function (element, userSettings) {
   userSettings = typeof userSettings === 'object' ? userSettings : {};
@@ -19096,50 +20440,40 @@ module.exports = function (element, userSettings) {
   // Create a plugin instance.
   var i = instances.add(element);
 
-  i.settings = h.extend(i.settings, userSettings);
+  i.settings = _.extend(i.settings, userSettings);
   cls.add(element, 'ps-theme-' + i.settings.theme);
 
-  clickRailHandler(element);
-  dragScrollbarHandler(element);
-  mouseWheelHandler(element);
+  i.settings.handlers.forEach(function (handlerName) {
+    handlers[handlerName](element);
+  });
+
   nativeScrollHandler(element);
-
-  if (i.settings.useSelectionScroll) {
-    selectionHandler(element);
-  }
-
-  if (h.env.supportsTouch || h.env.supportsIePointer) {
-    touchHandler(element, h.env.supportsTouch, h.env.supportsIePointer);
-  }
-  if (i.settings.useKeyboard) {
-    keyboardHandler(element);
-  }
 
   updateGeometry(element);
 };
 
-},{"../lib/class":55,"../lib/helper":59,"./handler/click-rail":63,"./handler/drag-scrollbar":64,"./handler/keyboard":65,"./handler/mouse-wheel":66,"./handler/native-scroll":67,"./handler/selection":68,"./handler/touch":69,"./instances":71,"./update-geometry":72}],71:[function(require,module,exports){
+},{"../lib/class":62,"../lib/helper":66,"./handler/click-rail":70,"./handler/drag-scrollbar":71,"./handler/keyboard":72,"./handler/mouse-wheel":73,"./handler/native-scroll":74,"./handler/selection":75,"./handler/touch":76,"./instances":78,"./update-geometry":79}],78:[function(require,module,exports){
 'use strict';
 
-var cls = require('../lib/class')
-  , d = require('../lib/dom')
-  , defaultSettings = require('./default-setting')
-  , EventManager = require('../lib/event-manager')
-  , guid = require('../lib/guid')
-  , h = require('../lib/helper');
+var _ = require('../lib/helper');
+var cls = require('../lib/class');
+var defaultSettings = require('./default-setting');
+var dom = require('../lib/dom');
+var EventManager = require('../lib/event-manager');
+var guid = require('../lib/guid');
 
 var instances = {};
 
 function Instance(element) {
   var i = this;
 
-  i.settings = h.clone(defaultSettings);
+  i.settings = _.clone(defaultSettings);
   i.containerWidth = null;
   i.containerHeight = null;
   i.contentWidth = null;
   i.contentHeight = null;
 
-  i.isRtl = d.css(element, 'direction') === "rtl";
+  i.isRtl = dom.css(element, 'direction') === "rtl";
   i.isNegativeScroll = (function () {
     var originalScrollLeft = element.scrollLeft;
     var result = null;
@@ -19160,67 +20494,55 @@ function Instance(element) {
     cls.remove(element, 'ps-focus');
   }
 
-  i.scrollbarXRail = d.appendTo(d.e('div', 'ps-scrollbar-x-rail'), element);
-  i.scrollbarX = d.appendTo(d.e('div', 'ps-scrollbar-x'), i.scrollbarXRail);
+  i.scrollbarXRail = dom.appendTo(dom.e('div', 'ps-scrollbar-x-rail'), element);
+  i.scrollbarX = dom.appendTo(dom.e('div', 'ps-scrollbar-x'), i.scrollbarXRail);
   i.scrollbarX.setAttribute('tabindex', 0);
   i.event.bind(i.scrollbarX, 'focus', focus);
   i.event.bind(i.scrollbarX, 'blur', blur);
   i.scrollbarXActive = null;
   i.scrollbarXWidth = null;
   i.scrollbarXLeft = null;
-  i.scrollbarXBottom = h.toInt(d.css(i.scrollbarXRail, 'bottom'));
+  i.scrollbarXBottom = _.toInt(dom.css(i.scrollbarXRail, 'bottom'));
   i.isScrollbarXUsingBottom = i.scrollbarXBottom === i.scrollbarXBottom; // !isNaN
-  i.scrollbarXTop = i.isScrollbarXUsingBottom ? null : h.toInt(d.css(i.scrollbarXRail, 'top'));
-  i.railBorderXWidth = h.toInt(d.css(i.scrollbarXRail, 'borderLeftWidth')) + h.toInt(d.css(i.scrollbarXRail, 'borderRightWidth'));
+  i.scrollbarXTop = i.isScrollbarXUsingBottom ? null : _.toInt(dom.css(i.scrollbarXRail, 'top'));
+  i.railBorderXWidth = _.toInt(dom.css(i.scrollbarXRail, 'borderLeftWidth')) + _.toInt(dom.css(i.scrollbarXRail, 'borderRightWidth'));
   // Set rail to display:block to calculate margins
-  d.css(i.scrollbarXRail, 'display', 'block');
-  i.railXMarginWidth = h.toInt(d.css(i.scrollbarXRail, 'marginLeft')) + h.toInt(d.css(i.scrollbarXRail, 'marginRight'));
-  d.css(i.scrollbarXRail, 'display', '');
+  dom.css(i.scrollbarXRail, 'display', 'block');
+  i.railXMarginWidth = _.toInt(dom.css(i.scrollbarXRail, 'marginLeft')) + _.toInt(dom.css(i.scrollbarXRail, 'marginRight'));
+  dom.css(i.scrollbarXRail, 'display', '');
   i.railXWidth = null;
   i.railXRatio = null;
 
-  i.scrollbarYRail = d.appendTo(d.e('div', 'ps-scrollbar-y-rail'), element);
-  i.scrollbarY = d.appendTo(d.e('div', 'ps-scrollbar-y'), i.scrollbarYRail);
+  i.scrollbarYRail = dom.appendTo(dom.e('div', 'ps-scrollbar-y-rail'), element);
+  i.scrollbarY = dom.appendTo(dom.e('div', 'ps-scrollbar-y'), i.scrollbarYRail);
   i.scrollbarY.setAttribute('tabindex', 0);
   i.event.bind(i.scrollbarY, 'focus', focus);
   i.event.bind(i.scrollbarY, 'blur', blur);
   i.scrollbarYActive = null;
   i.scrollbarYHeight = null;
   i.scrollbarYTop = null;
-  i.scrollbarYRight = h.toInt(d.css(i.scrollbarYRail, 'right'));
+  i.scrollbarYRight = _.toInt(dom.css(i.scrollbarYRail, 'right'));
   i.isScrollbarYUsingRight = i.scrollbarYRight === i.scrollbarYRight; // !isNaN
-  i.scrollbarYLeft = i.isScrollbarYUsingRight ? null : h.toInt(d.css(i.scrollbarYRail, 'left'));
-  i.scrollbarYOuterWidth = i.isRtl ? h.outerWidth(i.scrollbarY) : null;
-  i.railBorderYWidth = h.toInt(d.css(i.scrollbarYRail, 'borderTopWidth')) + h.toInt(d.css(i.scrollbarYRail, 'borderBottomWidth'));
-  d.css(i.scrollbarYRail, 'display', 'block');
-  i.railYMarginHeight = h.toInt(d.css(i.scrollbarYRail, 'marginTop')) + h.toInt(d.css(i.scrollbarYRail, 'marginBottom'));
-  d.css(i.scrollbarYRail, 'display', '');
+  i.scrollbarYLeft = i.isScrollbarYUsingRight ? null : _.toInt(dom.css(i.scrollbarYRail, 'left'));
+  i.scrollbarYOuterWidth = i.isRtl ? _.outerWidth(i.scrollbarY) : null;
+  i.railBorderYWidth = _.toInt(dom.css(i.scrollbarYRail, 'borderTopWidth')) + _.toInt(dom.css(i.scrollbarYRail, 'borderBottomWidth'));
+  dom.css(i.scrollbarYRail, 'display', 'block');
+  i.railYMarginHeight = _.toInt(dom.css(i.scrollbarYRail, 'marginTop')) + _.toInt(dom.css(i.scrollbarYRail, 'marginBottom'));
+  dom.css(i.scrollbarYRail, 'display', '');
   i.railYHeight = null;
   i.railYRatio = null;
 }
 
 function getId(element) {
-  if (typeof element.dataset === 'undefined') {
-    return element.getAttribute('data-ps-id');
-  } else {
-    return element.dataset.psId;
-  }
+  return element.getAttribute('data-ps-id');
 }
 
 function setId(element, id) {
-  if (typeof element.dataset === 'undefined') {
-    element.setAttribute('data-ps-id', id);
-  } else {
-    element.dataset.psId = id;
-  }
+  element.setAttribute('data-ps-id', id);
 }
 
 function removeId(element) {
-  if (typeof element.dataset === 'undefined') {
-    element.removeAttribute('data-ps-id');
-  } else {
-    delete element.dataset.psId;
-  }
+  element.removeAttribute('data-ps-id');
 }
 
 exports.add = function (element) {
@@ -19239,14 +20561,14 @@ exports.get = function (element) {
   return instances[getId(element)];
 };
 
-},{"../lib/class":55,"../lib/dom":56,"../lib/event-manager":57,"../lib/guid":58,"../lib/helper":59,"./default-setting":61}],72:[function(require,module,exports){
+},{"../lib/class":62,"../lib/dom":63,"../lib/event-manager":64,"../lib/guid":65,"../lib/helper":66,"./default-setting":68}],79:[function(require,module,exports){
 'use strict';
 
-var cls = require('../lib/class')
-  , d = require('../lib/dom')
-  , h = require('../lib/helper')
-  , instances = require('./instances')
-  , updateScroll = require('./update-scroll');
+var _ = require('../lib/helper');
+var cls = require('../lib/class');
+var dom = require('../lib/dom');
+var instances = require('./instances');
+var updateScroll = require('./update-scroll');
 
 function getThumbSize(i, thumbSize) {
   if (i.settings.minScrollbarLength) {
@@ -19270,7 +20592,7 @@ function updateCss(element, i) {
   } else {
     xRailOffset.top = i.scrollbarXTop + element.scrollTop;
   }
-  d.css(i.scrollbarXRail, xRailOffset);
+  dom.css(i.scrollbarXRail, xRailOffset);
 
   var yRailOffset = {top: element.scrollTop, height: i.railYHeight};
   if (i.isScrollbarYUsingRight) {
@@ -19286,10 +20608,10 @@ function updateCss(element, i) {
       yRailOffset.left = i.scrollbarYLeft + element.scrollLeft;
     }
   }
-  d.css(i.scrollbarYRail, yRailOffset);
+  dom.css(i.scrollbarYRail, yRailOffset);
 
-  d.css(i.scrollbarX, {left: i.scrollbarXLeft, width: i.scrollbarXWidth - i.railBorderXWidth});
-  d.css(i.scrollbarY, {top: i.scrollbarYTop, height: i.scrollbarYHeight - i.railBorderYWidth});
+  dom.css(i.scrollbarX, {left: i.scrollbarXLeft, width: i.scrollbarXWidth - i.railBorderXWidth});
+  dom.css(i.scrollbarY, {top: i.scrollbarYTop, height: i.scrollbarYHeight - i.railBorderYWidth});
 }
 
 module.exports = function (element) {
@@ -19302,30 +20624,30 @@ module.exports = function (element) {
 
   var existingRails;
   if (!element.contains(i.scrollbarXRail)) {
-    existingRails = d.queryChildren(element, '.ps-scrollbar-x-rail');
+    existingRails = dom.queryChildren(element, '.ps-scrollbar-x-rail');
     if (existingRails.length > 0) {
       existingRails.forEach(function (rail) {
-        d.remove(rail);
+        dom.remove(rail);
       });
     }
-    d.appendTo(i.scrollbarXRail, element);
+    dom.appendTo(i.scrollbarXRail, element);
   }
   if (!element.contains(i.scrollbarYRail)) {
-    existingRails = d.queryChildren(element, '.ps-scrollbar-y-rail');
+    existingRails = dom.queryChildren(element, '.ps-scrollbar-y-rail');
     if (existingRails.length > 0) {
       existingRails.forEach(function (rail) {
-        d.remove(rail);
+        dom.remove(rail);
       });
     }
-    d.appendTo(i.scrollbarYRail, element);
+    dom.appendTo(i.scrollbarYRail, element);
   }
 
   if (!i.settings.suppressScrollX && i.containerWidth + i.settings.scrollXMarginOffset < i.contentWidth) {
     i.scrollbarXActive = true;
     i.railXWidth = i.containerWidth - i.railXMarginWidth;
     i.railXRatio = i.containerWidth / i.railXWidth;
-    i.scrollbarXWidth = getThumbSize(i, h.toInt(i.railXWidth * i.containerWidth / i.contentWidth));
-    i.scrollbarXLeft = h.toInt((i.negativeScrollAdjustment + element.scrollLeft) * (i.railXWidth - i.scrollbarXWidth) / (i.contentWidth - i.containerWidth));
+    i.scrollbarXWidth = getThumbSize(i, _.toInt(i.railXWidth * i.containerWidth / i.contentWidth));
+    i.scrollbarXLeft = _.toInt((i.negativeScrollAdjustment + element.scrollLeft) * (i.railXWidth - i.scrollbarXWidth) / (i.contentWidth - i.containerWidth));
   } else {
     i.scrollbarXActive = false;
   }
@@ -19334,8 +20656,8 @@ module.exports = function (element) {
     i.scrollbarYActive = true;
     i.railYHeight = i.containerHeight - i.railYMarginHeight;
     i.railYRatio = i.containerHeight / i.railYHeight;
-    i.scrollbarYHeight = getThumbSize(i, h.toInt(i.railYHeight * i.containerHeight / i.contentHeight));
-    i.scrollbarYTop = h.toInt(element.scrollTop * (i.railYHeight - i.scrollbarYHeight) / (i.contentHeight - i.containerHeight));
+    i.scrollbarYHeight = getThumbSize(i, _.toInt(i.railYHeight * i.containerHeight / i.contentHeight));
+    i.scrollbarYTop = _.toInt(element.scrollTop * (i.railYHeight - i.scrollbarYHeight) / (i.contentHeight - i.containerHeight));
   } else {
     i.scrollbarYActive = false;
   }
@@ -19367,23 +20689,23 @@ module.exports = function (element) {
   }
 };
 
-},{"../lib/class":55,"../lib/dom":56,"../lib/helper":59,"./instances":71,"./update-scroll":73}],73:[function(require,module,exports){
+},{"../lib/class":62,"../lib/dom":63,"../lib/helper":66,"./instances":78,"./update-scroll":80}],80:[function(require,module,exports){
 'use strict';
 
 var instances = require('./instances');
 
-var upEvent = document.createEvent('Event')
-  , downEvent = document.createEvent('Event')
-  , leftEvent = document.createEvent('Event')
-  , rightEvent = document.createEvent('Event')
-  , yEvent = document.createEvent('Event')
-  , xEvent = document.createEvent('Event')
-  , xStartEvent = document.createEvent('Event')
-  , xEndEvent = document.createEvent('Event')
-  , yStartEvent = document.createEvent('Event')
-  , yEndEvent = document.createEvent('Event')
-  , lastTop
-  , lastLeft;
+var upEvent = document.createEvent('Event');
+var downEvent = document.createEvent('Event');
+var leftEvent = document.createEvent('Event');
+var rightEvent = document.createEvent('Event');
+var yEvent = document.createEvent('Event');
+var xEvent = document.createEvent('Event');
+var xStartEvent = document.createEvent('Event');
+var xEndEvent = document.createEvent('Event');
+var yStartEvent = document.createEvent('Event');
+var yEndEvent = document.createEvent('Event');
+var lastTop;
+var lastLeft;
 
 upEvent.initEvent('ps-scroll-up', true, true);
 downEvent.initEvent('ps-scroll-down', true, true);
@@ -19422,12 +20744,26 @@ module.exports = function (element, axis, value) {
   var i = instances.get(element);
 
   if (axis === 'top' && value >= i.contentHeight - i.containerHeight) {
-    element.scrollTop = value = i.contentHeight - i.containerHeight; // don't allow scroll past container
+    // don't allow scroll past container
+    value = i.contentHeight - i.containerHeight;
+    if (value - element.scrollTop <= 1) {
+      // mitigates rounding errors on non-subpixel scroll values
+      value = element.scrollTop;
+    } else {
+      element.scrollTop = value;
+    }
     element.dispatchEvent(yEndEvent);
   }
 
   if (axis === 'left' && value >= i.contentWidth - i.containerWidth) {
-    element.scrollLeft = value = i.contentWidth - i.containerWidth; // don't allow scroll past container
+    // don't allow scroll past container
+    value = i.contentWidth - i.containerWidth;
+    if (value - element.scrollLeft <= 1) {
+      // mitigates rounding errors on non-subpixel scroll values
+      value = element.scrollLeft;
+    } else {
+      element.scrollLeft = value;
+    }
     element.dispatchEvent(xEndEvent);
   }
 
@@ -19467,14 +20803,14 @@ module.exports = function (element, axis, value) {
 
 };
 
-},{"./instances":71}],74:[function(require,module,exports){
+},{"./instances":78}],81:[function(require,module,exports){
 'use strict';
 
-var d = require('../lib/dom')
-  , h = require('../lib/helper')
-  , instances = require('./instances')
-  , updateGeometry = require('./update-geometry')
-  , updateScroll = require('./update-scroll');
+var _ = require('../lib/helper');
+var dom = require('../lib/dom');
+var instances = require('./instances');
+var updateGeometry = require('./update-geometry');
+var updateScroll = require('./update-scroll');
 
 module.exports = function (element) {
   var i = instances.get(element);
@@ -19487,14 +20823,14 @@ module.exports = function (element) {
   i.negativeScrollAdjustment = i.isNegativeScroll ? element.scrollWidth - element.clientWidth : 0;
 
   // Recalculate rail margins
-  d.css(i.scrollbarXRail, 'display', 'block');
-  d.css(i.scrollbarYRail, 'display', 'block');
-  i.railXMarginWidth = h.toInt(d.css(i.scrollbarXRail, 'marginLeft')) + h.toInt(d.css(i.scrollbarXRail, 'marginRight'));
-  i.railYMarginHeight = h.toInt(d.css(i.scrollbarYRail, 'marginTop')) + h.toInt(d.css(i.scrollbarYRail, 'marginBottom'));
+  dom.css(i.scrollbarXRail, 'display', 'block');
+  dom.css(i.scrollbarYRail, 'display', 'block');
+  i.railXMarginWidth = _.toInt(dom.css(i.scrollbarXRail, 'marginLeft')) + _.toInt(dom.css(i.scrollbarXRail, 'marginRight'));
+  i.railYMarginHeight = _.toInt(dom.css(i.scrollbarYRail, 'marginTop')) + _.toInt(dom.css(i.scrollbarYRail, 'marginBottom'));
 
   // Hide scrollbars not to affect scrollWidth and scrollHeight
-  d.css(i.scrollbarXRail, 'display', 'none');
-  d.css(i.scrollbarYRail, 'display', 'none');
+  dom.css(i.scrollbarXRail, 'display', 'none');
+  dom.css(i.scrollbarYRail, 'display', 'none');
 
   updateGeometry(element);
 
@@ -19502,20 +20838,48 @@ module.exports = function (element) {
   updateScroll(element, 'top', element.scrollTop);
   updateScroll(element, 'left', element.scrollLeft);
 
-  d.css(i.scrollbarXRail, 'display', '');
-  d.css(i.scrollbarYRail, 'display', '');
+  dom.css(i.scrollbarXRail, 'display', '');
+  dom.css(i.scrollbarYRail, 'display', '');
 };
 
-},{"../lib/dom":56,"../lib/helper":59,"./instances":71,"./update-geometry":72,"./update-scroll":73}],75:[function(require,module,exports){
+},{"../lib/dom":63,"../lib/helper":66,"./instances":78,"./update-geometry":79,"./update-scroll":80}],82:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+(function () {
+  try {
+    cachedSetTimeout = setTimeout;
+  } catch (e) {
+    cachedSetTimeout = function () {
+      throw new Error('setTimeout is not defined');
+    }
+  }
+  try {
+    cachedClearTimeout = clearTimeout;
+  } catch (e) {
+    cachedClearTimeout = function () {
+      throw new Error('clearTimeout is not defined');
+    }
+  }
+} ())
 var queue = [];
 var draining = false;
 var currentQueue;
 var queueIndex = -1;
 
 function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
     draining = false;
     if (currentQueue.length) {
         queue = currentQueue.concat(queue);
@@ -19531,7 +20895,7 @@ function drainQueue() {
     if (draining) {
         return;
     }
-    var timeout = setTimeout(cleanUpNextTick);
+    var timeout = cachedSetTimeout(cleanUpNextTick);
     draining = true;
 
     var len = queue.length;
@@ -19548,7 +20912,7 @@ function drainQueue() {
     }
     currentQueue = null;
     draining = false;
-    clearTimeout(timeout);
+    cachedClearTimeout(timeout);
 }
 
 process.nextTick = function (fun) {
@@ -19560,7 +20924,7 @@ process.nextTick = function (fun) {
     }
     queue.push(new Item(fun, args));
     if (queue.length === 1 && !draining) {
-        setTimeout(drainQueue, 0);
+        cachedSetTimeout(drainQueue, 0);
     }
 };
 
@@ -19599,12 +20963,12 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],76:[function(require,module,exports){
+},{}],83:[function(require,module,exports){
 'use strict';
 
 module.exports = require('react/lib/ReactDOM');
 
-},{"react/lib/ReactDOM":111}],77:[function(require,module,exports){
+},{"react/lib/ReactDOM":118}],84:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -19641,7 +21005,7 @@ var AutoFocusUtils = {
 };
 
 module.exports = AutoFocusUtils;
-},{"./ReactMount":141,"./findDOMNode":184,"fbjs/lib/focusNode":34}],78:[function(require,module,exports){
+},{"./ReactMount":148,"./findDOMNode":191,"fbjs/lib/focusNode":41}],85:[function(require,module,exports){
 /**
  * Copyright 2013-2015 Facebook, Inc.
  * All rights reserved.
@@ -20047,7 +21411,7 @@ var BeforeInputEventPlugin = {
 };
 
 module.exports = BeforeInputEventPlugin;
-},{"./EventConstants":90,"./EventPropagators":94,"./FallbackCompositionState":95,"./SyntheticCompositionEvent":166,"./SyntheticInputEvent":170,"fbjs/lib/ExecutionEnvironment":26,"fbjs/lib/keyOf":44}],79:[function(require,module,exports){
+},{"./EventConstants":97,"./EventPropagators":101,"./FallbackCompositionState":102,"./SyntheticCompositionEvent":173,"./SyntheticInputEvent":177,"fbjs/lib/ExecutionEnvironment":33,"fbjs/lib/keyOf":51}],86:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -20187,7 +21551,7 @@ var CSSProperty = {
 };
 
 module.exports = CSSProperty;
-},{}],80:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -20365,7 +21729,7 @@ ReactPerf.measureMethods(CSSPropertyOperations, 'CSSPropertyOperations', {
 
 module.exports = CSSPropertyOperations;
 }).call(this,require('_process'))
-},{"./CSSProperty":79,"./ReactPerf":147,"./dangerousStyleValue":181,"_process":75,"fbjs/lib/ExecutionEnvironment":26,"fbjs/lib/camelizeStyleName":28,"fbjs/lib/hyphenateStyleName":39,"fbjs/lib/memoizeStringOnly":46,"fbjs/lib/warning":51}],81:[function(require,module,exports){
+},{"./CSSProperty":86,"./ReactPerf":154,"./dangerousStyleValue":188,"_process":82,"fbjs/lib/ExecutionEnvironment":33,"fbjs/lib/camelizeStyleName":35,"fbjs/lib/hyphenateStyleName":46,"fbjs/lib/memoizeStringOnly":53,"fbjs/lib/warning":58}],88:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -20461,7 +21825,7 @@ PooledClass.addPoolingTo(CallbackQueue);
 
 module.exports = CallbackQueue;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"./PooledClass":99,"_process":75,"fbjs/lib/invariant":40}],82:[function(require,module,exports){
+},{"./Object.assign":105,"./PooledClass":106,"_process":82,"fbjs/lib/invariant":47}],89:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -20783,7 +22147,7 @@ var ChangeEventPlugin = {
 };
 
 module.exports = ChangeEventPlugin;
-},{"./EventConstants":90,"./EventPluginHub":91,"./EventPropagators":94,"./ReactUpdates":159,"./SyntheticEvent":168,"./getEventTarget":190,"./isEventSupported":195,"./isTextInputElement":196,"fbjs/lib/ExecutionEnvironment":26,"fbjs/lib/keyOf":44}],83:[function(require,module,exports){
+},{"./EventConstants":97,"./EventPluginHub":98,"./EventPropagators":101,"./ReactUpdates":166,"./SyntheticEvent":175,"./getEventTarget":197,"./isEventSupported":202,"./isTextInputElement":203,"fbjs/lib/ExecutionEnvironment":33,"fbjs/lib/keyOf":51}],90:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -20807,7 +22171,7 @@ var ClientReactRootIndex = {
 };
 
 module.exports = ClientReactRootIndex;
-},{}],84:[function(require,module,exports){
+},{}],91:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -20939,7 +22303,7 @@ ReactPerf.measureMethods(DOMChildrenOperations, 'DOMChildrenOperations', {
 
 module.exports = DOMChildrenOperations;
 }).call(this,require('_process'))
-},{"./Danger":87,"./ReactMultiChildUpdateTypes":143,"./ReactPerf":147,"./setInnerHTML":200,"./setTextContent":201,"_process":75,"fbjs/lib/invariant":40}],85:[function(require,module,exports){
+},{"./Danger":94,"./ReactMultiChildUpdateTypes":150,"./ReactPerf":154,"./setInnerHTML":207,"./setTextContent":208,"_process":82,"fbjs/lib/invariant":47}],92:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -21176,7 +22540,7 @@ var DOMProperty = {
 
 module.exports = DOMProperty;
 }).call(this,require('_process'))
-},{"_process":75,"fbjs/lib/invariant":40}],86:[function(require,module,exports){
+},{"_process":82,"fbjs/lib/invariant":47}],93:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -21404,7 +22768,7 @@ ReactPerf.measureMethods(DOMPropertyOperations, 'DOMPropertyOperations', {
 
 module.exports = DOMPropertyOperations;
 }).call(this,require('_process'))
-},{"./DOMProperty":85,"./ReactPerf":147,"./quoteAttributeValueForBrowser":198,"_process":75,"fbjs/lib/warning":51}],87:[function(require,module,exports){
+},{"./DOMProperty":92,"./ReactPerf":154,"./quoteAttributeValueForBrowser":205,"_process":82,"fbjs/lib/warning":58}],94:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -21552,7 +22916,7 @@ var Danger = {
 
 module.exports = Danger;
 }).call(this,require('_process'))
-},{"_process":75,"fbjs/lib/ExecutionEnvironment":26,"fbjs/lib/createNodesFromMarkup":31,"fbjs/lib/emptyFunction":32,"fbjs/lib/getMarkupWrap":36,"fbjs/lib/invariant":40}],88:[function(require,module,exports){
+},{"_process":82,"fbjs/lib/ExecutionEnvironment":33,"fbjs/lib/createNodesFromMarkup":38,"fbjs/lib/emptyFunction":39,"fbjs/lib/getMarkupWrap":43,"fbjs/lib/invariant":47}],95:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -21580,7 +22944,7 @@ var keyOf = require('fbjs/lib/keyOf');
 var DefaultEventPluginOrder = [keyOf({ ResponderEventPlugin: null }), keyOf({ SimpleEventPlugin: null }), keyOf({ TapEventPlugin: null }), keyOf({ EnterLeaveEventPlugin: null }), keyOf({ ChangeEventPlugin: null }), keyOf({ SelectEventPlugin: null }), keyOf({ BeforeInputEventPlugin: null })];
 
 module.exports = DefaultEventPluginOrder;
-},{"fbjs/lib/keyOf":44}],89:[function(require,module,exports){
+},{"fbjs/lib/keyOf":51}],96:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -21705,7 +23069,7 @@ var EnterLeaveEventPlugin = {
 };
 
 module.exports = EnterLeaveEventPlugin;
-},{"./EventConstants":90,"./EventPropagators":94,"./ReactMount":141,"./SyntheticMouseEvent":172,"fbjs/lib/keyOf":44}],90:[function(require,module,exports){
+},{"./EventConstants":97,"./EventPropagators":101,"./ReactMount":148,"./SyntheticMouseEvent":179,"fbjs/lib/keyOf":51}],97:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -21798,7 +23162,7 @@ var EventConstants = {
 };
 
 module.exports = EventConstants;
-},{"fbjs/lib/keyMirror":43}],91:[function(require,module,exports){
+},{"fbjs/lib/keyMirror":50}],98:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -22080,7 +23444,7 @@ var EventPluginHub = {
 
 module.exports = EventPluginHub;
 }).call(this,require('_process'))
-},{"./EventPluginRegistry":92,"./EventPluginUtils":93,"./ReactErrorUtils":132,"./accumulateInto":178,"./forEachAccumulated":186,"_process":75,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],92:[function(require,module,exports){
+},{"./EventPluginRegistry":99,"./EventPluginUtils":100,"./ReactErrorUtils":139,"./accumulateInto":185,"./forEachAccumulated":193,"_process":82,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],99:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -22303,7 +23667,7 @@ var EventPluginRegistry = {
 
 module.exports = EventPluginRegistry;
 }).call(this,require('_process'))
-},{"_process":75,"fbjs/lib/invariant":40}],93:[function(require,module,exports){
+},{"_process":82,"fbjs/lib/invariant":47}],100:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -22508,7 +23872,7 @@ var EventPluginUtils = {
 
 module.exports = EventPluginUtils;
 }).call(this,require('_process'))
-},{"./EventConstants":90,"./ReactErrorUtils":132,"_process":75,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],94:[function(require,module,exports){
+},{"./EventConstants":97,"./ReactErrorUtils":139,"_process":82,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],101:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -22646,7 +24010,7 @@ var EventPropagators = {
 
 module.exports = EventPropagators;
 }).call(this,require('_process'))
-},{"./EventConstants":90,"./EventPluginHub":91,"./accumulateInto":178,"./forEachAccumulated":186,"_process":75,"fbjs/lib/warning":51}],95:[function(require,module,exports){
+},{"./EventConstants":97,"./EventPluginHub":98,"./accumulateInto":185,"./forEachAccumulated":193,"_process":82,"fbjs/lib/warning":58}],102:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -22742,7 +24106,7 @@ assign(FallbackCompositionState.prototype, {
 PooledClass.addPoolingTo(FallbackCompositionState);
 
 module.exports = FallbackCompositionState;
-},{"./Object.assign":98,"./PooledClass":99,"./getTextContentAccessor":193}],96:[function(require,module,exports){
+},{"./Object.assign":105,"./PooledClass":106,"./getTextContentAccessor":200}],103:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -22973,7 +24337,7 @@ var HTMLDOMPropertyConfig = {
 };
 
 module.exports = HTMLDOMPropertyConfig;
-},{"./DOMProperty":85,"fbjs/lib/ExecutionEnvironment":26}],97:[function(require,module,exports){
+},{"./DOMProperty":92,"fbjs/lib/ExecutionEnvironment":33}],104:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -23110,7 +24474,7 @@ var LinkedValueUtils = {
 
 module.exports = LinkedValueUtils;
 }).call(this,require('_process'))
-},{"./ReactPropTypeLocations":149,"./ReactPropTypes":150,"_process":75,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],98:[function(require,module,exports){
+},{"./ReactPropTypeLocations":156,"./ReactPropTypes":157,"_process":82,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],105:[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -23158,7 +24522,7 @@ function assign(target, sources) {
 }
 
 module.exports = assign;
-},{}],99:[function(require,module,exports){
+},{}],106:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -23280,7 +24644,7 @@ var PooledClass = {
 
 module.exports = PooledClass;
 }).call(this,require('_process'))
-},{"_process":75,"fbjs/lib/invariant":40}],100:[function(require,module,exports){
+},{"_process":82,"fbjs/lib/invariant":47}],107:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -23321,7 +24685,7 @@ React.__SECRET_DOM_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactDOM;
 React.__SECRET_DOM_SERVER_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactDOMServer;
 
 module.exports = React;
-},{"./Object.assign":98,"./ReactDOM":111,"./ReactDOMServer":121,"./ReactIsomorphic":139,"./deprecated":182}],101:[function(require,module,exports){
+},{"./Object.assign":105,"./ReactDOM":118,"./ReactDOMServer":128,"./ReactIsomorphic":146,"./deprecated":189}],108:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -23360,7 +24724,7 @@ var ReactBrowserComponentMixin = {
 
 module.exports = ReactBrowserComponentMixin;
 }).call(this,require('_process'))
-},{"./ReactInstanceMap":138,"./findDOMNode":184,"_process":75,"fbjs/lib/warning":51}],102:[function(require,module,exports){
+},{"./ReactInstanceMap":145,"./findDOMNode":191,"_process":82,"fbjs/lib/warning":58}],109:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -23685,7 +25049,7 @@ ReactPerf.measureMethods(ReactBrowserEventEmitter, 'ReactBrowserEventEmitter', {
 });
 
 module.exports = ReactBrowserEventEmitter;
-},{"./EventConstants":90,"./EventPluginHub":91,"./EventPluginRegistry":92,"./Object.assign":98,"./ReactEventEmitterMixin":133,"./ReactPerf":147,"./ViewportMetrics":177,"./isEventSupported":195}],103:[function(require,module,exports){
+},{"./EventConstants":97,"./EventPluginHub":98,"./EventPluginRegistry":99,"./Object.assign":105,"./ReactEventEmitterMixin":140,"./ReactPerf":154,"./ViewportMetrics":184,"./isEventSupported":202}],110:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -23810,7 +25174,7 @@ var ReactChildReconciler = {
 
 module.exports = ReactChildReconciler;
 }).call(this,require('_process'))
-},{"./ReactReconciler":152,"./instantiateReactComponent":194,"./shouldUpdateReactComponent":202,"./traverseAllChildren":203,"_process":75,"fbjs/lib/warning":51}],104:[function(require,module,exports){
+},{"./ReactReconciler":159,"./instantiateReactComponent":201,"./shouldUpdateReactComponent":209,"./traverseAllChildren":210,"_process":82,"fbjs/lib/warning":58}],111:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -23993,7 +25357,7 @@ var ReactChildren = {
 };
 
 module.exports = ReactChildren;
-},{"./PooledClass":99,"./ReactElement":128,"./traverseAllChildren":203,"fbjs/lib/emptyFunction":32}],105:[function(require,module,exports){
+},{"./PooledClass":106,"./ReactElement":135,"./traverseAllChildren":210,"fbjs/lib/emptyFunction":39}],112:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -24767,7 +26131,7 @@ var ReactClass = {
 
 module.exports = ReactClass;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"./ReactComponent":106,"./ReactElement":128,"./ReactNoopUpdateQueue":145,"./ReactPropTypeLocationNames":148,"./ReactPropTypeLocations":149,"_process":75,"fbjs/lib/emptyObject":33,"fbjs/lib/invariant":40,"fbjs/lib/keyMirror":43,"fbjs/lib/keyOf":44,"fbjs/lib/warning":51}],106:[function(require,module,exports){
+},{"./Object.assign":105,"./ReactComponent":113,"./ReactElement":135,"./ReactNoopUpdateQueue":152,"./ReactPropTypeLocationNames":155,"./ReactPropTypeLocations":156,"_process":82,"fbjs/lib/emptyObject":40,"fbjs/lib/invariant":47,"fbjs/lib/keyMirror":50,"fbjs/lib/keyOf":51,"fbjs/lib/warning":58}],113:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -24892,7 +26256,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactComponent;
 }).call(this,require('_process'))
-},{"./ReactNoopUpdateQueue":145,"./canDefineProperty":180,"_process":75,"fbjs/lib/emptyObject":33,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],107:[function(require,module,exports){
+},{"./ReactNoopUpdateQueue":152,"./canDefineProperty":187,"_process":82,"fbjs/lib/emptyObject":40,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],114:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -24934,7 +26298,7 @@ var ReactComponentBrowserEnvironment = {
 };
 
 module.exports = ReactComponentBrowserEnvironment;
-},{"./ReactDOMIDOperations":116,"./ReactMount":141}],108:[function(require,module,exports){
+},{"./ReactDOMIDOperations":123,"./ReactMount":148}],115:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -24988,7 +26352,7 @@ var ReactComponentEnvironment = {
 
 module.exports = ReactComponentEnvironment;
 }).call(this,require('_process'))
-},{"_process":75,"fbjs/lib/invariant":40}],109:[function(require,module,exports){
+},{"_process":82,"fbjs/lib/invariant":47}],116:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -25685,7 +27049,7 @@ var ReactCompositeComponent = {
 
 module.exports = ReactCompositeComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"./ReactComponentEnvironment":108,"./ReactCurrentOwner":110,"./ReactElement":128,"./ReactInstanceMap":138,"./ReactPerf":147,"./ReactPropTypeLocationNames":148,"./ReactPropTypeLocations":149,"./ReactReconciler":152,"./ReactUpdateQueue":158,"./shouldUpdateReactComponent":202,"_process":75,"fbjs/lib/emptyObject":33,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],110:[function(require,module,exports){
+},{"./Object.assign":105,"./ReactComponentEnvironment":115,"./ReactCurrentOwner":117,"./ReactElement":135,"./ReactInstanceMap":145,"./ReactPerf":154,"./ReactPropTypeLocationNames":155,"./ReactPropTypeLocations":156,"./ReactReconciler":159,"./ReactUpdateQueue":165,"./shouldUpdateReactComponent":209,"_process":82,"fbjs/lib/emptyObject":40,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],117:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -25716,7 +27080,7 @@ var ReactCurrentOwner = {
 };
 
 module.exports = ReactCurrentOwner;
-},{}],111:[function(require,module,exports){
+},{}],118:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -25811,7 +27175,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = React;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":110,"./ReactDOMTextComponent":122,"./ReactDefaultInjection":125,"./ReactInstanceHandles":137,"./ReactMount":141,"./ReactPerf":147,"./ReactReconciler":152,"./ReactUpdates":159,"./ReactVersion":160,"./findDOMNode":184,"./renderSubtreeIntoContainer":199,"_process":75,"fbjs/lib/ExecutionEnvironment":26,"fbjs/lib/warning":51}],112:[function(require,module,exports){
+},{"./ReactCurrentOwner":117,"./ReactDOMTextComponent":129,"./ReactDefaultInjection":132,"./ReactInstanceHandles":144,"./ReactMount":148,"./ReactPerf":154,"./ReactReconciler":159,"./ReactUpdates":166,"./ReactVersion":167,"./findDOMNode":191,"./renderSubtreeIntoContainer":206,"_process":82,"fbjs/lib/ExecutionEnvironment":33,"fbjs/lib/warning":58}],119:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -25862,7 +27226,7 @@ var ReactDOMButton = {
 };
 
 module.exports = ReactDOMButton;
-},{}],113:[function(require,module,exports){
+},{}],120:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -26827,7 +28191,7 @@ assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mix
 
 module.exports = ReactDOMComponent;
 }).call(this,require('_process'))
-},{"./AutoFocusUtils":77,"./CSSPropertyOperations":80,"./DOMProperty":85,"./DOMPropertyOperations":86,"./EventConstants":90,"./Object.assign":98,"./ReactBrowserEventEmitter":102,"./ReactComponentBrowserEnvironment":107,"./ReactDOMButton":112,"./ReactDOMInput":117,"./ReactDOMOption":118,"./ReactDOMSelect":119,"./ReactDOMTextarea":123,"./ReactMount":141,"./ReactMultiChild":142,"./ReactPerf":147,"./ReactUpdateQueue":158,"./canDefineProperty":180,"./escapeTextContentForBrowser":183,"./isEventSupported":195,"./setInnerHTML":200,"./setTextContent":201,"./validateDOMNesting":204,"_process":75,"fbjs/lib/invariant":40,"fbjs/lib/keyOf":44,"fbjs/lib/shallowEqual":49,"fbjs/lib/warning":51}],114:[function(require,module,exports){
+},{"./AutoFocusUtils":84,"./CSSPropertyOperations":87,"./DOMProperty":92,"./DOMPropertyOperations":93,"./EventConstants":97,"./Object.assign":105,"./ReactBrowserEventEmitter":109,"./ReactComponentBrowserEnvironment":114,"./ReactDOMButton":119,"./ReactDOMInput":124,"./ReactDOMOption":125,"./ReactDOMSelect":126,"./ReactDOMTextarea":130,"./ReactMount":148,"./ReactMultiChild":149,"./ReactPerf":154,"./ReactUpdateQueue":165,"./canDefineProperty":187,"./escapeTextContentForBrowser":190,"./isEventSupported":202,"./setInnerHTML":207,"./setTextContent":208,"./validateDOMNesting":211,"_process":82,"fbjs/lib/invariant":47,"fbjs/lib/keyOf":51,"fbjs/lib/shallowEqual":56,"fbjs/lib/warning":58}],121:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27007,7 +28371,7 @@ var ReactDOMFactories = mapObject({
 
 module.exports = ReactDOMFactories;
 }).call(this,require('_process'))
-},{"./ReactElement":128,"./ReactElementValidator":129,"_process":75,"fbjs/lib/mapObject":45}],115:[function(require,module,exports){
+},{"./ReactElement":135,"./ReactElementValidator":136,"_process":82,"fbjs/lib/mapObject":52}],122:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27026,7 +28390,7 @@ var ReactDOMFeatureFlags = {
 };
 
 module.exports = ReactDOMFeatureFlags;
-},{}],116:[function(require,module,exports){
+},{}],123:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27123,7 +28487,7 @@ ReactPerf.measureMethods(ReactDOMIDOperations, 'ReactDOMIDOperations', {
 
 module.exports = ReactDOMIDOperations;
 }).call(this,require('_process'))
-},{"./DOMChildrenOperations":84,"./DOMPropertyOperations":86,"./ReactMount":141,"./ReactPerf":147,"_process":75,"fbjs/lib/invariant":40}],117:[function(require,module,exports){
+},{"./DOMChildrenOperations":91,"./DOMPropertyOperations":93,"./ReactMount":148,"./ReactPerf":154,"_process":82,"fbjs/lib/invariant":47}],124:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27279,7 +28643,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMInput;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":97,"./Object.assign":98,"./ReactDOMIDOperations":116,"./ReactMount":141,"./ReactUpdates":159,"_process":75,"fbjs/lib/invariant":40}],118:[function(require,module,exports){
+},{"./LinkedValueUtils":104,"./Object.assign":105,"./ReactDOMIDOperations":123,"./ReactMount":148,"./ReactUpdates":166,"_process":82,"fbjs/lib/invariant":47}],125:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27371,7 +28735,7 @@ var ReactDOMOption = {
 
 module.exports = ReactDOMOption;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"./ReactChildren":104,"./ReactDOMSelect":119,"_process":75,"fbjs/lib/warning":51}],119:[function(require,module,exports){
+},{"./Object.assign":105,"./ReactChildren":111,"./ReactDOMSelect":126,"_process":82,"fbjs/lib/warning":58}],126:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27562,7 +28926,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMSelect;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":97,"./Object.assign":98,"./ReactMount":141,"./ReactUpdates":159,"_process":75,"fbjs/lib/warning":51}],120:[function(require,module,exports){
+},{"./LinkedValueUtils":104,"./Object.assign":105,"./ReactMount":148,"./ReactUpdates":166,"_process":82,"fbjs/lib/warning":58}],127:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27775,7 +29139,7 @@ var ReactDOMSelection = {
 };
 
 module.exports = ReactDOMSelection;
-},{"./getNodeForCharacterOffset":192,"./getTextContentAccessor":193,"fbjs/lib/ExecutionEnvironment":26}],121:[function(require,module,exports){
+},{"./getNodeForCharacterOffset":199,"./getTextContentAccessor":200,"fbjs/lib/ExecutionEnvironment":33}],128:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -27802,7 +29166,7 @@ var ReactDOMServer = {
 };
 
 module.exports = ReactDOMServer;
-},{"./ReactDefaultInjection":125,"./ReactServerRendering":156,"./ReactVersion":160}],122:[function(require,module,exports){
+},{"./ReactDefaultInjection":132,"./ReactServerRendering":163,"./ReactVersion":167}],129:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27932,7 +29296,7 @@ assign(ReactDOMTextComponent.prototype, {
 
 module.exports = ReactDOMTextComponent;
 }).call(this,require('_process'))
-},{"./DOMChildrenOperations":84,"./DOMPropertyOperations":86,"./Object.assign":98,"./ReactComponentBrowserEnvironment":107,"./ReactMount":141,"./escapeTextContentForBrowser":183,"./setTextContent":201,"./validateDOMNesting":204,"_process":75}],123:[function(require,module,exports){
+},{"./DOMChildrenOperations":91,"./DOMPropertyOperations":93,"./Object.assign":105,"./ReactComponentBrowserEnvironment":114,"./ReactMount":148,"./escapeTextContentForBrowser":190,"./setTextContent":208,"./validateDOMNesting":211,"_process":82}],130:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -28048,7 +29412,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMTextarea;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":97,"./Object.assign":98,"./ReactDOMIDOperations":116,"./ReactUpdates":159,"_process":75,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],124:[function(require,module,exports){
+},{"./LinkedValueUtils":104,"./Object.assign":105,"./ReactDOMIDOperations":123,"./ReactUpdates":166,"_process":82,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],131:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -28116,7 +29480,7 @@ var ReactDefaultBatchingStrategy = {
 };
 
 module.exports = ReactDefaultBatchingStrategy;
-},{"./Object.assign":98,"./ReactUpdates":159,"./Transaction":176,"fbjs/lib/emptyFunction":32}],125:[function(require,module,exports){
+},{"./Object.assign":105,"./ReactUpdates":166,"./Transaction":183,"fbjs/lib/emptyFunction":39}],132:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -28216,7 +29580,7 @@ module.exports = {
   inject: inject
 };
 }).call(this,require('_process'))
-},{"./BeforeInputEventPlugin":78,"./ChangeEventPlugin":82,"./ClientReactRootIndex":83,"./DefaultEventPluginOrder":88,"./EnterLeaveEventPlugin":89,"./HTMLDOMPropertyConfig":96,"./ReactBrowserComponentMixin":101,"./ReactComponentBrowserEnvironment":107,"./ReactDOMComponent":113,"./ReactDOMTextComponent":122,"./ReactDefaultBatchingStrategy":124,"./ReactDefaultPerf":126,"./ReactEventListener":134,"./ReactInjection":135,"./ReactInstanceHandles":137,"./ReactMount":141,"./ReactReconcileTransaction":151,"./SVGDOMPropertyConfig":161,"./SelectEventPlugin":162,"./ServerReactRootIndex":163,"./SimpleEventPlugin":164,"_process":75,"fbjs/lib/ExecutionEnvironment":26}],126:[function(require,module,exports){
+},{"./BeforeInputEventPlugin":85,"./ChangeEventPlugin":89,"./ClientReactRootIndex":90,"./DefaultEventPluginOrder":95,"./EnterLeaveEventPlugin":96,"./HTMLDOMPropertyConfig":103,"./ReactBrowserComponentMixin":108,"./ReactComponentBrowserEnvironment":114,"./ReactDOMComponent":120,"./ReactDOMTextComponent":129,"./ReactDefaultBatchingStrategy":131,"./ReactDefaultPerf":133,"./ReactEventListener":141,"./ReactInjection":142,"./ReactInstanceHandles":144,"./ReactMount":148,"./ReactReconcileTransaction":158,"./SVGDOMPropertyConfig":168,"./SelectEventPlugin":169,"./ServerReactRootIndex":170,"./SimpleEventPlugin":171,"_process":82,"fbjs/lib/ExecutionEnvironment":33}],133:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -28454,7 +29818,7 @@ var ReactDefaultPerf = {
 };
 
 module.exports = ReactDefaultPerf;
-},{"./DOMProperty":85,"./ReactDefaultPerfAnalysis":127,"./ReactMount":141,"./ReactPerf":147,"fbjs/lib/performanceNow":48}],127:[function(require,module,exports){
+},{"./DOMProperty":92,"./ReactDefaultPerfAnalysis":134,"./ReactMount":148,"./ReactPerf":154,"fbjs/lib/performanceNow":55}],134:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -28656,7 +30020,7 @@ var ReactDefaultPerfAnalysis = {
 };
 
 module.exports = ReactDefaultPerfAnalysis;
-},{"./Object.assign":98}],128:[function(require,module,exports){
+},{"./Object.assign":105}],135:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -28906,7 +30270,7 @@ ReactElement.isValidElement = function (object) {
 
 module.exports = ReactElement;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"./ReactCurrentOwner":110,"./canDefineProperty":180,"_process":75}],129:[function(require,module,exports){
+},{"./Object.assign":105,"./ReactCurrentOwner":117,"./canDefineProperty":187,"_process":82}],136:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -29190,7 +30554,7 @@ var ReactElementValidator = {
 
 module.exports = ReactElementValidator;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":110,"./ReactElement":128,"./ReactPropTypeLocationNames":148,"./ReactPropTypeLocations":149,"./canDefineProperty":180,"./getIteratorFn":191,"_process":75,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],130:[function(require,module,exports){
+},{"./ReactCurrentOwner":117,"./ReactElement":135,"./ReactPropTypeLocationNames":155,"./ReactPropTypeLocations":156,"./canDefineProperty":187,"./getIteratorFn":198,"_process":82,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],137:[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -29246,7 +30610,7 @@ assign(ReactEmptyComponent.prototype, {
 ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 
 module.exports = ReactEmptyComponent;
-},{"./Object.assign":98,"./ReactElement":128,"./ReactEmptyComponentRegistry":131,"./ReactReconciler":152}],131:[function(require,module,exports){
+},{"./Object.assign":105,"./ReactElement":135,"./ReactEmptyComponentRegistry":138,"./ReactReconciler":159}],138:[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -29295,7 +30659,7 @@ var ReactEmptyComponentRegistry = {
 };
 
 module.exports = ReactEmptyComponentRegistry;
-},{}],132:[function(require,module,exports){
+},{}],139:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -29375,7 +30739,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactErrorUtils;
 }).call(this,require('_process'))
-},{"_process":75}],133:[function(require,module,exports){
+},{"_process":82}],140:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -29414,7 +30778,7 @@ var ReactEventEmitterMixin = {
 };
 
 module.exports = ReactEventEmitterMixin;
-},{"./EventPluginHub":91}],134:[function(require,module,exports){
+},{"./EventPluginHub":98}],141:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -29626,7 +30990,7 @@ var ReactEventListener = {
 };
 
 module.exports = ReactEventListener;
-},{"./Object.assign":98,"./PooledClass":99,"./ReactInstanceHandles":137,"./ReactMount":141,"./ReactUpdates":159,"./getEventTarget":190,"fbjs/lib/EventListener":25,"fbjs/lib/ExecutionEnvironment":26,"fbjs/lib/getUnboundedScrollPosition":37}],135:[function(require,module,exports){
+},{"./Object.assign":105,"./PooledClass":106,"./ReactInstanceHandles":144,"./ReactMount":148,"./ReactUpdates":166,"./getEventTarget":197,"fbjs/lib/EventListener":32,"fbjs/lib/ExecutionEnvironment":33,"fbjs/lib/getUnboundedScrollPosition":44}],142:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -29665,7 +31029,7 @@ var ReactInjection = {
 };
 
 module.exports = ReactInjection;
-},{"./DOMProperty":85,"./EventPluginHub":91,"./ReactBrowserEventEmitter":102,"./ReactClass":105,"./ReactComponentEnvironment":108,"./ReactEmptyComponent":130,"./ReactNativeComponent":144,"./ReactPerf":147,"./ReactRootIndex":154,"./ReactUpdates":159}],136:[function(require,module,exports){
+},{"./DOMProperty":92,"./EventPluginHub":98,"./ReactBrowserEventEmitter":109,"./ReactClass":112,"./ReactComponentEnvironment":115,"./ReactEmptyComponent":137,"./ReactNativeComponent":151,"./ReactPerf":154,"./ReactRootIndex":161,"./ReactUpdates":166}],143:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -29790,7 +31154,7 @@ var ReactInputSelection = {
 };
 
 module.exports = ReactInputSelection;
-},{"./ReactDOMSelection":120,"fbjs/lib/containsNode":29,"fbjs/lib/focusNode":34,"fbjs/lib/getActiveElement":35}],137:[function(require,module,exports){
+},{"./ReactDOMSelection":127,"fbjs/lib/containsNode":36,"fbjs/lib/focusNode":41,"fbjs/lib/getActiveElement":42}],144:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -30095,7 +31459,7 @@ var ReactInstanceHandles = {
 
 module.exports = ReactInstanceHandles;
 }).call(this,require('_process'))
-},{"./ReactRootIndex":154,"_process":75,"fbjs/lib/invariant":40}],138:[function(require,module,exports){
+},{"./ReactRootIndex":161,"_process":82,"fbjs/lib/invariant":47}],145:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -30143,7 +31507,7 @@ var ReactInstanceMap = {
 };
 
 module.exports = ReactInstanceMap;
-},{}],139:[function(require,module,exports){
+},{}],146:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -30220,7 +31584,7 @@ var React = {
 
 module.exports = React;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"./ReactChildren":104,"./ReactClass":105,"./ReactComponent":106,"./ReactDOMFactories":114,"./ReactElement":128,"./ReactElementValidator":129,"./ReactPropTypes":150,"./ReactVersion":160,"./onlyChild":197,"_process":75}],140:[function(require,module,exports){
+},{"./Object.assign":105,"./ReactChildren":111,"./ReactClass":112,"./ReactComponent":113,"./ReactDOMFactories":121,"./ReactElement":135,"./ReactElementValidator":136,"./ReactPropTypes":157,"./ReactVersion":167,"./onlyChild":204,"_process":82}],147:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -30266,7 +31630,7 @@ var ReactMarkupChecksum = {
 };
 
 module.exports = ReactMarkupChecksum;
-},{"./adler32":179}],141:[function(require,module,exports){
+},{"./adler32":186}],148:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -31119,7 +32483,7 @@ ReactPerf.measureMethods(ReactMount, 'ReactMount', {
 
 module.exports = ReactMount;
 }).call(this,require('_process'))
-},{"./DOMProperty":85,"./Object.assign":98,"./ReactBrowserEventEmitter":102,"./ReactCurrentOwner":110,"./ReactDOMFeatureFlags":115,"./ReactElement":128,"./ReactEmptyComponentRegistry":131,"./ReactInstanceHandles":137,"./ReactInstanceMap":138,"./ReactMarkupChecksum":140,"./ReactPerf":147,"./ReactReconciler":152,"./ReactUpdateQueue":158,"./ReactUpdates":159,"./instantiateReactComponent":194,"./setInnerHTML":200,"./shouldUpdateReactComponent":202,"./validateDOMNesting":204,"_process":75,"fbjs/lib/containsNode":29,"fbjs/lib/emptyObject":33,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],142:[function(require,module,exports){
+},{"./DOMProperty":92,"./Object.assign":105,"./ReactBrowserEventEmitter":109,"./ReactCurrentOwner":117,"./ReactDOMFeatureFlags":122,"./ReactElement":135,"./ReactEmptyComponentRegistry":138,"./ReactInstanceHandles":144,"./ReactInstanceMap":145,"./ReactMarkupChecksum":147,"./ReactPerf":154,"./ReactReconciler":159,"./ReactUpdateQueue":165,"./ReactUpdates":166,"./instantiateReactComponent":201,"./setInnerHTML":207,"./shouldUpdateReactComponent":209,"./validateDOMNesting":211,"_process":82,"fbjs/lib/containsNode":36,"fbjs/lib/emptyObject":40,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],149:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -31618,7 +32982,7 @@ var ReactMultiChild = {
 
 module.exports = ReactMultiChild;
 }).call(this,require('_process'))
-},{"./ReactChildReconciler":103,"./ReactComponentEnvironment":108,"./ReactCurrentOwner":110,"./ReactMultiChildUpdateTypes":143,"./ReactReconciler":152,"./flattenChildren":185,"_process":75}],143:[function(require,module,exports){
+},{"./ReactChildReconciler":110,"./ReactComponentEnvironment":115,"./ReactCurrentOwner":117,"./ReactMultiChildUpdateTypes":150,"./ReactReconciler":159,"./flattenChildren":192,"_process":82}],150:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -31651,7 +33015,7 @@ var ReactMultiChildUpdateTypes = keyMirror({
 });
 
 module.exports = ReactMultiChildUpdateTypes;
-},{"fbjs/lib/keyMirror":43}],144:[function(require,module,exports){
+},{"fbjs/lib/keyMirror":50}],151:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -31748,7 +33112,7 @@ var ReactNativeComponent = {
 
 module.exports = ReactNativeComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"_process":75,"fbjs/lib/invariant":40}],145:[function(require,module,exports){
+},{"./Object.assign":105,"_process":82,"fbjs/lib/invariant":47}],152:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -31869,7 +33233,7 @@ var ReactNoopUpdateQueue = {
 
 module.exports = ReactNoopUpdateQueue;
 }).call(this,require('_process'))
-},{"_process":75,"fbjs/lib/warning":51}],146:[function(require,module,exports){
+},{"_process":82,"fbjs/lib/warning":58}],153:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -31963,7 +33327,7 @@ var ReactOwner = {
 
 module.exports = ReactOwner;
 }).call(this,require('_process'))
-},{"_process":75,"fbjs/lib/invariant":40}],147:[function(require,module,exports){
+},{"_process":82,"fbjs/lib/invariant":47}],154:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -32062,7 +33426,7 @@ function _noMeasure(objName, fnName, func) {
 
 module.exports = ReactPerf;
 }).call(this,require('_process'))
-},{"_process":75}],148:[function(require,module,exports){
+},{"_process":82}],155:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -32089,7 +33453,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactPropTypeLocationNames;
 }).call(this,require('_process'))
-},{"_process":75}],149:[function(require,module,exports){
+},{"_process":82}],156:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -32112,7 +33476,7 @@ var ReactPropTypeLocations = keyMirror({
 });
 
 module.exports = ReactPropTypeLocations;
-},{"fbjs/lib/keyMirror":43}],150:[function(require,module,exports){
+},{"fbjs/lib/keyMirror":50}],157:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -32469,7 +33833,7 @@ function getClassName(propValue) {
 }
 
 module.exports = ReactPropTypes;
-},{"./ReactElement":128,"./ReactPropTypeLocationNames":148,"./getIteratorFn":191,"fbjs/lib/emptyFunction":32}],151:[function(require,module,exports){
+},{"./ReactElement":135,"./ReactPropTypeLocationNames":155,"./getIteratorFn":198,"fbjs/lib/emptyFunction":39}],158:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -32621,7 +33985,7 @@ assign(ReactReconcileTransaction.prototype, Transaction.Mixin, Mixin);
 PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
-},{"./CallbackQueue":81,"./Object.assign":98,"./PooledClass":99,"./ReactBrowserEventEmitter":102,"./ReactDOMFeatureFlags":115,"./ReactInputSelection":136,"./Transaction":176}],152:[function(require,module,exports){
+},{"./CallbackQueue":88,"./Object.assign":105,"./PooledClass":106,"./ReactBrowserEventEmitter":109,"./ReactDOMFeatureFlags":122,"./ReactInputSelection":143,"./Transaction":183}],159:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -32729,7 +34093,7 @@ var ReactReconciler = {
 };
 
 module.exports = ReactReconciler;
-},{"./ReactRef":153}],153:[function(require,module,exports){
+},{"./ReactRef":160}],160:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -32808,7 +34172,7 @@ ReactRef.detachRefs = function (instance, element) {
 };
 
 module.exports = ReactRef;
-},{"./ReactOwner":146}],154:[function(require,module,exports){
+},{"./ReactOwner":153}],161:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -32838,7 +34202,7 @@ var ReactRootIndex = {
 };
 
 module.exports = ReactRootIndex;
-},{}],155:[function(require,module,exports){
+},{}],162:[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -32862,7 +34226,7 @@ var ReactServerBatchingStrategy = {
 };
 
 module.exports = ReactServerBatchingStrategy;
-},{}],156:[function(require,module,exports){
+},{}],163:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -32948,7 +34312,7 @@ module.exports = {
   renderToStaticMarkup: renderToStaticMarkup
 };
 }).call(this,require('_process'))
-},{"./ReactDefaultBatchingStrategy":124,"./ReactElement":128,"./ReactInstanceHandles":137,"./ReactMarkupChecksum":140,"./ReactServerBatchingStrategy":155,"./ReactServerRenderingTransaction":157,"./ReactUpdates":159,"./instantiateReactComponent":194,"_process":75,"fbjs/lib/emptyObject":33,"fbjs/lib/invariant":40}],157:[function(require,module,exports){
+},{"./ReactDefaultBatchingStrategy":131,"./ReactElement":135,"./ReactInstanceHandles":144,"./ReactMarkupChecksum":147,"./ReactServerBatchingStrategy":162,"./ReactServerRenderingTransaction":164,"./ReactUpdates":166,"./instantiateReactComponent":201,"_process":82,"fbjs/lib/emptyObject":40,"fbjs/lib/invariant":47}],164:[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -33036,7 +34400,7 @@ assign(ReactServerRenderingTransaction.prototype, Transaction.Mixin, Mixin);
 PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
-},{"./CallbackQueue":81,"./Object.assign":98,"./PooledClass":99,"./Transaction":176,"fbjs/lib/emptyFunction":32}],158:[function(require,module,exports){
+},{"./CallbackQueue":88,"./Object.assign":105,"./PooledClass":106,"./Transaction":183,"fbjs/lib/emptyFunction":39}],165:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -33296,7 +34660,7 @@ var ReactUpdateQueue = {
 
 module.exports = ReactUpdateQueue;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"./ReactCurrentOwner":110,"./ReactElement":128,"./ReactInstanceMap":138,"./ReactUpdates":159,"_process":75,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],159:[function(require,module,exports){
+},{"./Object.assign":105,"./ReactCurrentOwner":117,"./ReactElement":135,"./ReactInstanceMap":145,"./ReactUpdates":166,"_process":82,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],166:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -33522,7 +34886,7 @@ var ReactUpdates = {
 
 module.exports = ReactUpdates;
 }).call(this,require('_process'))
-},{"./CallbackQueue":81,"./Object.assign":98,"./PooledClass":99,"./ReactPerf":147,"./ReactReconciler":152,"./Transaction":176,"_process":75,"fbjs/lib/invariant":40}],160:[function(require,module,exports){
+},{"./CallbackQueue":88,"./Object.assign":105,"./PooledClass":106,"./ReactPerf":154,"./ReactReconciler":159,"./Transaction":183,"_process":82,"fbjs/lib/invariant":47}],167:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -33537,7 +34901,7 @@ module.exports = ReactUpdates;
 'use strict';
 
 module.exports = '0.14.8';
-},{}],161:[function(require,module,exports){
+},{}],168:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -33665,7 +35029,7 @@ var SVGDOMPropertyConfig = {
 };
 
 module.exports = SVGDOMPropertyConfig;
-},{"./DOMProperty":85}],162:[function(require,module,exports){
+},{"./DOMProperty":92}],169:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -33867,7 +35231,7 @@ var SelectEventPlugin = {
 };
 
 module.exports = SelectEventPlugin;
-},{"./EventConstants":90,"./EventPropagators":94,"./ReactInputSelection":136,"./SyntheticEvent":168,"./isTextInputElement":196,"fbjs/lib/ExecutionEnvironment":26,"fbjs/lib/getActiveElement":35,"fbjs/lib/keyOf":44,"fbjs/lib/shallowEqual":49}],163:[function(require,module,exports){
+},{"./EventConstants":97,"./EventPropagators":101,"./ReactInputSelection":143,"./SyntheticEvent":175,"./isTextInputElement":203,"fbjs/lib/ExecutionEnvironment":33,"fbjs/lib/getActiveElement":42,"fbjs/lib/keyOf":51,"fbjs/lib/shallowEqual":56}],170:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -33897,7 +35261,7 @@ var ServerReactRootIndex = {
 };
 
 module.exports = ServerReactRootIndex;
-},{}],164:[function(require,module,exports){
+},{}],171:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -34487,7 +35851,7 @@ var SimpleEventPlugin = {
 
 module.exports = SimpleEventPlugin;
 }).call(this,require('_process'))
-},{"./EventConstants":90,"./EventPropagators":94,"./ReactMount":141,"./SyntheticClipboardEvent":165,"./SyntheticDragEvent":167,"./SyntheticEvent":168,"./SyntheticFocusEvent":169,"./SyntheticKeyboardEvent":171,"./SyntheticMouseEvent":172,"./SyntheticTouchEvent":173,"./SyntheticUIEvent":174,"./SyntheticWheelEvent":175,"./getEventCharCode":187,"_process":75,"fbjs/lib/EventListener":25,"fbjs/lib/emptyFunction":32,"fbjs/lib/invariant":40,"fbjs/lib/keyOf":44}],165:[function(require,module,exports){
+},{"./EventConstants":97,"./EventPropagators":101,"./ReactMount":148,"./SyntheticClipboardEvent":172,"./SyntheticDragEvent":174,"./SyntheticEvent":175,"./SyntheticFocusEvent":176,"./SyntheticKeyboardEvent":178,"./SyntheticMouseEvent":179,"./SyntheticTouchEvent":180,"./SyntheticUIEvent":181,"./SyntheticWheelEvent":182,"./getEventCharCode":194,"_process":82,"fbjs/lib/EventListener":32,"fbjs/lib/emptyFunction":39,"fbjs/lib/invariant":47,"fbjs/lib/keyOf":51}],172:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -34527,7 +35891,7 @@ function SyntheticClipboardEvent(dispatchConfig, dispatchMarker, nativeEvent, na
 SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 
 module.exports = SyntheticClipboardEvent;
-},{"./SyntheticEvent":168}],166:[function(require,module,exports){
+},{"./SyntheticEvent":175}],173:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -34565,7 +35929,7 @@ function SyntheticCompositionEvent(dispatchConfig, dispatchMarker, nativeEvent, 
 SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface);
 
 module.exports = SyntheticCompositionEvent;
-},{"./SyntheticEvent":168}],167:[function(require,module,exports){
+},{"./SyntheticEvent":175}],174:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -34603,7 +35967,7 @@ function SyntheticDragEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeE
 SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 
 module.exports = SyntheticDragEvent;
-},{"./SyntheticMouseEvent":172}],168:[function(require,module,exports){
+},{"./SyntheticMouseEvent":179}],175:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -34786,7 +36150,7 @@ PooledClass.addPoolingTo(SyntheticEvent, PooledClass.fourArgumentPooler);
 
 module.exports = SyntheticEvent;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"./PooledClass":99,"_process":75,"fbjs/lib/emptyFunction":32,"fbjs/lib/warning":51}],169:[function(require,module,exports){
+},{"./Object.assign":105,"./PooledClass":106,"_process":82,"fbjs/lib/emptyFunction":39,"fbjs/lib/warning":58}],176:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -34824,7 +36188,7 @@ function SyntheticFocusEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 
 module.exports = SyntheticFocusEvent;
-},{"./SyntheticUIEvent":174}],170:[function(require,module,exports){
+},{"./SyntheticUIEvent":181}],177:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -34863,7 +36227,7 @@ function SyntheticInputEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 
 module.exports = SyntheticInputEvent;
-},{"./SyntheticEvent":168}],171:[function(require,module,exports){
+},{"./SyntheticEvent":175}],178:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -34949,7 +36313,7 @@ function SyntheticKeyboardEvent(dispatchConfig, dispatchMarker, nativeEvent, nat
 SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 
 module.exports = SyntheticKeyboardEvent;
-},{"./SyntheticUIEvent":174,"./getEventCharCode":187,"./getEventKey":188,"./getEventModifierState":189}],172:[function(require,module,exports){
+},{"./SyntheticUIEvent":181,"./getEventCharCode":194,"./getEventKey":195,"./getEventModifierState":196}],179:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35023,7 +36387,7 @@ function SyntheticMouseEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
 module.exports = SyntheticMouseEvent;
-},{"./SyntheticUIEvent":174,"./ViewportMetrics":177,"./getEventModifierState":189}],173:[function(require,module,exports){
+},{"./SyntheticUIEvent":181,"./ViewportMetrics":184,"./getEventModifierState":196}],180:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35070,7 +36434,7 @@ function SyntheticTouchEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
 module.exports = SyntheticTouchEvent;
-},{"./SyntheticUIEvent":174,"./getEventModifierState":189}],174:[function(require,module,exports){
+},{"./SyntheticUIEvent":181,"./getEventModifierState":196}],181:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35131,7 +36495,7 @@ function SyntheticUIEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEve
 SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 module.exports = SyntheticUIEvent;
-},{"./SyntheticEvent":168,"./getEventTarget":190}],175:[function(require,module,exports){
+},{"./SyntheticEvent":175,"./getEventTarget":197}],182:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35187,7 +36551,7 @@ function SyntheticWheelEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 
 module.exports = SyntheticWheelEvent;
-},{"./SyntheticMouseEvent":172}],176:[function(require,module,exports){
+},{"./SyntheticMouseEvent":179}],183:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -35421,7 +36785,7 @@ var Transaction = {
 
 module.exports = Transaction;
 }).call(this,require('_process'))
-},{"_process":75,"fbjs/lib/invariant":40}],177:[function(require,module,exports){
+},{"_process":82,"fbjs/lib/invariant":47}],184:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35449,7 +36813,7 @@ var ViewportMetrics = {
 };
 
 module.exports = ViewportMetrics;
-},{}],178:[function(require,module,exports){
+},{}],185:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -35511,7 +36875,7 @@ function accumulateInto(current, next) {
 
 module.exports = accumulateInto;
 }).call(this,require('_process'))
-},{"_process":75,"fbjs/lib/invariant":40}],179:[function(require,module,exports){
+},{"_process":82,"fbjs/lib/invariant":47}],186:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35554,7 +36918,7 @@ function adler32(data) {
 }
 
 module.exports = adler32;
-},{}],180:[function(require,module,exports){
+},{}],187:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -35581,7 +36945,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = canDefineProperty;
 }).call(this,require('_process'))
-},{"_process":75}],181:[function(require,module,exports){
+},{"_process":82}],188:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35637,7 +37001,7 @@ function dangerousStyleValue(name, value) {
 }
 
 module.exports = dangerousStyleValue;
-},{"./CSSProperty":79}],182:[function(require,module,exports){
+},{"./CSSProperty":86}],189:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -35688,7 +37052,7 @@ function deprecated(fnName, newModule, newPackage, ctx, fn) {
 
 module.exports = deprecated;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"_process":75,"fbjs/lib/warning":51}],183:[function(require,module,exports){
+},{"./Object.assign":105,"_process":82,"fbjs/lib/warning":58}],190:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35727,7 +37091,7 @@ function escapeTextContentForBrowser(text) {
 }
 
 module.exports = escapeTextContentForBrowser;
-},{}],184:[function(require,module,exports){
+},{}],191:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -35779,7 +37143,7 @@ function findDOMNode(componentOrElement) {
 
 module.exports = findDOMNode;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":110,"./ReactInstanceMap":138,"./ReactMount":141,"_process":75,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],185:[function(require,module,exports){
+},{"./ReactCurrentOwner":117,"./ReactInstanceMap":145,"./ReactMount":148,"_process":82,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],192:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -35830,7 +37194,7 @@ function flattenChildren(children) {
 
 module.exports = flattenChildren;
 }).call(this,require('_process'))
-},{"./traverseAllChildren":203,"_process":75,"fbjs/lib/warning":51}],186:[function(require,module,exports){
+},{"./traverseAllChildren":210,"_process":82,"fbjs/lib/warning":58}],193:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35860,7 +37224,7 @@ var forEachAccumulated = function (arr, cb, scope) {
 };
 
 module.exports = forEachAccumulated;
-},{}],187:[function(require,module,exports){
+},{}],194:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -35911,7 +37275,7 @@ function getEventCharCode(nativeEvent) {
 }
 
 module.exports = getEventCharCode;
-},{}],188:[function(require,module,exports){
+},{}],195:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36015,7 +37379,7 @@ function getEventKey(nativeEvent) {
 }
 
 module.exports = getEventKey;
-},{"./getEventCharCode":187}],189:[function(require,module,exports){
+},{"./getEventCharCode":194}],196:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36060,7 +37424,7 @@ function getEventModifierState(nativeEvent) {
 }
 
 module.exports = getEventModifierState;
-},{}],190:[function(require,module,exports){
+},{}],197:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36090,7 +37454,7 @@ function getEventTarget(nativeEvent) {
 }
 
 module.exports = getEventTarget;
-},{}],191:[function(require,module,exports){
+},{}],198:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36131,7 +37495,7 @@ function getIteratorFn(maybeIterable) {
 }
 
 module.exports = getIteratorFn;
-},{}],192:[function(require,module,exports){
+},{}],199:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36205,7 +37569,7 @@ function getNodeForCharacterOffset(root, offset) {
 }
 
 module.exports = getNodeForCharacterOffset;
-},{}],193:[function(require,module,exports){
+},{}],200:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36239,7 +37603,7 @@ function getTextContentAccessor() {
 }
 
 module.exports = getTextContentAccessor;
-},{"fbjs/lib/ExecutionEnvironment":26}],194:[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":33}],201:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -36354,7 +37718,7 @@ function instantiateReactComponent(node) {
 
 module.exports = instantiateReactComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"./ReactCompositeComponent":109,"./ReactEmptyComponent":130,"./ReactNativeComponent":144,"_process":75,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],195:[function(require,module,exports){
+},{"./Object.assign":105,"./ReactCompositeComponent":116,"./ReactEmptyComponent":137,"./ReactNativeComponent":151,"_process":82,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],202:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36415,7 +37779,7 @@ function isEventSupported(eventNameSuffix, capture) {
 }
 
 module.exports = isEventSupported;
-},{"fbjs/lib/ExecutionEnvironment":26}],196:[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":33}],203:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36456,7 +37820,7 @@ function isTextInputElement(elem) {
 }
 
 module.exports = isTextInputElement;
-},{}],197:[function(require,module,exports){
+},{}],204:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -36492,7 +37856,7 @@ function onlyChild(children) {
 
 module.exports = onlyChild;
 }).call(this,require('_process'))
-},{"./ReactElement":128,"_process":75,"fbjs/lib/invariant":40}],198:[function(require,module,exports){
+},{"./ReactElement":135,"_process":82,"fbjs/lib/invariant":47}],205:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36519,7 +37883,7 @@ function quoteAttributeValueForBrowser(value) {
 }
 
 module.exports = quoteAttributeValueForBrowser;
-},{"./escapeTextContentForBrowser":183}],199:[function(require,module,exports){
+},{"./escapeTextContentForBrowser":190}],206:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36536,7 +37900,7 @@ module.exports = quoteAttributeValueForBrowser;
 var ReactMount = require('./ReactMount');
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
-},{"./ReactMount":141}],200:[function(require,module,exports){
+},{"./ReactMount":148}],207:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36627,7 +37991,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setInnerHTML;
-},{"fbjs/lib/ExecutionEnvironment":26}],201:[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":33}],208:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36668,7 +38032,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setTextContent;
-},{"./escapeTextContentForBrowser":183,"./setInnerHTML":200,"fbjs/lib/ExecutionEnvironment":26}],202:[function(require,module,exports){
+},{"./escapeTextContentForBrowser":190,"./setInnerHTML":207,"fbjs/lib/ExecutionEnvironment":33}],209:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -36712,7 +38076,7 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 }
 
 module.exports = shouldUpdateReactComponent;
-},{}],203:[function(require,module,exports){
+},{}],210:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -36904,7 +38268,7 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":110,"./ReactElement":128,"./ReactInstanceHandles":137,"./getIteratorFn":191,"_process":75,"fbjs/lib/invariant":40,"fbjs/lib/warning":51}],204:[function(require,module,exports){
+},{"./ReactCurrentOwner":117,"./ReactElement":135,"./ReactInstanceHandles":144,"./getIteratorFn":198,"_process":82,"fbjs/lib/invariant":47,"fbjs/lib/warning":58}],211:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -37270,9 +38634,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = validateDOMNesting;
 }).call(this,require('_process'))
-},{"./Object.assign":98,"_process":75,"fbjs/lib/emptyFunction":32,"fbjs/lib/warning":51}],205:[function(require,module,exports){
+},{"./Object.assign":105,"_process":82,"fbjs/lib/emptyFunction":39,"fbjs/lib/warning":58}],212:[function(require,module,exports){
 'use strict';
 
 module.exports = require('./lib/React');
 
-},{"./lib/React":100}]},{},[24]);
+},{"./lib/React":107}]},{},[31]);

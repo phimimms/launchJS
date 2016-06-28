@@ -12,7 +12,7 @@ export default class PrototypesSlide extends Slide {
     constructor(props) {
         super(props);
 
-        this.sectionName = 'Types';
+        this.sectionName = 'Types & Grammar';
         this.slideTitle = 'Object Prototypes';
     }
 
@@ -38,7 +38,7 @@ export default class PrototypesSlide extends Slide {
                                 <span>//  arr: [1] ---> Array.prototype ---> Object.prototype --> null</span>
                             </p>
                         </div>
-                        <li><code>Object.create()</code> creates a new object that's prototype-linked to the specified object</li>
+                        <li><code>Object.create()</code> returns a new object that's prototype-linked to the specified object</li>
                         <div className="code-block small">
                             <p>
                                 <span>var obj1 = &#123; a: 1 &#125;;</span>

@@ -42,11 +42,9 @@ export default class LetLoopsSlide extends Slide {
                         <p>
                             <span>(function foo(elements) &#123;</span>
                             <span>    for (let i = 0, n = elements.length; i &#60; n; i++) &#123;</span>
-                            <span>        var num = Math.floor(Math.random() * 10);</span>
-                            <span> </span>
                             <span>        elements[i]</span>
                             <span>            .addEventListener('click', function() &#123;</span>
-                            <span>                console.log(num);</span>
+                            <span>                console.log(i);</span>
                             <span>        &#125;);</span>
                             <span>    &#125;</span>
                             <span>&#125;)(document.getElementsByClassName('clickable'));</span>

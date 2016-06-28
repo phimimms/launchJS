@@ -272,22 +272,12 @@ var ClosureSlide = function (_Slide) {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    '    var num = 0;'
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    ' '
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
                                     '    function bar() {'
                                 ),
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    '        console.log(num);'
+                                    '        console.log(i);'
                                 ),
                                 _react2.default.createElement(
                                     'span',
@@ -303,16 +293,6 @@ var ClosureSlide = function (_Slide) {
                                     'span',
                                     null,
                                     '    for (var i = 0, n = elements.length; i < n; i++) {'
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    '        num = Math.floor(Math.random() * 10);'
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    ' '
                                 ),
                                 _react2.default.createElement(
                                     'span',
@@ -338,7 +318,7 @@ var ClosureSlide = function (_Slide) {
                         ),
                         _react2.default.createElement(
                             'a',
-                            { href: 'https://jsfiddle.net/r2gx6ctv/30/', target: '_blank' },
+                            { href: 'https://jsfiddle.net/r2gx6ctv/31/', target: '_blank' },
                             'Live Example'
                         )
                     ),
@@ -370,16 +350,6 @@ var ClosureSlide = function (_Slide) {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    '    var num = 0;'
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    ' '
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
                                     '    function bar(n) {'
                                 ),
                                 _react2.default.createElement(
@@ -405,22 +375,12 @@ var ClosureSlide = function (_Slide) {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    '        num = Math.floor(Math.random() * 10);'
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    ' '
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
                                     '        elements[i]'
                                 ),
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    '            .addEventListener(\'click\', bar.bind(this, num));'
+                                    '            .addEventListener(\'click\', bar.bind(this, i));'
                                 ),
                                 _react2.default.createElement(
                                     'span',
@@ -436,7 +396,7 @@ var ClosureSlide = function (_Slide) {
                         ),
                         _react2.default.createElement(
                             'a',
-                            { href: 'https://jsfiddle.net/r2gx6ctv/29/', target: '_blank' },
+                            { href: 'https://jsfiddle.net/r2gx6ctv/32/', target: '_blank' },
                             'Live Example'
                         )
                     )
@@ -1369,16 +1329,6 @@ var LetLoopsSlide = function (_Slide) {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    '        var num = Math.floor(Math.random() * 10);'
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
-                                    ' '
-                                ),
-                                _react2.default.createElement(
-                                    'span',
-                                    null,
                                     '        elements[i]'
                                 ),
                                 _react2.default.createElement(
@@ -1389,7 +1339,7 @@ var LetLoopsSlide = function (_Slide) {
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    '                console.log(num);'
+                                    '                console.log(i);'
                                 ),
                                 _react2.default.createElement(
                                     'span',

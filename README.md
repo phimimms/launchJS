@@ -3,7 +3,7 @@
 ## Summary
 A presentation on Javascript execution behavior.
 
-Covers the following topics:
+**Covers the following topics:**
 * Scope
 * Hoisting
 * Function Declarations vs Function Expressions

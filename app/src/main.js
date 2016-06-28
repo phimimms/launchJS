@@ -35,6 +35,7 @@ import GetterSettersSlide from './js/slides/typesAndGrammar/gettersSetters';
 import PrototypesSlide from './js/slides/typesAndGrammar/prototypes';
 import PropertyAccessorsSlide from './js/slides/typesAndGrammar/propertyAccessors';
 import TypesIQSlide from './js/slides/typesAndGrammar/typesIQ';
+import PromisesIntroSlide from './js/slides/promises/promisesIntro';
 
 $(document).ready(function() {
     var slidesContainer = document.getElementById('slides');
@@ -75,7 +76,9 @@ $(document).ready(function() {
         GetterSettersSlide,
         PrototypesSlide,
         PropertyAccessorsSlide,
-        TypesIQSlide
+        TypesIQSlide/*,
+        PromisesIntroSlide
+        */
     ];
 
     for (let i = 0, n = Slides.length; i < n; i++) {

@@ -37,7 +37,7 @@ export default class LetLoopsSlide extends Slide {
                             <span>console.log(i); // Reference Error!</span>
                         </p>
                     </div>
-                    <li>Creates closure per iteration</li>
+                    <li>Creates closure <strong>per</strong> iteration</li>
                     <div className="code-block small">
                         <p>
                             <span>(function foo(elements) &#123;</span>

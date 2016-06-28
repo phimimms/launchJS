@@ -42,15 +42,15 @@ export default class TypesIQSlide extends Slide {
                             <span>var obj2 = Object.create(obj1);</span>
                             <span>obj2.a = 1;</span>
                             <span> </span>
-                            <span>console.log(obj1.a);</span>
-                            <span>console.log(obj2.a);</span>
+                            <span>console.log(obj1.a); // ?</span>
+                            <span>console.log(obj2.a); // ?</span>
                             <span> </span>
                             <span>var obj3 = Object.create(obj2);</span>
                             <span> </span>
                             <span>obj2.a = 2;</span>
                             <span> </span>
-                            <span>console.log(obj2.a);</span>
-                            <span>console.log(obj3.a);</span>
+                            <span>console.log(obj2.a); // ?</span>
+                            <span>console.log(obj3.a); // ?</span>
                         </p>
                     </div>
                 </div>

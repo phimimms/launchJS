@@ -26,6 +26,10 @@ import NewBindingSlide from './js/slides/this/newBinding';
 import ThisIQSlide from './js/slides/this/thisIQ';
 import ES6ThisSlide from './js/slides/this/es6This';
 import TypesIntroSlide from './js/slides/typesAndGrammar/typesIntro';
+import CoercionSlide from './js/slides/typesAndGrammar/coercion';
+import FalsySlide from './js/slides/typesAndGrammar/falsy';
+import EqualityOperatorsSlide from './js/slides/typesAndGrammar/equalityOperators';
+import ConditionalOperatorsSlide from './js/slides/typesAndGrammar/conditionalOperators';
 import PassingParametersSlide from './js/slides/typesAndGrammar/passingParameters';
 import GetterSettersSlide from './js/slides/typesAndGrammar/gettersSetters';
 import PrototypesSlide from './js/slides/typesAndGrammar/prototypes';
@@ -63,6 +67,10 @@ $(document).ready(function() {
         ThisIQSlide,
         ES6ThisSlide,
         TypesIntroSlide,
+        CoercionSlide,
+        FalsySlide,
+        EqualityOperatorsSlide,
+        ConditionalOperatorsSlide,
         PassingParametersSlide,
         GetterSettersSlide,
         PrototypesSlide,

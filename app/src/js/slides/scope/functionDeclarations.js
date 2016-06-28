@@ -38,7 +38,7 @@ export default class FunctionDeclarationsSlide extends Slide {
                                 </p>
                             </div>
                         <li>Function declarations are <strong>always</strong> hoisted</li>
-                        <div className="code-block small">
+                        <div className="code-block smaller">
                             <p>
                                 <span>function foo() &#123;</span>
                                 <span>    function bar() &#123;</span>

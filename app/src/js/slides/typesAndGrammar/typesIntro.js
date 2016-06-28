@@ -36,6 +36,7 @@ export default class TypesIntroSlide extends Slide {
                                 <span>a = ['Now I am an array'];</span>
                             </p>
                         </div>
+                        <ul><li>Variables don't have types -- <em>values</em> have types</li></ul>
                         <li>Primitive Types:</li>
                             <ul>
                                 <li><code>Boolean</code>, <code>Null</code>, <code>Undefined</code>, <code>Number</code>, <code>String</code></li>

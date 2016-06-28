@@ -1,6 +1,6 @@
 # launchJS
 
-### Summary
+## Summary
 A presentation on Javascript execution behavior.
 
 Covers the following topics:
@@ -22,14 +22,14 @@ Covers the following topics:
 * Object Prototypes
 * Property Accessors
 
-#### What's to Come?
+### What's to Come?
 * Promises
 * ES6
 
-### Usage
+## Usage
 To view the presentation, open `app\index.html` in your browser.
 
-### Development
+## Development
 Make sure to run `npm install` in the root directory of your local branch prior to making changes to the source files.
 Then run `gulp` to watch the source files and update the distribution files as changes are saved.
 

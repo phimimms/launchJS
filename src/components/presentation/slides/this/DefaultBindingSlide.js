@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -25,20 +26,20 @@ class DefaultBindingSlide extends React.Component {
                         <li>Invoked with a plain, undecorated function reference</li>
                         <div className="code-block small">
                             <p>
-                                <span>var foo = function bar() &#123;</span>
-                                <span>    console.log(this); // global object (window)</span>
-                                <span>&#125;;</span>
+                                <span>var foo = function bar() {char.LBRACE}</span>
+                                <span>    console.log(this); {char.COMMENT} global object (window)</span>
+                                <span>{char.RBRACE};</span>
                                 <span> </span>
                                 <span>foo();</span>
                             </p>
                         </div>
-                        <li>If the contents of the invoked function include <code>'use strict';</code>, then <code>this</code> will be <code>undefined</code></li>
+                        <li>If the contents of the invoked function include <code>{char.SQUOTE}use strict{char.SQUOTE};</code>, then <code>this</code> will be <code>undefined</code></li>
                         <div className="code-block small">
                             <p>
-                                <span>var foo = function bar() &#123;</span>
-                                <span>    'use strict';</span>
-                                <span>    console.log(this); // undefined</span>
-                                <span>&#125;;</span>
+                                <span>var foo = function bar() {char.LBRACE}</span>
+                                <span>    {char.SQUOTE}use strict{char.SQUOTE};</span>
+                                <span>    console.log(this); {char.COMMENT} undefined</span>
+                                <span>{char.RBRACE};</span>
                                 <span> </span>
                                 <span>foo();</span>
                             </p>

@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -23,17 +24,17 @@ class GettersSettersSlide extends React.Component {
                 <div className="slide-content">
                     <div className="code-block small">
                         <p>
-                            <span>var obj = &#123;</span>
-                            <span>    get a() &#123;</span>
+                            <span>var obj = {char.LBRACE}</span>
+                            <span>    get a() {char.LBRACE}</span>
                             <span>        return this.b;</span>
-                            <span>    &#125;,</span>
-                            <span>    set a(num) &#123;</span>
+                            <span>    {char.RBRACE},</span>
+                            <span>    set a(num) {char.LBRACE}</span>
                             <span>        this.b = num;</span>
-                            <span>    &#125;</span>
-                            <span>&#125;;</span>
+                            <span>    {char.RBRACE}</span>
+                            <span>{char.RBRACE};</span>
                             <span> </span>
                             <span>obj.a = 1;</span>
-                            <span>console.log(obj.a); // 1</span>
+                            <span>console.log(obj.a); {char.COMMENT} 1</span>
                         </p>
                     </div>
                     <ul>

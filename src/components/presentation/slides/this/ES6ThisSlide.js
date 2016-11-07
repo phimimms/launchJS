@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -26,18 +27,18 @@ class ES6ThisSlide extends React.Component {
                         <ul><li>Cannot be overridden (even with <code>new</code> binding)</li></ul>
                         <div className="code-block small">
                             <p>
-                                <span>var obj1 = &#123; &#125;;</span>
-                                <span>var obj2 = &#123; &#125;;</span>
+                                <span>var obj1 = {char.LBRACE} {char.RBRACE};</span>
+                                <span>var obj2 = {char.LBRACE} {char.RBRACE};</span>
                                 <span> </span>
-                                <span>(function() &#123;</span>
-                                <span>    console.log(this); // obj1;</span>
+                                <span>(function() {char.LBRACE}</span>
+                                <span>    console.log(this); {char.COMMENT} obj1;</span>
                                 <span> </span>
-                                <span>    var foo = () => &#123;</span>
-                                <span>        console.log(this); // obj1;</span>
-                                <span>    &#125;.bind(obj2);</span>
+                                <span>    var foo = () => {char.LBRACE}</span>
+                                <span>        console.log(this); {char.COMMENT} obj1;</span>
+                                <span>    {char.RBRACE}.bind(obj2);</span>
                                 <span> </span>
                                 <span>    foo.call(obj2);</span>
-                                <span>&#125;.bind(obj1))();</span>
+                                <span>{char.RBRACE}.bind(obj1))();</span>
                             </p>
                         </div>
                     </ul>

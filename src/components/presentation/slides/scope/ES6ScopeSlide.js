@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -26,15 +27,15 @@ class ES6ScopeSlide extends React.Component {
                         <div className="code-block small">
                             <p>
                                 <span></span>
-                                <span>(function() &#123;</span>
-                                <span>    let a = 1; // No different than 'var'</span>
-                                <span>    if (a) &#123;</span>
+                                <span>(function() {char.LBRACE}</span>
+                                <span>    let a = 1; {char.COMMENT} No different than {char.SQUOTE}var{char.SQUOTE}</span>
+                                <span>    if (a) {char.LBRACE}</span>
                                 <span>        let b = 2;</span>
-                                <span>    &#125;</span>
-                                <span>    console.log(b); // Reference Error!</span>
+                                <span>    {char.RBRACE}</span>
+                                <span>    console.log(b); {char.COMMENT} Reference Error!</span>
                                 <span>    const c = 3;</span>
-                                <span>    c++; // Type Error!</span>
-                                <span>&#125;)();</span>
+                                <span>    c++; {char.COMMENT} Type Error!</span>
+                                <span>{char.RBRACE})();</span>
                             </p>
                         </div>
                     </ul>

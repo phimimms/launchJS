@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -26,9 +27,9 @@ class EqualityOperatorsSlide extends React.Component {
                         <ul><li><strong>Never</strong> use <code>==</code> against a boolean value</li></ul>
                         <div className="code-block smaller">
                             <p>
-                                <span>var a = '42';</span>
-                                <span>if (a == true) &#123; // Does not reach here &#125;</span>
-                                <span>if (a) &#123; // Does reach here &#125;</span>
+                                <span>var a = {char.SQUOTE}42{char.SQUOTE};</span>
+                                <span>if (a == true) {char.LBRACE} {char.COMMENT} Does not reach here {char.RBRACE}</span>
+                                <span>if (a) {char.LBRACE} {char.COMMENT} Does reach here {char.RBRACE}</span>
                             </p>
                         </div>
                         <li>Objects (including arrays and functions) are <em>only</em> equal <strong>if</strong> they are both references to the <em>exact same value</em></li>

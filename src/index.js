@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 import App from './components/App';
 import configureStore from './store/configureStore';
-import fullpage from 'fullpage.js';
+import fullpage from 'fullpage.js'; // eslint-disable-line no-unused-vars
 import $ from 'jquery';
 import Ps from 'perfect-scrollbar';
 import React from 'react';

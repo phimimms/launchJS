@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -23,15 +24,15 @@ class ScopeIQSlide extends React.Component {
                 <div className="slide-content">
                     <div className="code-block">
                         <p>
-                            <span>(function foo() &#123;</span>
-                            <span>    function bar() &#123;</span>
+                            <span>(function foo() {char.LBRACE}</span>
+                            <span>    function bar() {char.LBRACE}</span>
                             <span>        i = 3;</span>
-                            <span>    &#125;</span>
+                            <span>    {char.RBRACE}</span>
                             <span> </span>
-                            <span>    for (var i = 0; i &#60; 5; i++) &#123;</span>
+                            <span>    for (var i = 0; i {char.LESSTHAN} 5; i++) {char.LBRACE}</span>
                             <span>        bar();</span>
-                            <span>    &#125;</span>
-                            <span>&#125;)();</span>
+                            <span>    {char.RBRACE}</span>
+                            <span>{char.RBRACE})();</span>
                         </p>
                     </div>
                 </div>

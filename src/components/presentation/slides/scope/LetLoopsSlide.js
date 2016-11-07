@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -17,33 +18,31 @@ class LetLoopsSlide extends React.Component {
     }
 
     render() {
-        const rsquote = '&#8217';
-
         return (
             <div className="slide-container novetta-bg">
                 <div className="slide-header">Let Loops</div>
                 <div className="slide-content">
                 <ul>
-                    <li>The identifier is scoped to the loop{rsquote}s braces</li>
+                    <li>The identifier is scoped to the loop{char.RSQUOTE}s braces</li>
                     <div className="code-block small">
                         <p>
-                            <span>for (let i = 0; i &#60; 5; i++) &#123;</span>
+                            <span>for (let i = 0; i {char.LESSTHAN} 5; i++) {char.LBRACE}</span>
                             <span>    ...</span>
-                            <span>&#125;</span>
-                            <span>console.log(i); // Reference Error!</span>
+                            <span>{char.RBRACE}</span>
+                            <span>console.log(i); {char.COMMENT} Reference Error!</span>
                         </p>
                     </div>
                     <li>Creates closure <strong>per</strong> iteration</li>
                     <div className="code-block small">
                         <p>
-                            <span>(function foo(elements) &#123;</span>
-                            <span>    for (let i = 0, n = elements.length; i &#60; n; i++) &#123;</span>
+                            <span>(function foo(elements) {char.LBRACE}</span>
+                            <span>    for (let i = 0, n = elements.length; i {char.COMMENT} n; i++) {char.LBRACE}</span>
                             <span>        elements[i]</span>
-                            <span>            .addEventListener('click', function() &#123;</span>
+                            <span>            .addEventListener({char.SQUOTE}click{char.SQUOTE}, function() {char.LBRACE}</span>
                             <span>                console.log(i);</span>
-                            <span>        &#125;);</span>
-                            <span>    &#125;</span>
-                            <span>&#125;)(document.getElementsByClassName('clickable'));</span>
+                            <span>        {char.RBRACE});</span>
+                            <span>    {char.RBRACE}</span>
+                            <span>{char.RBRACE})(document.getElementsByClassName({char.SQUOTE}clickable{char.SQUOTE}));</span>
                         </p>
                     </div>
                 </ul>

@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -17,8 +18,6 @@ class PrototypesSlide extends React.Component {
     }
 
     render() {
-        const rsquote = '&#8217';
-
         return (
             <div className="slide-container novetta-bg">
                 <div className="slide-header">Object Prototypes</div>
@@ -28,18 +27,18 @@ class PrototypesSlide extends React.Component {
                         <li>All compound types have the <code>Object</code> prototype in their prototype chain</li>
                         <div className="code-block small">
                             <p>
-                                <span>var obj = &#123; a: 1 &#125;;</span>
-                                <span>//  obj: &#123; a: 1 &#125; ---> Object.prototype ---> null</span>
+                                <span>var obj = {char.LBRACE} a: 1 {char.RBRACE};</span>
+                                <span>{char.COMMENT}  obj: {char.LBRACE} a: 1 {char.RBRACE} ---> Object.prototype ---> null</span>
                                 <span>var arr = [1];</span>
-                                <span>//  arr: [1] ---> Array.prototype ---> Object.prototype --> null</span>
+                                <span>{char.COMMENT}  arr: [1] ---> Array.prototype ---> Object.prototype --> null</span>
                             </p>
                         </div>
-                        <li><code>Object.create()</code> returns a new object that{rsquote}s prototype-linked to the specified object</li>
+                        <li><code>Object.create()</code> returns a new object that{char.RSQUOTE}s prototype-linked to the specified object</li>
                         <div className="code-block small">
                             <p>
-                                <span>var obj1 = &#123; a: 1 &#125;;</span>
+                                <span>var obj1 = {char.LBRACE} a: 1 {char.RBRACE};</span>
                                 <span>var obj2 = Object.create(obj1);</span>
-                                <span>console.log(obj2.a); // 1</span>
+                                <span>console.log(obj2.a); {char.COMMENT} 1</span>
                             </p>
                         </div>
                     </ul>

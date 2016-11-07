@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -25,11 +26,11 @@ class ImplicitBindingSlide extends React.Component {
                         <li>Invoked with an object for a function reference</li>
                         <div className="code-block">
                             <p>
-                                <span>var foo = &#123;</span>
-                                <span>    bar: function() &#123;</span>
-                                <span>        console.log(this); // foo</span>
-                                <span>    &#125;</span>
-                                <span>&#125;;</span>
+                                <span>var foo = {char.LBRACE}</span>
+                                <span>    bar: function() {char.LBRACE}</span>
+                                <span>        console.log(this); {char.COMMENT} foo</span>
+                                <span>    {char.RBRACE}</span>
+                                <span>{char.RBRACE};</span>
                                 <span> </span>
                                 <span>foo.bar();</span>
                             </p>

@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -26,25 +27,25 @@ class FunctionDeclarationsSlide extends React.Component {
                             <ul><li><code>function</code> keyword is the first term of the statement</li></ul>
                             <div className="code-block smaller">
                                 <p>
-                                    <span>function foo() &#123;</span>
+                                    <span>function foo() {char.LBRACE}</span>
                                     <span>    ...</span>
-                                    <span>&#125;</span>
+                                    <span>{char.RBRACE}</span>
                                 </p>
                             </div>
                         <li>Function declarations are <strong>always</strong> hoisted</li>
                         <div className="code-block smaller">
                             <p>
-                                <span>function foo() &#123;</span>
-                                <span>    function bar() &#123;</span>
+                                <span>function foo() {char.LBRACE}</span>
+                                <span>    function bar() {char.LBRACE}</span>
                                 <span>        return 1;</span>
-                                <span>    &#125;</span>
+                                <span>    {char.RBRACE}</span>
                                 <span>    return bar();</span>
                                 <span> </span>
-                                <span>    function bar() &#123;</span>
+                                <span>    function bar() {char.LBRACE}</span>
                                 <span>        return 2;</span>
-                                <span>    &#125;</span>
-                                <span>&#125;</span>
-                                <span>console.log(foo()); // 2</span>
+                                <span>    {char.RBRACE}</span>
+                                <span>{char.RBRACE}</span>
+                                <span>console.log(foo()); {char.COMMENT} 2</span>
                             </p>
                         </div>
                     </ul>

@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -36,9 +37,9 @@ class UndeclaredVariablesSlide extends React.Component {
                             <h1>Left-Hand Side</h1>
                             <div className="code-block small">
                                 <p>
-                                    <span>function foo() &#123;</span>
+                                    <span>function foo() {char.LBRACE}</span>
                                     <span>    a = 1;</span>
-                                    <span>&#125;</span>
+                                    <span>{char.RBRACE}</span>
                                 </p>
                             </div>
                             <ul>
@@ -49,9 +50,9 @@ class UndeclaredVariablesSlide extends React.Component {
                             <h1>Right-Hand Side</h1>
                             <div className="code-block small">
                                 <p>
-                                    <span>function bar() &#123;</span>
+                                    <span>function bar() {char.LBRACE}</span>
                                     <span>    var a = 2 * b;</span>
-                                    <span>&#125;</span>
+                                    <span>{char.RBRACE}</span>
                                 </p>
                             </div>
                             <ul>

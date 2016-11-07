@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -25,10 +26,10 @@ class ExplicitBindingSlide extends React.Component {
                         <li>Invoked with a specified object as the context via <code>call()</code> or <code>apply()</code></li>
                         <div className="code-block smaller">
                             <p>
-                                <span>var obj1 = &#123; &#125;;</span>
-                                <span>var foo = function() &#123;</span>
-                                <span>    console.log(this); // obj1</span>
-                                <span>&#125;;</span>
+                                <span>var obj1 = {char.LBRACE} {char.RBRACE};</span>
+                                <span>var foo = function() {char.LBRACE}</span>
+                                <span>    console.log(this); {char.COMMENT} obj1</span>
+                                <span>{char.RBRACE};</span>
                                 <span> </span>
                                 <span>foo.call(obj1);</span>
                             </p>
@@ -36,11 +37,11 @@ class ExplicitBindingSlide extends React.Component {
                         <li>Hard Biding: <code>bind()</code> returns a new function that calls the original function with the specified object as the <code>this</code> context</li>
                         <div className="code-block smaller">
                             <p>
-                                <span>var obj1 = &#123; &#125;;</span>
+                                <span>var obj1 = {char.LBRACE} {char.RBRACE};</span>
                                 <span> </span>
-                                <span>var foo = function() &#123;</span>
-                                <span>    console.log(this); // obj1</span>
-                                <span>&#125;.bind(obj1);</span>
+                                <span>var foo = function() {char.LBRACE}</span>
+                                <span>    console.log(this); {char.COMMENT} obj1</span>
+                                <span>{char.RBRACE}.bind(obj1);</span>
                                 <span> </span>
                                 <span>foo();</span>
                             </p>

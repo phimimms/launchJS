@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -23,25 +24,25 @@ class ThisIQSlide extends React.Component {
                 <div className="slide-content">
                     <div className="code-block smaller">
                         <p>
-                            <span>(function foo() &#123;</span>
-                            <span>    function bar() &#123;</span>
+                            <span>(function foo() {char.LBRACE}</span>
+                            <span>    function bar() {char.LBRACE}</span>
                             <span>        this.a = this.a ? 4 : 3;</span>
-                            <span>    &#125;</span>
+                            <span>    {char.RBRACE}</span>
                             <span> </span>
-                            <span>    var obj1 = &#123;</span>
+                            <span>    var obj1 = {char.LBRACE}</span>
                             <span>        a: 1,</span>
                             <span>        bar: bar</span>
-                            <span>    &#125;;</span>
+                            <span>    {char.RBRACE};</span>
                             <span> </span>
-                            <span>    var obj2 = &#123;</span>
+                            <span>    var obj2 = {char.LBRACE}</span>
                             <span>        a: 0,</span>
                             <span>        bar: bar.bind(obj1)</span>
-                            <span>    &#125;;</span>
+                            <span>    {char.RBRACE};</span>
                             <span> </span>
                             <span>    obj2.bar.call(obj2);</span>
-                            <span>    console.log(obj1.a); // ?</span>
-                            <span>    console.log(obj2.a); // ?</span>
-                            <span>&#125;)();</span>
+                            <span>    console.log(obj1.a); {char.COMMENT} ?</span>
+                            <span>    console.log(obj2.a); {char.COMMENT} ?</span>
+                            <span>{char.RBRACE})();</span>
                         </p>
                     </div>
                 </div>

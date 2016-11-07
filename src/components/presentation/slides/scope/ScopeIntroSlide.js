@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -37,17 +38,17 @@ class ScopeIntroSlide extends React.Component {
                             <div className="code-block small">
                                 <p>
                                     <span>var a = 2;</span>
-                                    <span>function foo() &#123;</span>
+                                    <span>function foo() {char.LBRACE}</span>
                                     <span>    var a = 0;</span>
-                                    <span>    var bar = function() &#123;</span>
+                                    <span>    var bar = function() {char.LBRACE}</span>
                                     <span>        a += 1;</span>
-                                    <span>    &#125;;</span>
+                                    <span>    {char.RBRACE};</span>
                                     <span> </span>
                                     <span>    bar();</span>
-                                    <span>    console.log(a); // 1</span>
-                                    <span>&#125;</span>
+                                    <span>    console.log(a); {char.COMMENT} 1</span>
+                                    <span>{char.RBRACE}</span>
                                     <span>foo();</span>
-                                    <span>console.log(a); // 2</span>
+                                    <span>console.log(a); {char.COMMENT} 2</span>
                                 </p>
                             </div>
                         </div>

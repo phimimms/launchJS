@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -25,25 +26,25 @@ class PassingParametersSlide extends React.Component {
                         <li>Primitive types are <strong>always</strong> passed by <em>value</em></li>
                         <div className="code-block smaller">
                             <p>
-                                <span>var foo = function(p) &#123;</span>
+                                <span>var foo = function(p) {char.LBRACE}</span>
                                 <span>    p += 1;</span>
-                                <span>&#125;;</span>
+                                <span>{char.RBRACE};</span>
                                 <span> </span>
                                 <span>var a = 0;</span>
                                 <span>foo(a);</span>
-                                <span>console.log(a); // 0</span>
+                                <span>console.log(a); {char.COMMENT} 0</span>
                             </p>
                         </div>
                         <li>Compound types are <strong>always</strong> passed by <em>reference</em></li>
                         <div className="code-block smaller">
                             <p>
-                                <span>var foo = function(p) &#123;</span>
+                                <span>var foo = function(p) {char.LBRACE}</span>
                                 <span>    p.push(1);</span>
-                                <span>&#125;;</span>
+                                <span>{char.RBRACE};</span>
                                 <span> </span>
                                 <span>var a = [0];</span>
                                 <span>foo(a);</span>
-                                <span>console.log(a); // [0, 1]</span>
+                                <span>console.log(a); {char.COMMENT} [0, 1]</span>
                             </p>
                         </div>
                     </ul>

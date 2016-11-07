@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -29,15 +30,15 @@ class NewBindingSlide extends React.Component {
                         </ul>
                         <div className="code-block small">
                             <p>
-                                <span>var Foo = function() &#123;</span>
+                                <span>var Foo = function() {char.LBRACE}</span>
                                 <span>    this.a = 1;</span>
-                                <span>&#125;;</span>
+                                <span>{char.RBRACE};</span>
                                 <span> </span>
                                 <span>var obj = new Foo();</span>
-                                <span>console.log(obj); // &#123; a: 1 &#125;</span>
+                                <span>console.log(obj); {char.COMMENT} {char.LBRACE} a: 1 {char.RBRACE}</span>
                             </p>
                         </div>
-                        <li><strong>Binding Priority:</strong> <code>new</code> &#62; hard &#62; explicit &#62; implicit &#62; default</li>
+                        <li><strong>Binding Priority:</strong> <code>new</code> {char.GREATERTHAN} hard {char.GREATERTHAN} explicit {char.GREATERTHAN} implicit {char.GREATERTHAN} default</li>
                     </ul>
                 </div>
             </div>

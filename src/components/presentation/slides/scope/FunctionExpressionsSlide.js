@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -26,26 +27,26 @@ class FunctionExpressionsSlide extends React.Component {
                         <li>Named Function Expression</li>
                             <div className="code-block smaller">
                                 <p>
-                                    <span>var foo = function bar() &#123;</span>
+                                    <span>var foo = function bar() {char.LBRACE}</span>
                                     <span>    ...</span>
-                                    <span>&#125;;</span>
+                                    <span>{char.RBRACE};</span>
                                 </p>
                             </div>
                         <li>Anonymous Function Expression</li>
                             <div className="code-block smaller">
                                 <p>
-                                    <span>someElement.addEventListener('click', function() &#123;</span>
+                                    <span>someElement.addEventListener({char.SQUOTE}click{char.SQUOTE}, function() {char.LBRACE}</span>
                                     <span>    ...</span>
-                                    <span>&#125;);</span>
+                                    <span>{char.RBRACE});</span>
                                 </p>
                             </div>
                             <ul><li>Cannot support recursion</li></ul>
                         <li>Immediately Invoked Function Expression</li>
                             <div className="code-block smaller">
                                 <p>
-                                    <span>(function foo() &#123;</span>
+                                    <span>(function foo() {char.LBRACE}</span>
                                     <span>    ...</span>
-                                    <span>&#125;)();</span>
+                                    <span>{char.RBRACE})();</span>
                                 </p>
                             </div>
                             <ul><li>Does <strong>not</strong> occupy the local scope</li></ul>

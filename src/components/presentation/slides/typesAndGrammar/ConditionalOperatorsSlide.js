@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -32,12 +33,12 @@ class ConditionalOperatorsSlide extends React.Component {
                         <li><code>if</code> coerces its expression to a boolean value</li>
                         <div className="code-block smaller">
                             <p>
-                                <span>var a = [] && 0;    // 0</span>
-                                <span>var b = null || &#123;&#125;; // &#123;&#125;</span>
+                                <span>var a = [] && 0;    {char.COMMENT} 0</span>
+                                <span>var b = null || {char.LBRACE}{char.RBRACE}; {char.COMMENT} {char.LBRACE}{char.RBRACE}</span>
                                 <span> </span>
-                                <span>if (b || a) &#123;</span>
-                                <span>    // b || a --> &#123;&#125; --> Reaches here</span>
-                                <span>&#125;</span>
+                                <span>if (b || a) {char.LBRACE}</span>
+                                <span>    {char.COMMENT} b || a --> {char.LBRACE}{char.RBRACE} --> Reaches here</span>
+                                <span>{char.RBRACE}</span>
                             </p>
                         </div>
                     </ul>

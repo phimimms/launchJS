@@ -1,3 +1,4 @@
+import char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
 import sections from '../../../../dictionary/sections';
 
@@ -27,25 +28,25 @@ class CoercionSlide extends React.Component {
                         <li>String to Number:</li>
                             <div className="code-block smaller">
                                 <p>
-                                    <span>var a = '15';</span>
-                                    <span>console.log(+a);     // 15</span>
-                                    <span>console.log(+a + 1); // 16</span>
+                                    <span>var a = {char.SQUOTE}15{char.SQUOTE};</span>
+                                    <span>console.log(+a);     {char.COMMENT} 15</span>
+                                    <span>console.log(+a + 1); {char.COMMENT} 16</span>
                                 </p>
                             </div>
                         <li>Number to String:</li>
                             <div className="code-block smaller">
                                 <p>
                                     <span>var a = 15;</span>
-                                    <span>console.log(a + '');  // '15'</span>
-                                    <span>console.log(a + '1'); // '151'</span>
+                                    <span>console.log(a + {char.SQUOTE}{char.SQUOTE});  {char.COMMENT} {char.SQUOTE}15{char.SQUOTE}</span>
+                                    <span>console.log(a + {char.SQUOTE}1{char.SQUOTE}); {char.COMMENT} {char.SQUOTE}151{char.SQUOTE}</span>
                                 </p>
                             </div>
                         <li>Anything to Boolean:</li>
                             <div className="code-block smaller">
                                 <p>
                                     <span>var a = 15;</span>
-                                    <span>console.log(!a);  // false</span>
-                                    <span>console.log(!!a); // true</span>
+                                    <span>console.log(!a);  {char.COMMENT} false</span>
+                                    <span>console.log(!!a); {char.COMMENT} true</span>
                                 </p>
                             </div>
                     </ul>

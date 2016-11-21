@@ -24,7 +24,7 @@ import GettersSettersSlide from '../components/presentation/slides/typesAndGramm
 import PrototypesSlide from '../components/presentation/slides/typesAndGrammar/PrototypesSlide';
 import PropertyAccessorsSlide from '../components/presentation/slides/typesAndGrammar/PropertyAccessorsSlide';
 import TypesIQSlide from '../components/presentation/slides/typesAndGrammar/TypesIQSlide';
-import PromisesIntroSlide from '../components/presentation/slides/promises/PromisesIntroSlide';
+//import PromisesIntroSlide from '../components/presentation/slides/promises/PromisesIntroSlide';
 
 /**
  * Gets a list of the slide components in their presentation order
@@ -58,8 +58,9 @@ export function getSlides() {
             GettersSettersSlide,
             PrototypesSlide,
             PropertyAccessorsSlide,
-            TypesIQSlide,
+            TypesIQSlide/*,
             PromisesIntroSlide
+            */
         ]);
     });
 }

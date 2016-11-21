@@ -1,6 +1,9 @@
 import React, { PropTypes } from 'react';
 import SectionList from './SectionList';
 
+/**
+ * Represents the sections in the presentation
+ */
 const TableOfContents = ({slides}) => {
     const sections = generateSections(slides);
 
@@ -19,6 +22,11 @@ TableOfContents.propTypes = {
     slides: PropTypes.array.isRequired
 };
 
+/**
+ * Organizes the slides into their respective section
+ * @param  {Array} slides The Slide Components in their presentation order
+ * @return {Array} The list of sections, each containing their Slide Components
+ */
 function generateSections(slides) {
     let sections = [];
     let index = -1;

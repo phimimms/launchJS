@@ -1,6 +1,9 @@
 import $ from 'jquery';
 import React, { PropTypes } from 'react';
 
+/**
+ * Represents a Slide in the Toolbar
+ */
 const SlideListing = ({slide}) => {
     const selectSlide = () => {
         if ($.fn.fullpage) {

@@ -13,10 +13,18 @@ class ConditionalOperatorsSlide extends React.Component {
         return 'Conditional Operators';
     }
 
+    /**
+     * Instantiates the Component
+     * @param {Object}  props   The initial values of instance properties
+     */
     constructor(props) {
         super(props);
     }
 
+    /**
+     * Generates the HTML representation of the Component
+     * @return {Element}
+     */
     render() {
         return (
             <div className="slide-container novetta-bg">

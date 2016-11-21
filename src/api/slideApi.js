@@ -26,6 +26,10 @@ import PropertyAccessorsSlide from '../components/presentation/slides/typesAndGr
 import TypesIQSlide from '../components/presentation/slides/typesAndGrammar/TypesIQSlide';
 import PromisesIntroSlide from '../components/presentation/slides/promises/PromisesIntroSlide';
 
+/**
+ * Gets a list of the slide components in their presentation order
+ * @return {Promise}
+ */
 export function getSlides() {
     return new Promise((fulfill) => {
         fulfill([

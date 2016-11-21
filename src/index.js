@@ -9,8 +9,10 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { loadSlides } from './actions/slideActions';
 
+/* Creates Redux Store */
 const store = configureStore();
 
+/* Load Slides */
 store.dispatch(loadSlides()).then(() => {
     $(document).ready(() => {
         /* Initializes fullpage */

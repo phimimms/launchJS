@@ -1,3 +1,4 @@
+/* The HTML Character Codes for Symbols */
 export default {
     /* Braces */
     LBRACE: String.fromCharCode(123),

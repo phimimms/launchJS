@@ -1,5 +1,8 @@
 import React, { PropTypes } from 'react';
 
+/**
+ * Generates the Slides in the Presentation
+ */
 const PresentationSlide = ({slides}) => {
     return (
         <div id="fullpage" className="unselectable">

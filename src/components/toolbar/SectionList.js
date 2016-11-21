@@ -1,6 +1,9 @@
 import React, { PropTypes } from 'react';
 import SlideListing from './SlideListing';
 
+/**
+ * Represents a Slide Section in the Toolbar
+ */
 const SectionList = ({section}) => {
     return (
         <div>

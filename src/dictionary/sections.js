@@ -1,3 +1,4 @@
+/* The Slide Sections */
 export default {
     INTRODUCTION: {
         id: 'intro',

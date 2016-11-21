@@ -1,8 +1,10 @@
-import * as types from '../actions/actionTypes';
+import * as actionTypes from '../actions/actionTypes';
+import initialState from './initialState';
 
-export default function slideReducer(state = [], action) {
+/* The Slide Reducer */
+export default function slideReducer(state = initialState.slides, action) {
     switch (action.type) {
-        case types.LOAD_SLIDES:
+        case actionTypes.LOAD_SLIDES:
             return action.slides;
         default:
             return state;

@@ -1,0 +1,90 @@
+.slide-container {
+    background-color:           #F5F5F7;
+    font-size:                  3em;
+    height:                     100%;
+    width:                      100%;
+
+    h1 {
+        font-size:              1em;
+        margin:                 0.5em;
+    }
+
+    h2 {
+        font-size:              0.75em;
+        margin:                 0.25em;
+    }
+
+    a {
+        color:                  #939598;
+        display:                inline-block;
+        font-size:              0.75em;
+    }
+
+    ul {
+        clear:                  both;
+        float:                  left;
+        margin:                 0;
+
+        li {
+            clear:              both;
+            float:              left;
+            padding:            0.25em 0;
+        }
+    }
+
+    code {
+        background-color:       rgba(0, 0, 0, 0.1);
+        font-family:            Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    }
+
+    .code-block {
+        background-color:       rgba(0, 0, 0, 0.1);
+        clear:                  both;
+        float:                  left;
+        font-family:            Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        margin:                 0.5em;
+        overflow:               hidden;
+
+        p {
+            margin:             0;
+            overflow:           hidden;
+            padding:            0.5em;
+
+            span {
+                display:        block;
+                white-space:    pre;
+            }
+        }
+    }
+
+    .slide-content {
+        clear:                  both;
+        float:                  left;
+        padding-left:           0.5em;
+        padding-top:            0.5em;
+    }
+
+    .slide-header {
+        border-bottom:          solid #3D88C6;
+        clear:                  both;
+        color:                  #939598;
+        float:                  left;
+        font-size:              2em;
+        font-weight:            bold;
+        height:                 1.25em;
+        padding:                0 0.5em;
+        width:                  100%;
+    }
+
+    .small {
+        font-size:          75%;
+    }
+
+    .smaller {
+        font-size:          50%;
+    }
+
+    .smallest {
+        font-size:          45%;
+    }
+}

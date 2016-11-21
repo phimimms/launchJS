@@ -26,12 +26,9 @@ A presentation on Javascript execution behavior.
 * Promises
 * ES6
 
-## Usage
-To view the presentation, open `app\index.html` in your browser.
-
 ## Development
 Make sure to run `npm install` in the root directory of your local branch prior to making changes to the source files.
 
-Then run `gulp` to watch the source files and update the distribution files as changes are saved.
+Then run `npm start` to watch the source files and update the distribution files as changes are saved.
 
 Feel free to issue pull requests to the `develop` branch :)

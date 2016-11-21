@@ -1,0 +1,17 @@
+@import '../../node_modules/fullpage.js/dist/jquery.fullPage.min.css';
+@import '../../node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min';
+
+@import './colors.scss';
+@import './demos.scss';
+@import './layout.scss';
+@import './slides.scss';
+@import './state.scss';
+
+html, body {
+    cursor:             default;
+    font-family:        'Helvetica', 'Arial', sans-serif;
+}
+
+.fp-controlArrow {
+    display:            none !important;
+}

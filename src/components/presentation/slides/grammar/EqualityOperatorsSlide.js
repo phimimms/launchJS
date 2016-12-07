@@ -1,16 +1,14 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../dictionary/sections';
+import * as slides from '../../../../dictionary/slides';
 
 class EqualityOperatorsSlide extends React.Component {
-    get id() {
-        return 'equality-operators';
-    }
     get section() {
-        return sections.TYPES_AND_GRAMMAR;
+        return sections.GRAMMAR;
     }
-    get title() {
-        return 'Equality Operators';
+    get slide() {
+        return slides.GRAMMAR_EQUALITY_OPERATORS;
     }
 
     /**
@@ -28,7 +26,7 @@ class EqualityOperatorsSlide extends React.Component {
     render() {
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Equality Operators</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <ul>
                         <li><code>==</code> allows coercion in the comparison and <code>===</code> disallows coercion</li>

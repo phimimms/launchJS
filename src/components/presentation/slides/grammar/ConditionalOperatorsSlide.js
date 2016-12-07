@@ -1,16 +1,14 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../dictionary/sections';
+import * as slides from '../../../../dictionary/slides';
 
 class ConditionalOperatorsSlide extends React.Component {
-    get id() {
-        return 'conditional-operators';
-    }
     get section() {
-        return sections.TYPES_AND_GRAMMAR;
+        return sections.GRAMMAR;
     }
-    get title() {
-        return 'Conditional Operators';
+    get slide() {
+        return slides.GRAMMAR_CONDITIONAL_OPERATORS;
     }
 
     /**
@@ -28,7 +26,7 @@ class ConditionalOperatorsSlide extends React.Component {
     render() {
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Conditional Operators</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <ul>
                         <li>The value produced by <code>&&</code> or <code>||</code> will <strong>always</strong> be <em>one</em> of the two operand expressions</li>

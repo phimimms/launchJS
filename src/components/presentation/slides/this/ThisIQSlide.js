@@ -1,16 +1,14 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../dictionary/sections';
+import * as slides from '../../../../dictionary/slides';
 
 class ThisIQSlide extends React.Component {
-    get id() {
-        return 'this-iq';
-    }
     get section() {
         return sections.THIS;
     }
-    get title() {
-        return 'Interview Question';
+    get slide() {
+        return slides.THIS_IQ;
     }
 
     /**
@@ -28,7 +26,7 @@ class ThisIQSlide extends React.Component {
     render() {
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Interview Question</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <div className="code-block smaller">
                         <p>

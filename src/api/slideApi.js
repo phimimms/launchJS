@@ -14,16 +14,16 @@ import ExplicitBindingSlide from '../components/presentation/slides/this/Explici
 import NewBindingSlide from '../components/presentation/slides/this/NewBindingSlide';
 import ThisIQSlide from '../components/presentation/slides/this/ThisIQSlide';
 import ES6ThisSlide from '../components/presentation/slides/this/ES6ThisSlide';
-import TypesIntroSlide from '../components/presentation/slides/typesAndGrammar/TypesIntroSlide';
-import CoercionSlide from '../components/presentation/slides/typesAndGrammar/CoercionSlide';
-import FalsySlide from '../components/presentation/slides/typesAndGrammar/FalsySlide';
-import EqualityOperatorsSlide from '../components/presentation/slides/typesAndGrammar/EqualityOperatorsSlide';
-import ConditionalOperatorsSlide from '../components/presentation/slides/typesAndGrammar/ConditionalOperatorsSlide';
-import PassingParametersSlide from '../components/presentation/slides/typesAndGrammar/PassingParametersSlide';
-import GettersSettersSlide from '../components/presentation/slides/typesAndGrammar/GettersSettersSlide';
-import PrototypesSlide from '../components/presentation/slides/typesAndGrammar/PrototypesSlide';
-import PropertyAccessorsSlide from '../components/presentation/slides/typesAndGrammar/PropertyAccessorsSlide';
-import TypesIQSlide from '../components/presentation/slides/typesAndGrammar/TypesIQSlide';
+import GrammarIntroSlide from '../components/presentation/slides/grammar/GrammarIntroSlide';
+import CoercionSlide from '../components/presentation/slides/grammar/CoercionSlide';
+import FalsySlide from '../components/presentation/slides/grammar/FalsySlide';
+import EqualityOperatorsSlide from '../components/presentation/slides/grammar/EqualityOperatorsSlide';
+import ConditionalOperatorsSlide from '../components/presentation/slides/grammar/ConditionalOperatorsSlide';
+import PassingParametersSlide from '../components/presentation/slides/grammar/PassingParametersSlide';
+import GettersSettersSlide from '../components/presentation/slides/grammar/GettersSettersSlide';
+import PrototypesSlide from '../components/presentation/slides/grammar/PrototypesSlide';
+import PropertyAccessorsSlide from '../components/presentation/slides/grammar/PropertyAccessorsSlide';
+import GrammarIQSlide from '../components/presentation/slides/grammar/GrammarIQSlide';
 //import PromisesIntroSlide from '../components/presentation/slides/promises/PromisesIntroSlide';
 
 /**
@@ -49,7 +49,7 @@ export function getSlides() {
             NewBindingSlide,
             ThisIQSlide,
             ES6ThisSlide,
-            TypesIntroSlide,
+            GrammarIntroSlide,
             CoercionSlide,
             FalsySlide,
             EqualityOperatorsSlide,
@@ -58,7 +58,7 @@ export function getSlides() {
             GettersSettersSlide,
             PrototypesSlide,
             PropertyAccessorsSlide,
-            TypesIQSlide/*,
+            GrammarIQSlide/*,
             PromisesIntroSlide
             */
         ]);

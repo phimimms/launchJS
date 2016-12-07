@@ -1,16 +1,14 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../dictionary/sections';
+import * as slides from '../../../../dictionary/slides';
 
 class UndeclaredVariablesSlide extends React.Component {
-    get id() {
-        return 'undeclared-variables';
-    }
     get section() {
         return sections.SCOPE;
     }
-    get title() {
-        return 'Undeclared Variables';
+    get slide() {
+        return slides.SCOPE_UNDECLARED_VARIABLES;
     }
 
     /**
@@ -38,7 +36,7 @@ class UndeclaredVariablesSlide extends React.Component {
 
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Undeclared Variables</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <div style={containerStyle}>
                         <div style={sideContainerStyle}>

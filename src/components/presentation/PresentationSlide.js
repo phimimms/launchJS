@@ -8,7 +8,7 @@ const PresentationSlide = ({slides}) => {
         <div id="fullpage" className="unselectable">
             <div id="slides" className="section" data-anchor="slides">
                 {slides.map((Slide, i) =>
-                    <div key={new Slide().id} id={'section' + i} className="slide">
+                    <div key={new Slide().slide.id} id={'section' + i} className="slide">
                         <Slide />
                     </div>
                 )}

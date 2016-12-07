@@ -1,15 +1,13 @@
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../dictionary/sections';
+import * as slides from '../../../../dictionary/slides';
 
 class FalsySlide extends React.Component {
-    get id() {
-        return 'falsy';
-    }
     get section() {
-        return sections.TYPES_AND_GRAMMAR;
+        return sections.GRAMMAR;
     }
-    get title() {
-        return 'Truthy vs. Falsy';
+    get slide() {
+        return slides.GRAMMAR_FALSY;
     }
 
     /**
@@ -27,7 +25,7 @@ class FalsySlide extends React.Component {
     render() {
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Truthy vs. Falsy</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <ul>
                         <li>Falsy values:</li>

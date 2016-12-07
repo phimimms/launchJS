@@ -4,13 +4,13 @@ import SlideListing from './SlideListing';
 /**
  * Represents a Slide Section in the Toolbar
  */
-const SectionList = ({section}) => {
+const SectionList = ({presentationSlide, section}) => {
     return (
         <div>
             <h2 id={'menu-' + section.id}>{section.title}</h2>
             <ul className={'list-' + section.id}>
-                {section.slides.map((slide) =>
-                    <SlideListing key={slide.id} slide={slide} />
+                {section.slides.map((s) =>
+                    <SlideListing key={s.slide.id} s={s} isSelected={presentationSlide.id === s.slide.id} />
                 )}
             </ul>
         </div>
@@ -18,6 +18,7 @@ const SectionList = ({section}) => {
 };
 
 SectionList.propTypes = {
+    presentationSlide: PropTypes.object.isRequired,
     section: PropTypes.object.isRequired
 };
 

@@ -1,16 +1,14 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../dictionary/sections';
+import * as slides from '../../../../dictionary/slides';
 
 class ImplicitBindingSlide extends React.Component {
-    get id() {
-        return 'implicit-binding';
-    }
     get section() {
         return sections.THIS;
     }
-    get title() {
-        return 'Implicit Binding';
+    get slide() {
+        return slides.THIS_IMPLICIT_BINDING;
     }
 
     /**
@@ -28,7 +26,7 @@ class ImplicitBindingSlide extends React.Component {
     render() {
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Implicit Binding</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <ul>
                         <li>Invoked with an object for a function reference</li>

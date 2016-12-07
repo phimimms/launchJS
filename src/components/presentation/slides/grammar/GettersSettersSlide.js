@@ -1,16 +1,14 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../dictionary/sections';
+import * as slides from '../../../../dictionary/slides';
 
 class GettersSettersSlide extends React.Component {
-    get id() {
-        return 'getters-and-setters';
-    }
     get section() {
-        return sections.TYPES_AND_GRAMMAR;
+        return sections.GRAMMAR;
     }
-    get title() {
-        return 'Getters & Setters';
+    get slide() {
+        return slides.GRAMMAR_GETTERS_SETTERS;
     }
 
     /**
@@ -28,7 +26,7 @@ class GettersSettersSlide extends React.Component {
     render() {
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Getters & Setters</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <div className="code-block small">
                         <p>

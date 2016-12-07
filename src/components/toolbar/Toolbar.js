@@ -1,3 +1,4 @@
+import * as presentationActions from '../../actions/presentationActions';
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -21,21 +22,23 @@ class Toolbar extends React.Component {
      * @return {Element}
      */
     render() {
-        const { slides } = this.props;
+        const { presentation, slides } = this.props;
 
         return (
-            <TableOfContents slides={slides} />
+            <TableOfContents presentationSlide={presentation.slide} slides={slides} />
         );
     }
 }
 
 Toolbar.propTypes = {
     actions: PropTypes.object.isRequired,
+    presentation: PropTypes.object.isRequired,
     slides: PropTypes.array.isRequired
 };
 
 function mapStateToProps(state) {
     return {
+        presentation: state.presentation,
         slides: state.slides
     };
 }

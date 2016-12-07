@@ -1,16 +1,14 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../dictionary/sections';
+import * as slides from '../../../../dictionary/slides';
 
 class ScopeIQSlide extends React.Component {
-    get id() {
-        return 'scope-iq';
-    }
     get section() {
         return sections.SCOPE;
     }
-    get title() {
-        return 'Interview Question';
+    get slide() {
+        return slides.SCOPE_IQ;
     }
 
     /**
@@ -28,7 +26,7 @@ class ScopeIQSlide extends React.Component {
     render() {
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Interview Question</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <div className="code-block">
                         <p>

@@ -1,16 +1,14 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../dictionary/sections';
+import * as slides from '../../../../dictionary/slides';
 
 class CoercionSlide extends React.Component {
-    get id() {
-        return 'coercion';
-    }
     get section() {
-        return sections.TYPES_AND_GRAMMAR;
+        return sections.GRAMMAR;
     }
-    get title() {
-        return 'Coercion';
+    get slide() {
+        return slides.GRAMMAR_COERCION;
     }
 
     /**
@@ -28,7 +26,7 @@ class CoercionSlide extends React.Component {
     render() {
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Coercion</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <ul>
                         <li>Implicit conversion of one type to another</li>

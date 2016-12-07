@@ -8,7 +8,7 @@ import { getSlides } from '../api/slideApi';
 export function loadSlides() {
     return (dispatch) => {
         return getSlides().then((slides) => {
-            dispatch({type: actionTypes.LOAD_SLIDES, slides});
+            dispatch({ type: actionTypes.LOAD_SLIDES, slides });
         });
     };
 }

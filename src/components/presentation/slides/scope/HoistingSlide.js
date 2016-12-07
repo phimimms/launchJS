@@ -1,16 +1,14 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../dictionary/sections';
+import * as slides from '../../../../dictionary/slides';
 
 class HoistingSlide extends React.Component {
-    get id() {
-        return 'hoisting';
-    }
     get section() {
         return sections.SCOPE;
     }
-    get title() {
-        return 'Hoisting';
+    get slide() {
+        return slides.SCOPE_HOISTING;
     }
 
     /**
@@ -38,7 +36,7 @@ class HoistingSlide extends React.Component {
 
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Hoisting</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <ul>
                         <li>Functions are interpreted as if <strong>all</strong> of its variable declarations were <em>hoisted</em> to its top</li>

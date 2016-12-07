@@ -1,23 +1,26 @@
 /* The Slide Sections */
-export default {
-    INTRODUCTION: {
-        id: 'intro',
-        title: 'Introduction'
-    },
-    PROMISES: {
-        id: 'promises',
-        title: 'Promises'
-    },
-    SCOPE: {
-        id: 'scope',
-        title: 'Scope'
-    },
-    THIS: {
-        id: 'this',
-        title: 'this'
-    },
-    TYPES_AND_GRAMMAR: {
-        id: 'types-and-grammar',
-        title: 'Types & Grammar'
-    }
+
+export const INTRODUCTION = {
+    id: 'intro',
+    title: 'Introduction'
+};
+
+export const PROMISES = {
+    id: 'promises',
+    title: 'Promises'
+};
+
+export const SCOPE = {
+    id: 'scope',
+    title: 'Scope'
+};
+
+export const THIS = {
+    id: 'this',
+    title: 'this'
+};
+
+export const GRAMMAR = {
+    id: 'types-and-grammar',
+    title: 'Types & Grammar'
 };

@@ -4,14 +4,14 @@ import SectionList from './SectionList';
 /**
  * Represents the sections in the presentation
  */
-const TableOfContents = ({slides}) => {
+const TableOfContents = ({ presentationSlide, slides }) => {
     const sections = generateSections(slides);
 
     return (
         <div id="toolbar" className="unselectable">
             <div id="menu-content">
                 {sections.map(section =>
-                    <SectionList key={section.id} section={section} />
+                    <SectionList key={section.id} presentationSlide={presentationSlide} section={section} />
                 )}
             </div>
         </div>
@@ -19,6 +19,7 @@ const TableOfContents = ({slides}) => {
 };
 
 TableOfContents.propTypes = {
+    presentationSlide: PropTypes.object.isRequired,
     slides: PropTypes.array.isRequired
 };
 

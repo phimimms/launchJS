@@ -1,16 +1,14 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../dictionary/sections';
+import * as slides from '../../../../dictionary/slides';
 
 class ES6ScopeSlide extends React.Component {
-    get id() {
-        return 'scope-es6';
-    }
     get section() {
         return sections.SCOPE;
     }
-    get title() {
-        return 'ES6';
+    get slide() {
+        return slides.SCOPE_ES6;
     }
 
     /**
@@ -28,7 +26,7 @@ class ES6ScopeSlide extends React.Component {
     render() {
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">ES6 Scope</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <ul>
                         <li><strong>Block</strong> scoped variable declaration keywords: <code>let</code> & <code>const</code></li>

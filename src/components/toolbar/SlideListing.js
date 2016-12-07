@@ -1,23 +1,41 @@
 import $ from 'jquery';
+import * as presentationActions from '../../actions/presentationActions';
 import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 /**
  * Represents a Slide in the Toolbar
  */
-const SlideListing = ({slide}) => {
+const SlideListing = ({ isSelected, s }) => {
     const selectSlide = () => {
+        dispatch(presentationActions.setPresentationSlide(s.slide));
+
         if ($.fn.fullpage) {
-            $.fn.fullpage.moveTo('slides', slide.props.pageNumber);
+            $.fn.fullpage.moveTo('slides', s.props.pageNumber);
         }
     };
 
     return (
-        <li onClick={selectSlide}>{slide.title}</li>
+        <li className={`${isSelected ? 'selected': ''}`} onClick={selectSlide}>{s.slide.title}</li>
     );
 };
 
 SlideListing.propTypes = {
-    slide: PropTypes.object.isRequired
+    isSelected: PropTypes.bool.isRequired,
+    s: PropTypes.object.isRequired
 };
 
-export default SlideListing;
+function mapStateToProps(state) {
+    return {
+        presentationSlide: state.presentation.slide
+    };
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(presentationActions, dispatch)
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SlideListing);

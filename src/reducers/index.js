@@ -2,12 +2,12 @@ import { combineReducers } from 'redux';
 
 /* Reducers */
 import presentation from './presentationReducer';
-import slides from './slideReducer';
+import slide from './slideReducer';
 
 /* The Root Reducer of the Redux Store */
 const rootReducer = combineReducers({
     presentation,
-    slides
+    slide
 });
 
 export default rootReducer;

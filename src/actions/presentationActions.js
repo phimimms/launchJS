@@ -1,14 +1,15 @@
 import * as actionTypes from './actionTypes';
+import { getSlideByPageNumber } from '../api/slideApi';
 
 /**
- * Sets the slide in the presentation
- * @return {Function}
+ * Sets the slide in the presentation.
+ * @param   {Number}    pageNumber  The page number of the new presentation slide
+ * @return  {Function}
  */
-export function setPresentationSlide(slide) {
+export function setPresentationSlide(pageNumber) {
     return (dispatch) => {
-        return new Promise((fulfill) => {
+        return getSlideByPageNumber(pageNumber).then((slide) => {
             dispatch({ type: actionTypes.SET_PRESENTATION_SLIDE, slide });
-            fulfill();
         });
     };
 }

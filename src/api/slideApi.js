@@ -1,3 +1,6 @@
+import * as slides from '../entities/slides';
+
+/* The Slide Components */
 import ScopeIntroSlide from '../components/presentation/slides/scope/ScopeIntroSlide';
 import UndeclaredVariablesSlide from '../components/presentation/slides/scope/UndeclaredVariablesSlide';
 import HoistingSlide from '../components/presentation/slides/scope/HoistingSlide';
@@ -24,13 +27,77 @@ import GettersSettersSlide from '../components/presentation/slides/grammar/Gette
 import PrototypesSlide from '../components/presentation/slides/grammar/PrototypesSlide';
 import PropertyAccessorsSlide from '../components/presentation/slides/grammar/PropertyAccessorsSlide';
 import GrammarIQSlide from '../components/presentation/slides/grammar/GrammarIQSlide';
-//import PromisesIntroSlide from '../components/presentation/slides/promises/PromisesIntroSlide';
+//import PromiseIntroSlide from '../components/presentation/slides/promise/PromiseIntroSlide';
 
 /**
- * Gets a list of the slide components in their presentation order
+ * The slides in presentation order.
+ * @type {Array.<module:slide~slide>}
+ */
+const presentationSlides = [
+    /* Scope */
+    slides.SCOPE_INTRO, slides.SCOPE_UNDECLARED_VARIABLES, slides.SCOPE_HOISTING,
+    slides.SCOPE_FUNCTION_DECLARATIONS, slides.SCOPE_FUNCTION_EXPRESSIONS,
+    slides.SCOPE_CLOSURE, slides.SCOPE_IQ, slides.SCOPE_ES6, slides.SCOPE_LET_LOOPS,
+    /* this */
+    slides.THIS_INTRO, slides.THIS_DEFAULT_BINDING, slides.THIS_IMPLICIT_BINDING,
+    slides.THIS_EXPLICIT_BINDING, slides.THIS_NEW_BINDING, slides.THIS_IQ,
+    slides.THIS_ES6,
+    /* Grammar */
+    slides.GRAMMAR_INTRO, slides.GRAMMAR_COERCION, slides.GRAMMAR_FALSY,
+    slides.GRAMMAR_EQUALITY_OPERATORS, slides.GRAMMAR_CONDITIONAL_OPERATORS,
+    slides.GRAMMAR_PASSING_PARAMETERS, slides.GRAMMAR_GETTERS_SETTERS,
+    slides.GRAMMAR_PROTOTYPES, slides.GRAMMAR_PROPERTY_ACCESSORS,
+    slides.GRAMMAR_IQ
+];
+
+/**
+ * Gets a list of the sections in presentation order.
  * @return {Promise}
  */
-export function getSlides() {
+export function getSlidesBySection() {
+    return new Promise((fulfill) => {
+        let sections = [],
+            index = -1,
+            sectionId = null;
+
+        presentationSlides.forEach((slide, pageNumber) => {
+            /* Dereferences entity */
+            slide = Object.assign({}, slide);
+            slide.pageNumber = pageNumber;
+
+            switch (slide.section.id) {
+                case sectionId:
+                    /* Adds the slide to the current section */
+                    sections[index].slides.push(slide);
+                    break;
+                default:
+                    /* Adds the first slide of the next section */
+                    sectionId = slide.section.id;
+                    sections[++index] = Object.assign({}, slide.section, {slides: [slide]});
+                    break;
+            }
+        });
+
+        fulfill(sections);
+    });
+}
+
+/**
+ * Gets the slide corresponding to the given page number.
+ * @param   {Number}    pageNumber  The page number of the requested slide
+ * @return  {Promise}
+ */
+export function getSlideByPageNumber(pageNumber) {
+    return new Promise((fulfill) => {
+        fulfill(Object.assign({}, presentationSlides[pageNumber]));
+    });
+}
+
+/**
+ * Gets a list of the slide components in presentation order.
+ * @return {Promise}
+ */
+export function getSlideComponents() {
     return new Promise((fulfill) => {
         fulfill([
             ScopeIntroSlide,
@@ -59,7 +126,7 @@ export function getSlides() {
             PrototypesSlide,
             PropertyAccessorsSlide,
             GrammarIQSlide/*,
-            PromisesIntroSlide
+            PromiseIntroSlide
             */
         ]);
     });

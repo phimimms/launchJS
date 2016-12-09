@@ -1,7 +1,7 @@
 import * as actionTypes from '../actions/actionTypes';
 import initialState from './initialState';
 
-/* The Slide Reducer */
+/* The Presentation Reducer */
 export default function slideReducer(state = initialState.presentation, action) {
     switch (action.type) {
         case actionTypes.SET_PRESENTATION_SLIDE:

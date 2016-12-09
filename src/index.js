@@ -4,6 +4,7 @@ import configureStore from './store/configureStore';
 import fullpage from 'fullpage.js'; // eslint-disable-line no-unused-vars
 import $ from 'jquery';
 import Ps from 'perfect-scrollbar';
+import { setPresentationSlide } from './actions/presentationActions';
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
@@ -16,7 +17,14 @@ const store = configureStore();
 store.dispatch(loadSlides()).then(() => {
     $(document).ready(() => {
         /* Initializes fullpage */
-        $('#fullpage').fullpage();
+        $('#fullpage').fullpage({
+            /**
+             * Dispatches the new presentation slide.
+             */
+            onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+                store.dispatch(setPresentationSlide(nextSlideIndex));
+            }
+        });
 
         /* Initializes perfect-scrollbar */
         let toolbarContentContainer = document.getElementById('menu-content');
@@ -27,6 +35,7 @@ store.dispatch(loadSlides()).then(() => {
     });
 });
 
+/* Renders the Application */
 render(
     <Provider store={store}>
         <App />

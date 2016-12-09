@@ -1,7 +1,7 @@
 import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import * as sections from '../../../../dictionary/sections';
-import * as slides from '../../../../dictionary/slides';
+import * as sections from '../../../../entities/sections';
+import * as slides from '../../../../entities/slides';
 
 class ScopeIQSlide extends React.Component {
     get section() {
@@ -12,7 +12,7 @@ class ScopeIQSlide extends React.Component {
     }
 
     /**
-     * Instantiates the Component
+     * Instantiates the component.
      * @param {Object}  props   The initial values of instance properties
      */
     constructor(props) {
@@ -20,7 +20,7 @@ class ScopeIQSlide extends React.Component {
     }
 
     /**
-     * Generates the HTML representation of the Component
+     * Generates the HTML representation of the component.
      * @return {Element}
      */
     render() {

@@ -1,18 +1,18 @@
 import React, { PropTypes } from 'react';
-import * as sections from '../../../../dictionary/sections';
-import * as slides from '../../../../dictionary/slides';
+import * as sections from '../../../../entities/sections';
+import * as slides from '../../../../entities/slides';
 
-class PromisesIntroSlide extends React.Component {
+class PromiseIntroSlide extends React.Component {
     get section() {
-        return  sections.PROMISES;
+        return  sections.PROMISE;
     }
 
     get slide() {
-        return slides.PROMISES_INTRO;
+        return slides.PROMISE_INTRO;
     }
 
     /**
-     * Instantiates the Component
+     * Instantiates the component.
      * @param {Object}  props   The initial values of instance properties
      */
     constructor(props) {
@@ -20,7 +20,7 @@ class PromisesIntroSlide extends React.Component {
     }
 
     /**
-     * Generates the HTML representation of the Component
+     * Generates the HTML representation of the component.
      * @return {Element}
      */
     render() {
@@ -33,8 +33,8 @@ class PromisesIntroSlide extends React.Component {
     }
 }
 
-PromisesIntroSlide.propTypes = {
+PromiseIntroSlide.propTypes = {
     pageNumber: PropTypes.number
 };
 
-export default PromisesIntroSlide;
+export default PromiseIntroSlide;

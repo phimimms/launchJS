@@ -1,29 +1,29 @@
 .circle-large {
     border-radius: 50%;
-    height: 550px;
-    line-height: 75px;
+    height: 12em;
+    line-height: 2em;
     margin: 0 auto;
     position: absolute;
     text-align: center;
-    width: 550px;
+    width: 12em;
 }
 
 .circle-medium {
     border-radius: 50%;
-    height: 400px;
-    line-height: 75px;
-    margin: 75px;
+    height: 10em;
+    line-height: 2em;
+    margin: 2em;
     position: absolute;
     text-align: center;
-    width: 400px;
+    width: 10em;
 }
 
 .circle-small {
     border-radius: 50%;
-    height: 250px;
-    line-height: 100px;
-    margin: 150px;
+    height: 4em;
+    line-height: 3em;
+    margin: 4em;
     position: absolute;
     text-align: center;
-    width: 250px;
+    width: 4em;
 }

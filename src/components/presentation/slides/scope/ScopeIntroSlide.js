@@ -1,20 +1,18 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../entities/sections';
+import * as slides from '../../../../entities/slides';
 
 class ScopeIntroSlide extends React.Component {
-    get id() {
-        return 'scope-intro';
-    }
     get section() {
         return sections.SCOPE;
     }
-    get title() {
-        return 'Introduction';
+    get slide() {
+        return slides.SCOPE_INTRO;
     }
 
     /**
-     * Instantiates the Component
+     * Instantiates the component.
      * @param {Object}  props   The initial values of instance properties
      */
     constructor(props) {
@@ -22,7 +20,7 @@ class ScopeIntroSlide extends React.Component {
     }
 
     /**
-     * Generates the HTML representation of the Component
+     * Generates the HTML representation of the component.
      * @return {Element}
      */
     render() {
@@ -34,7 +32,7 @@ class ScopeIntroSlide extends React.Component {
 
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Scope</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <ul>
                         <li>The set of rules that determines where a variable is accessible</li>

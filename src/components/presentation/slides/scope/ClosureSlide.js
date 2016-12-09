@@ -1,20 +1,18 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../entities/sections';
+import * as slides from '../../../../entities/slides';
 
 class ClosureSlide extends React.Component {
-    get id() {
-        return 'closure';
-    }
     get section() {
         return sections.SCOPE;
     }
-    get title() {
-        return 'Closure';
+    get slide() {
+        return slides.SCOPE_CLOSURE;
     }
 
     /**
-     * Instantiates the Component
+     * Instantiates the component.
      * @param {Object}  props   The initial values of instance properties
      */
     constructor(props) {
@@ -22,7 +20,7 @@ class ClosureSlide extends React.Component {
     }
 
     /**
-     * Generates the HTML representation of the Component
+     * Generates the HTML representation of the component.
      * @return {Element}
      */
     render() {
@@ -33,7 +31,7 @@ class ClosureSlide extends React.Component {
 
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Closure</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <ul>
                         <li>The mapping of a function{char.RSQUOTE}s <em>free variables</em> to their value at the time of the function{char.RSQUOTE}s declaration</li>

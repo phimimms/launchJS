@@ -1,20 +1,18 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../entities/sections';
+import * as slides from '../../../../entities/slides';
 
 class ES6ThisSlide extends React.Component {
-    get id() {
-        return 'this-es6';
-    }
     get section() {
         return sections.THIS;
     }
-    get title() {
-        return 'ES6';
+    get slide() {
+        return slides.THIS_ES6;
     }
 
     /**
-     * Instantiates the Component
+     * Instantiates the component.
      * @param {Object}  props   The initial values of instance properties
      */
     constructor(props) {
@@ -22,13 +20,13 @@ class ES6ThisSlide extends React.Component {
     }
 
     /**
-     * Generates the HTML representation of the Component
+     * Generates the HTML representation of the component.
      * @return {Element}
      */
     render() {
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">ES6 this</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <ul>
                         <li>Arrow-functions adopt the <code>this</code> binding from the enclosing scope</li>

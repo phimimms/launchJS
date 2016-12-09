@@ -1,20 +1,18 @@
-import char from '../../../../dictionary/characterCodes';
+import * as char from '../../../../dictionary/characterCodes';
 import React, { PropTypes } from 'react';
-import sections from '../../../../dictionary/sections';
+import * as sections from '../../../../entities/sections';
+import * as slides from '../../../../entities/slides';
 
-class TypesIntroSlide extends React.Component {
-    get id() {
-        return 'types-grammar';
-    }
+class GrammarIntroSlide extends React.Component {
     get section() {
-        return sections.TYPES_AND_GRAMMAR;
+        return sections.GRAMMAR;
     }
-    get title() {
-        return 'Introduction';
+    get slide() {
+        return slides.GRAMMAR_INTRO;
     }
 
     /**
-     * Instantiates the Component
+     * Instantiates the component.
      * @param {Object}  props   The initial values of instance properties
      */
     constructor(props) {
@@ -22,13 +20,13 @@ class TypesIntroSlide extends React.Component {
     }
 
     /**
-     * Generates the HTML representation of the Component
+     * Generates the HTML representation of the component.
      * @return {Element}
      */
     render() {
         return (
             <div className="slide-container novetta-bg">
-                <div className="slide-header">Types & Grammar</div>
+                <div className="slide-header">{this.slide.title}</div>
                 <div className="slide-content">
                     <ul>
                         <li>Javascript is <strong>not</strong> a typed language</li>
@@ -54,8 +52,8 @@ class TypesIntroSlide extends React.Component {
     }
 }
 
-TypesIntroSlide.propTypes = {
+GrammarIntroSlide.propTypes = {
     pageNumber: PropTypes.number
 };
 
-export default TypesIntroSlide;
+export default GrammarIntroSlide;

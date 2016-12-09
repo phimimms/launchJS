@@ -1,17 +1,15 @@
 import '../scss/application.scss';
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as slideActions from '../actions/slideActions';
 import Presentation from './presentation/Presentation';
 import Toolbar from './toolbar/Toolbar';
 
 /**
- * The Application Component
+ * The Application Container
  */
 class App extends React.Component {
     /**
-     * Instantiates the Component
+     * Instantiates the component.
      * @param {Object}  props   The initial values of instance properties
      */
     constructor(props) {
@@ -19,7 +17,7 @@ class App extends React.Component {
     }
 
     /**
-     * Generates the HTML representation of the Component
+     * Generates the HTML representation of the component.
      * @return {Element}
      */
     render() {
@@ -32,18 +30,10 @@ class App extends React.Component {
     }
 }
 
-App.propTypes = {
-    actions: PropTypes.object.isRequired
-};
+App.propTypes = {};
 
 function mapStateToProps() {
     return {};
 }
 
-function mapDispatchToProps(dispatch) {
-    return {
-        actions: bindActionCreators(slideActions, dispatch)
-    };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps)(App);

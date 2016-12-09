@@ -1,14 +1,21 @@
 import * as actionTypes from './actionTypes';
-import { getSlides } from '../api/slideApi';
+import { getSlidesBySection, getSlideComponents } from '../api/slideApi';
 
 /**
- * Loads the slides in their presentation order
+ * Loads the slides in the presentation.
  * @return {Function}
  */
 export function loadSlides() {
     return (dispatch) => {
-        return getSlides().then((slides) => {
-            dispatch({type: actionTypes.LOAD_SLIDES, slides});
-        });
+        let promises = [];
+
+        promises.push(getSlidesBySection().then((sections) => {
+            dispatch({ type: actionTypes.LOAD_SECTIONS, sections });
+        }));
+        promises.push(getSlideComponents().then((slideComponents) => {
+            dispatch({ type: actionTypes.LOAD_SLIDE_COMPONENTS, slideComponents });
+        }));
+
+        return Promise.all(promises);
     };
 }

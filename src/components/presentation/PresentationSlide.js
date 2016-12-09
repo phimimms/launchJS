@@ -1,14 +1,18 @@
 import React, { PropTypes } from 'react';
 
 /**
- * Generates the Slides in the Presentation
+ * Renders the Slide Components in the Presentation
  */
-const PresentationSlide = ({slides}) => {
+const PresentationSlide = ({ slideComponents }) => {
     return (
         <div id="fullpage" className="unselectable">
             <div id="slides" className="section" data-anchor="slides">
-                {slides.map((Slide, i) =>
-                    <div key={new Slide().id} id={'section' + i} className="slide">
+                { slideComponents.map((Slide, pageNumber) =>
+                    <div
+                        key={new Slide({pageNumber}).slide.id}
+                        id={`section${pageNumber}`}
+                        className="slide"
+                        >
                         <Slide />
                     </div>
                 )}
@@ -18,7 +22,7 @@ const PresentationSlide = ({slides}) => {
 };
 
 PresentationSlide.propTypes = {
-    slides: PropTypes.array.isRequired
+    slideComponents: PropTypes.array.isRequired
 };
 
 export default PresentationSlide;

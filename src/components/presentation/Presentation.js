@@ -1,49 +1,26 @@
 import PresentationSlide from './PresentationSlide';
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as slideActions from '../../actions/slideActions';
 
 /**
- * The Presentation
+ * The Presentation Container
  */
-class Presentation extends React.Component {
-    /**
-     * Instantiates the Component
-     * @param {Object}  props   The initial values of instance properties
-     */
-    constructor(props) {
-        super(props);
-    }
-
-    /**
-     * Generates the HTML representation of the Component
-     * @return {Element}
-     */
-    render() {
-        const { slides } = this.props;
-
-        return (
-            <PresentationSlide slides={slides} />
-        );
-    }
-}
+const Presentation = ({ slideComponents }) => {
+    return (
+        <PresentationSlide
+            slideComponents={slideComponents}
+        />
+    );
+};
 
 Presentation.propTypes = {
-    actions: PropTypes.object.isRequired,
-    slides: PropTypes.array.isRequired
+    slideComponents: PropTypes.array.isRequired
 };
 
 function mapStateToProps(state) {
     return {
-        slides: state.slides
+        slideComponents: state.slide.components
     };
 }
 
-function mapDispatchToProps(dispatch) {
-    return {
-        actions: bindActionCreators(slideActions, dispatch)
-    };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Presentation);
+export default connect(mapStateToProps)(Presentation);

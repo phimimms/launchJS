@@ -1,6 +1,6 @@
 .slide-container {
     background-color:           #F5F5F7;
-    font-size:                  3em;
+    font-size:                  2em;
     height:                     100%;
     width:                      100%;
 
@@ -28,6 +28,7 @@
         li {
             clear:              both;
             float:              left;
+            list-style-type:    square;
             padding:            0.25em 0;
         }
     }
